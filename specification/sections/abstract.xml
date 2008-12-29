@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="abstract" property="dct:abstract"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/">
+	<title>Abstract</title>
+	<p>This specification defines the Document Markup Language (DML), a markup language for books, articles, notes and other type of documents. DML is an XML vocabulary normatively defined using RELAX NG and Schematron.</p>
+	<section>
+		<title>How to read this document</title>
+	</section>
+</section>
