@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-example" status="draft"
+<section xml:lang="en" xml:id="element-example"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">example</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A example.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">example</cdml:node> element represents an example.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /title?, $block[not( /example )]+ )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /dml | /note | /section )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+	<example>
+		<title>Usage of <cdml:node role="element">example</cdml:node> element</title>
+		<cdml:code language="xml">
+&lt;example xml:id="example-identifier"&gt;
+  &lt;title&gt;Title of the Lorem Ipsum example&lt;/title&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
+&lt;/example&gt;
+		</cdml:code>
+	</example>
 
 </section>
