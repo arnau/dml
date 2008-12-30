@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="metadata-attributes"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<title>Metadata attributes</title>
+
+	<list>
+		<item><cdml:node role="attribute">about?</cdml:node></item>
+		<item><cdml:node role="attribute">content?</cdml:node></item>
+		<item><cdml:node role="attribute">datatype?</cdml:node></item>
+		<item><cdml:node role="attribute">typeof?</cdml:node></item>
+		<item><cdml:node role="attribute">property?</cdml:node></item>
+		<item><cdml:node role="attribute">resource?</cdml:node></item>
+	</list>
+
+	<xi:include href="attributes/about.xml"/>
+	<xi:include href="attributes/content.xml"/>
+	<xi:include href="attributes/datatype.xml"/>
+	<xi:include href="attributes/typeof.xml"/>
+	<xi:include href="attributes/property.xml"/>
+	<xi:include href="attributes/resource.xml"/>
+
+
+</section>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="attribute-typeof" status="draft"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0">
+
+	<title>The <cdml:node role="attribute">typeof</cdml:node> attribute</title>
+
+	<p>…?</p>
+
+</section>

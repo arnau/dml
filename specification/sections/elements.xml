@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="elements"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<title>Elements</title>
+
+	<p status="draft">Add /listing for program listing? in cdml?</p>
+
+	<xi:include href="elements/abbr.xml"/>
+	<xi:include href="elements/cell.xml"/>
+	<xi:include href="elements/dml.xml"/>
+	<xi:include href="elements/em.xml"/>
+	<xi:include href="elements/example.xml"/>
+	<xi:include href="elements/figure.xml"/>
+	<xi:include href="elements/group.xml"/>
+	<xi:include href="elements/item.xml"/>
+	<xi:include href="elements/list.xml"/>
+	<xi:include href="elements/metadata.xml"/>
+	<xi:include href="elements/note.xml"/>
+	<xi:include href="elements/object.xml"/>
+	<xi:include href="elements/p.xml"/>
+	<xi:include href="elements/quote.xml"/>
+	<xi:include href="elements/section.xml"/>
+	<xi:include href="elements/span.xml"/>
+	<xi:include href="elements/sub.xml"/>
+	<xi:include href="elements/summary.xml"/>
+	<xi:include href="elements/sup.xml"/>
+	<xi:include href="elements/table.xml"/>
+	<xi:include href="elements/title.xml"/>
+
+</section>

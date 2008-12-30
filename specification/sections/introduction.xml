@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="introduction"
+	xmlns="http://purl.oclc.org/NET/dml/1.0">
+	<title>Introduction</title>
+	<p>DML is general purpose XML schema particulary well suited to books, articles and annotations in other XML sources.</p>
+	<p>DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions to cover all cases.</p>
+	
+	
+	<!-- explain DML arquitecture design -->
+	<p>Està dissenyat pensant en un set d'elements molt reduït de manera que sigui fàcil de recordar.</p>
+	<p>Un element canvia el seu comportament i refina el seu significat en funció de context. Un cas exemplar és l'element <cdml:node role="element">title</cdml:node>.</p>
+</section>

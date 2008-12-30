@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="element-section"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/">
+
+	<title>The <cdml:node role="element">section</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A logical section of a document.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">section</cdml:node> element represents a generic document section.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Draft</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /title, $block[not( /title )]+ )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @role? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /dml | /note | /object[parent::$block] | /quote[parent::$block] | /section )
+			</cdml:code>
+		</item>
+	</list>
+
+	<p status="review">The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">section</cdml:node> element meaning. Allowed values are:</p>
+	<list>
+		<item>
+			<title><cdml:value>abstract</cdml:value></title>
+			<p status="review">A summary or statement of the contents of a document.</p>
+		</item>
+		<item>
+			<title><cdml:value>part</cdml:value></title>
+			<p>A part of a book. Parts usually group related chapters in a book.</p>
+		</item>
+		<item>
+			<title><cdml:value>chapter</cdml:value></title>
+			<p status="review">A main division of a book.</p>
+		</item>
+		<item>
+			<title><cdml:value>appendix</cdml:value></title>
+			<p>An appendix in a document. Appendixes usually occur at the end of a document.</p>
+		</item>
+		<item>
+			<title><cdml:value status="draft">header</cdml:value></title>
+			<p status="draft">description …?</p>
+		</item>
+		<item>
+			<title><cdml:value status="draft">footer</cdml:value></title>
+			<p status="draft">description …?</p>
+		</item>
+		<item>
+			<title><cdml:value status="draft">toc</cdml:value></title>
+			<p status="draft">description …?</p>
+		</item>
+		<item>
+			<title><cdml:value>license</cdml:value></title>
+			<p status="draft">description …?</p>
+		</item>
+	</list>
+
+
+	<p status="draft">TODO: examples</p>
+
+</section>

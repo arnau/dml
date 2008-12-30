@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="element-dml"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/">
+
+	<title>The <cdml:node role="element">dml</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">The root element of a document.</item>
+		</list>
+	</metadata>
+
+	<p>The <cdml:node role="element">dml</cdml:node> element is the root element for a DML document.</p>
+	
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /title, $block[not( /title )]+ )
+
+(: this expression is more accurated but necessary? :)
+( /title, $block[not( /title | /section )]*, /section* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* )
+			</cdml:code>
+		</item>
+	</list>
+
+	<p status="draft">TODO: examples</p>
+
+</section>

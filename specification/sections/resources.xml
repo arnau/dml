@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="resources" role="appendix"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/">
+
+	<title>Resources</title>
+	
+	<list>
+		<title>RELAX NG</title>
+		<item xml:id="iso-19757-2">ISO/IEC 19757-2:2008: <span href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c052348_ISO_IEC_19757-2_2008(E).zip">Information technology — Document Schema Definition Language (DSDL) — Part 2: Regular-grammar-based validation — RELAX NG</span>. ISO/IEC. 2008.</item>
+		<item xml:id="relaxng" href="http://www.relaxng.org/">RELAX NG Home page</item>
+	</list>
+	<list>
+		<title>Schematron</title>
+		<item xml:id="iso-19757-3">ISO/IEC 19757-3:2006: <span href="http://standards.iso.org/ittf/PubliclyAvailableStandards/c040833_ISO_IEC_19757-3_2006(E).zip">Information technology — Document Schema Definition Language (DSDL) — Part 3: Rule-based validation — Schematron</span>. ISO/IEC. 2006.</item>
+		<item xml:id="schematron" href="http://www.schematron.com">Schematron Home page</item>
+	</list>
+	<list>
+		<title>IETF (Internet Engineering Task Force)</title>
+		<item xml:id="rfc2119"><span href="http://www.apps.ietf.org/rfc/rfc2119.html">RFC 2119: Key words for use in RFCs to Indicate Requirement Levels</span>. S. Bradner. 1997.</item>
+		<item xml:id="rfc4646"><span href="http://www.apps.ietf.org/rfc/rfc4646.html">RFC 4646: Tags for the Identification of Languages</span>. A. Phillips, Ed., M. Davis. 2006.</item>
+	</list>
+	<list>
+		<title>RDFa</title>
+		<item xml:id="#rdfa-syntax"><span href="http://www.w3.org/TR/2008/REC-rdfa-syntax-20081014">RDFa in XHTML: Syntax and Processing</span>. B. Adida, M. Birbeck, S. McCarron, S. Pemberton. 2008.</item>
+		<item xml:id="#rdfa-primer"><span href="http://www.w3.org/TR/2008/NOTE-xhtml-rdfa-primer-20081014/">RDFa Primer</span>. B. Adida, M. Birbeck. 2008.</item>
+	</list>
+	<list>
+		<title>Dublin Core Metadata Initiative</title>
+		<item xml:id="dcmi" href="http://dublincore.org/">Dublin Core Metadata Initiative Home page.</item>
+		<item xml:id="dcmi-html"><span href="http://dublincore.org/documents/2008/08/04/dc-html/">Expressing Dublin Core metadata using HTML/XHTML meta and link elements</span>. P. Jhonston, A. Powell. 2008.</item>
+	</list>
+<!--
+		<item href="http://www.loc.gov/standards/iso639-2/php/code_list.php" xml:id="iso-639-2">Language codes (ISO-639-2)</item>
+		<item href="http://www.iso.org/iso/english_country_names_and_code_elements" xml:id="iso-3166-1" xml:lang="en">English country names and code elements (ISO-3166-1)</item>
+		<item xml:id="iso-8601" xml:lang="en">Wikipedia. <span href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601: Numeric representation of Dates and Time</span>.</item>
+-->
+
+	
+</section>

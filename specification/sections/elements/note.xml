@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="element-note"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/">
+
+	<title>The <cdml:node role="element">note</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A note or annotation in a document.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">note</cdml:node> element represents a generic document note or annotation. It <em>may</em> be used as root element in <em status="review">DML islands</em> in non-DML documents.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Draft</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( ( /title?, $block[not( /title | /note )]+ ) | ( $inline | text() )+ )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @role? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<!-- Allow /quote[parent::$block] ? -->
+			<cdml:code language="dml-xpath">
+( /dml | /object[parent::$block] | /section )
+			</cdml:code>
+		</item>
+	</list>
+
+		<p status="review">The <cdml:node role="attribute">role</cdml:node> attribute may be used to provide a form to refine the <cdml:node role="element">note</cdml:node> element meaning. Allowed values are:</p>
+		<list>
+			<item>
+				<title><cdml:value>tip</cdml:value></title>
+				<p>A suggestion, tip or trick.</p>
+			</item>
+			<item>
+				<title><cdml:value>warning</cdml:value></title>
+				<p>An admonition note.</p>
+			</item>
+			<item>
+				<title><cdml:value>sidebar</cdml:value></title>
+				<p>A note that is isolated from the main narrative flow.</p>
+				<p status="draft">/section[@role="aside"] or /note[@role="aside"] or @role="sidebar" …?</p>
+			</item>
+			<item>
+				<title><cdml:value>footnote</cdml:value></title>
+				<p status="review">A footnote. Footnotes in paged medias usually occur at the end of the page which cite it.</p>
+			</item>
+		</list>
+
+
+		<p status="draft">TODO: examples</p>
+
+</section>

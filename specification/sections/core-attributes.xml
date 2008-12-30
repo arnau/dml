@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="core-attributes"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<title>Core attributes</title>
+	<cdml:code language="dml-xpath">
+$core.attrs ::= ( @xml:id | @xml:lang | @xml:base | @dir | @class | @href | @status )
+	</cdml:code>
+	<p>This attributes <em>must not</em> been repeated.</p>
+	<list>
+		<item><cdml:node role="attribute">xml:id</cdml:node></item>
+		<item><cdml:node role="attribute">xml:lang</cdml:node></item>
+		<item><cdml:node role="attribute" status="draft">xml:base</cdml:node></item>
+		<item><cdml:node role="attribute" status="draft">dir</cdml:node></item>
+		<item><cdml:node role="attribute">class</cdml:node></item>
+		<item><cdml:node role="attribute">href</cdml:node></item>
+		<item><cdml:node role="attribute">status</cdml:node></item>
+	</list>
+
+	<xi:include href="attributes/id.xml"/>
+	<xi:include href="attributes/lang.xml"/>
+	<xi:include href="attributes/class.xml"/>
+	<xi:include href="attributes/href.xml"/>
+	<xi:include href="attributes/status.xml"/>
+
+
+</section>

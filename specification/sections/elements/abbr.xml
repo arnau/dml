@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="element-abbr"
+	xmlns="http://purl.oclc.org/NET/dml/1.0"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns:dct="http://purl.org/dc/terms/">
+
+	<title>The <cdml:node role="element">abbr</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">An abbreviated form.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">abbr</cdml:node> element represents an abbreviation or acronym.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#inline-flow">Inline</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code>
+( $inline[not( /abbr )] | text() )+
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code>
+( $core.attrs* | $meta.attrs* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code>
+( $block | $inline[not( /abbr )] )
+			</cdml:code>
+		</item>
+	</list>
+	
+	<p><span href="#attribute-content">The <cdml:node role="attribute">content</cdml:node> attribute</span> <em>may</em> be used to provide an expansion of the abbreviation.</p>
+	<p><span href="#attribute-about">The <cdml:node role="attribute">about</cdml:node> attribute</span> <em>may</em> be used to provide a resource which provide the expansion form.</p>
+	<p><cdml:node role="attribute">content</cdml:node> and <cdml:node role="attribute">about</cdml:node> attributes are mutually exclusive.</p>
+
+	
+	<example>
+		<title><cdml:node role="element">abbr</cdml:node> element with inline expansion</title>
+		<cdml:code language="xml">
+&lt;p&gt;Example of &lt;abbr content="Document Markup Language"&gt;DML&lt;/abbr&gt;'s /abbr element.&lt;/p&gt;
+		</cdml:code>
+	</example>
+	<example>
+		<title><cdml:node role="element">abbr</cdml:node> element with remote expansion</title>
+		<cdml:code language="xml">
+&lt;p&gt;Example of &lt;abbr about="http://example.org/glossary#dml"&gt;DML&lt;/abbr&gt;'s /abbr element.&lt;/p&gt;
+		</cdml:code>
+	</example>
+
+</section>
