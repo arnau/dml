@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-group" status="draft"
+<section xml:lang="en" xml:id="element-group"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">group</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A table data group.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">group</cdml:node> element is a generic table cell container.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#table-flow">Table</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /group+ | /title+ | ( /title?, /cell+ ) )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @role? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /group | /table )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">group</cdml:node> element meaning. Allowed values are:</p>
+	<list>
+		<item>
+			<title><cdml:value>header</cdml:value></title>
+			<p>A header table group. Table header <em>must</em> be the first child of a <cdml:node role="element">table</cdml:node> element.</p>
+		</item>
+		<item>
+			<title><cdml:value>footer</cdml:value></title>
+			<p>A footer table group. Table footer <em>must</em> be child of a <cdml:node role="element">table</cdml:node> element.</p>
+		</item>
+	</list>
 
 </section>

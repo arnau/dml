@@ -51,6 +51,10 @@
 		<section xml:id="block-flow">
 			<title>Block</title>
 		</section>
+		<section xml:id="table-flow">
+			<title>Table</title>
+			<p>http://www.w3.org/TR/CSS21/tables.html</p>
+		</section>
 		<section xml:id="inline-flow">
 			<title>Inline</title>
 		</section>
