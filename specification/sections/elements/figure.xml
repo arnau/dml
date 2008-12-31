@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-figure" status="draft"
+<section xml:lang="en" xml:id="element-figure"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">figure</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A figure container.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">figure</cdml:node> element is a figure container; usually it contains an illustration or something to show graphically.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /title?, $block[not( /example | /figure )]+ )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /dml | /example | /note | /section )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+	<example>
+		<title>Usage of <cdml:node role="element">figure</cdml:node> element</title>
+		<cdml:code language="xml">
+&lt;figure xml:id="figure-identifier"&gt;
+  &lt;title&gt;It shown an illustration throught a figure element&lt;/title&gt;
+  &lt;object src="path/to/illustration"/&gt;
+&lt;/figure&gt;
+		</cdml:code>
+	</example>
 
 </section>
