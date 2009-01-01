@@ -40,11 +40,11 @@
 		</item>
 	</list>
 
-	<p status="review">The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">section</cdml:node> element meaning. Allowed values are:</p>
+	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">section</cdml:node> element meaning. Allowed values are:</p>
 	<list>
 		<item>
 			<title><cdml:value>abstract</cdml:value></title>
-			<p status="review">A summary or statement of the contents of a document.</p>
+			<p>A summary or statement of the contents of a document.</p>
 		</item>
 		<item>
 			<title><cdml:value>part</cdml:value></title>

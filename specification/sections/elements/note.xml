@@ -41,7 +41,7 @@
 		</item>
 	</list>
 
-		<p status="review">The <cdml:node role="attribute">role</cdml:node> attribute may be used to provide a form to refine the <cdml:node role="element">note</cdml:node> element meaning. Allowed values are:</p>
+		<p>The <cdml:node role="attribute">role</cdml:node> attribute may be used to provide a form to refine the <cdml:node role="element">note</cdml:node> element meaning. Allowed values are:</p>
 		<list>
 			<item>
 				<title><cdml:value>tip</cdml:value></title>
