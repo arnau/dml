@@ -28,7 +28,7 @@
 ( /title, $block[not( /title )]+ )
 
 (: this expression is more accurated but necessary? :)
-( /title, $block[not( /title | /section )]*, /section* )
+( /title, $block[not( /title | preceding-sibling::/section )]+, /section* )
 			</cdml:code>
 		</item>
 		<item>
