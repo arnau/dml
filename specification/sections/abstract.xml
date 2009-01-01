@@ -67,7 +67,7 @@
 				<p>Zero or more times.</p>
 			</item>
 		</list>
-		<p>Therefore, to indicate that an “status” attribute is optional the expression will be <cdml:node role="attribute">status?</cdml:node>. Or, if a “section” element is repeatable the expression will be <cdml:node role="element">section+</cdml:node>.</p>
+		<p status="review">Therefore, to indicate that an “status” attribute is optional the expression will be <cdml:node role="attribute">status?</cdml:node>. Or, if a “section” element is repeatable the expression will be <cdml:node role="element">section+</cdml:node>.</p>
 
 
 		<section>
