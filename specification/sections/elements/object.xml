@@ -51,7 +51,7 @@
 		<title>Usage of block flow <cdml:node role="element">object</cdml:node> element.</title>
 		<cdml:code language="xml">
 &lt;figure xml:id="fig-markup-trends"&gt;
-  &lt;title&gt;Usage of markup language in %&lt;/title&lt;
+  &lt;title&gt;Usage of markup language in %&lt;/title&gt;
   &lt;object src="markup-trends.svg" type="application/svg+xml"&gt;
     &lt;list role="leaded"&gt;
       &lt;item&gt;
