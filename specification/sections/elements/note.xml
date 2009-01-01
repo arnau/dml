@@ -41,28 +41,28 @@
 		</item>
 	</list>
 
-		<p>The <cdml:node role="attribute">role</cdml:node> attribute may be used to provide a form to refine the <cdml:node role="element">note</cdml:node> element meaning. Allowed values are:</p>
-		<list>
-			<item>
-				<title><cdml:value>tip</cdml:value></title>
-				<p>A suggestion, tip or trick.</p>
-			</item>
-			<item>
-				<title><cdml:value>warning</cdml:value></title>
-				<p>An admonition note.</p>
-			</item>
-			<item>
-				<title><cdml:value>sidebar</cdml:value></title>
-				<p>A note that is isolated from the main narrative flow.</p>
-				<p status="draft">/section[@role="aside"] or /note[@role="aside"] or @role="sidebar" …?</p>
-			</item>
-			<item>
-				<title><cdml:value>footnote</cdml:value></title>
-				<p>A footnote. Footnotes in paged medias usually occur at the end of the page which cite it.</p>
-			</item>
-		</list>
+	<p>The <cdml:node role="attribute">role</cdml:node> attribute may be used to provide a form to refine the <cdml:node role="element">note</cdml:node> element meaning. Allowed values are:</p>
+	<list>
+		<item>
+			<title><cdml:value>tip</cdml:value></title>
+			<p>A suggestion, tip or trick.</p>
+		</item>
+		<item>
+			<title><cdml:value>warning</cdml:value></title>
+			<p>An admonition note.</p>
+		</item>
+		<item>
+			<title><cdml:value>sidebar</cdml:value></title>
+			<p>A note that is isolated from the main narrative flow.</p>
+			<p status="draft">/section[@role="aside"] or /note[@role="aside"] or @role="sidebar" …?</p>
+		</item>
+		<item>
+			<title><cdml:value>footnote</cdml:value></title>
+			<p>A footnote. Footnotes in paged medias usually occur at the end of the page which cite it.</p>
+		</item>
+	</list>
 
 
-		<p status="draft">TODO: examples</p>
+	<p status="draft">TODO: examples</p>
 
 </section>

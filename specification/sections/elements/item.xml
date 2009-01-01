@@ -10,7 +10,7 @@
 			<item property="dct:description">A list item.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">item</cdml:node> element is a list item container.</p>
+	<p>The <cdml:node role="element">item</cdml:node> element represents a list item container.</p>
 	<list>
 		<item>
 			<title>Status</title>
