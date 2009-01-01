@@ -4,7 +4,7 @@
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 	<title>Abstract</title>
-	<p>This specification defines the Document Markup Language (DML), a markup language for books, articles, notes and other type of documents. DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions.</p>
+	<p>This specification defines the Document Markup Language (DML), a markup language for books, articles, notes and other types of documents. DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions.</p>
 	<section>
 		<title>Conventions</title>
 
@@ -19,7 +19,7 @@
 		<list>
 			<item>
 				<title xml:id="def-element">Element:</title>
-				<p>When an element (node with type <cdml:value>element</cdml:value>) is mentioned in the text, always has a preceding slash (<cdml:code>/</cdml:code>) and optionally has an associated <span href="#def-attribute">attribute</span> as a predicate. <span href="#ebnf-element">Element EBNF definition</span>.</p>
+				<p>When an element (node with type <cdml:value>element</cdml:value>) is mentioned in the text, it is always preceded by a slash (<cdml:code>/</cdml:code>) and it optionally has an associated <span href="#def-attribute">attribute</span> as a predicate. <span href="#ebnf-element">Element EBNF definition</span>.</p>
 				<example xml:id="ex-element-definition">
 					<title>Notation for the <cdml:node role="element">section</cdml:node> element</title>
 					<cdml:code>
@@ -30,7 +30,7 @@
 			</item>
 			<item>
 				<title xml:id="def-attribute">Attribute:</title>
-				<p>When an attribute (node with type <cdml:value>attribute</cdml:value>) is mentioned in the text, always has a preceding at-sign (<cdml:code>@</cdml:code>) and optionally has an associated value. <span href="#ebnf-attribute">Attribute EBNF definition</span>.</p>
+				<p>When an attribute (node with type <cdml:value>attribute</cdml:value>) is mentioned in the text, it is always preceded by an at-sign (<cdml:code>@</cdml:code>) and it optionally has an associated value. <span href="#ebnf-attribute">Attribute EBNF definition</span>.</p>
 				<example xml:id="ex-attribute-definition">
 					<title>Notation for the <cdml:node role="attribute">role</cdml:node> attribute</title>
 					<cdml:code>
@@ -41,7 +41,7 @@
 			</item>
 			<item>
 				<title xml:id="def-tag">Tag:</title>
-				<p>When a tag is mentioned in the text, always has a preceding less-than symbol (<cdml:code>&lt;</cdml:code>) and a following greater-than symbol (<cdml:code>&gt;</cdml:code>). <span href="#ebnf-tag">Tag EBNF definition</span>.</p>
+				<p>When a tag is mentioned in the text, it is always preceded by a less-than symbol (<cdml:code>&lt;</cdml:code>) and it is followed by a greater-than symbol (<cdml:code>&gt;</cdml:code>). <span href="#ebnf-tag">Tag EBNF definition</span>.</p>
 				<p>When a tag is mentioned with some omitted attributes it has an ellipsis symbol (<cdml:code>…</cdml:code>) preceding greater-than symbol (<cdml:code>&gt;</cdml:code>).</p>
 				<example xml:id="ex-tag-definition">
 					<title>Notation for the start tag <cdml:code>&lt;section …&gt;</cdml:code></title>
