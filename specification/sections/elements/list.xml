@@ -1,11 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-list" status="draft"
+<section xml:lang="en" xml:id="element-list"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">list</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A list container.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">list</cdml:node> element represents a list of items.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /title?, /item+ )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @role? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( $block[not( /p | /title )] )
+( /dml | $block[$block[not( self::/list )]] )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">list</cdml:node> element meaning. Allowed values are:</p>
+	<list>
+		<item>
+			<title><cdml:value>ordered</cdml:value></title>
+			<p>A list which items order is relevant.</p>
+		</item>
+		<item>
+			<title><cdml:value>leaded</cdml:value></title>
+			<p status="review">A list with enforced relation between item title and item content. Like price list.</p>
+		</item>
+	</list>
+
+	<example xml:id="ex-simple-list">
+		<title>Simple list</title>
+		<cdml:code language="xml">
+&lt;list&gt;
+  &lt;item&gt;sugar&lt;/item&gt;
+  &lt;item&gt;salt&lt;/item&gt;
+  &lt;item&gt;pepper&lt;/item&gt;
+&lt;/list&gt;
+		</cdml:code>
+	</example>
+	<example xml:id="ex-ordered-list">
+		<title>Ordered list</title>
+		<cdml:code language="xml">
+&lt;list role="ordered"&gt;
+  &lt;item&gt;first&lt;/item&gt;
+  &lt;item&gt;second&lt;/item&gt;
+  &lt;item&gt;third&lt;/item&gt;
+&lt;/list&gt;
+		</cdml:code>
+	</example>
+	<example xml:id="ex-list-with-title">
+		<title>List with title</title>
+		<cdml:code language="xml">
+&lt;list&gt;
+  &lt;title&gt;List title&lt;/title&gt;
+  &lt;item&gt;first&lt;/item&gt;
+  &lt;item&gt;second&lt;/item&gt;
+  &lt;item&gt;third&lt;/item&gt;
+&lt;/list&gt;
+		</cdml:code>
+	</example>
+	<example xml:id="ex-definition-list">
+		<title>Definition list</title>
+		<cdml:code language="xml">
+&lt;list&gt;
+  &lt;item&gt;
+    &lt;title&gt;Dweeb&lt;/title&gt;
+    &lt;p&gt;Young excitable person who may mature into a Nerd or Geek.&lt;/p&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;title&gt;Hacker&lt;/title&gt;
+    &lt;p&gt;A clever programmer.&lt;/p&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;title&gt;Nerd&lt;/title&gt;
+    &lt;p&gt;Technically bright but socially inept person.&lt;/p&gt;
+  &lt;/item&gt;
+&lt;/list&gt;
+		</cdml:code>
+	</example>
+
+	<example xml:id="ex-definition-list-multiple">
+		<title>Definition list with multiple terms and definitions</title>
+		<cdml:code language="xml">
+&lt;list&gt;
+  &lt;item&gt;
+    &lt;title&gt;Center&lt;/title&gt;
+    &lt;title&gt;Centre&lt;/title&gt;
+    &lt;list&gt;
+      &lt;item&gt;A point equidistant from all points on the surface of a sphere.&lt;/item&gt;
+      &lt;item&gt;In some field sports, the player who holds the middle position on the field, court, or forward line.&lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;title&gt;Color&lt;/title&gt;
+    &lt;title&gt;Colour&lt;/title&gt;
+    &lt;p&gt;The property possessed by an object of producing different sensations on the eye.&lt;/p&gt;
+  &lt;/item&gt;
+&lt;/list&gt;
+		</cdml:code>
+	</example>
+	<example xml:id="ex-leaded-list">
+		<title>Leaded list</title>
+		<cdml:code language="xml">
+&lt;list role="leaded"&gt;
+  &lt;item&gt;
+    &lt;title&gt;Sugar&lt;/title&gt;
+    &lt;p&gt;1 €/u.&lt;/p&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;title&gt;Salt&lt;/title&gt;
+    &lt;p&gt;1 €/u.&lt;/p&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;title&gt;Pepper&lt;/title&gt;
+    &lt;p&gt;2 €/u.&lt;/p&gt;
+  &lt;/item&gt;
+
+&lt;/list&gt;
+		</cdml:code>
+	</example>
 
 </section>
