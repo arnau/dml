@@ -5,7 +5,45 @@
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">object</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A generic embedded media object (image, video, audio).</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">object</cdml:node> element represents a generic embedded media object like images, videos, audio and other types of multimedia files.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Draft</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p>When its parent is an inline element or a block element that only allows inline elements its flow is <span href="#inline-flow">inline</span>, otherwise its flow is<span href="#block-flow">block</span>.</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( $block* | ( $inline | text() )* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @src | @type? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /dml | $block | $inline )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+		<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the resource.</p>
+		<p>The <cdml:node role="attribute">type</cdml:node> attribute <em>may</em> be used to provide the mime type of the resource.</p>
+
+
+		<p status="draft">TODO: examples</p>
 
 </section>
