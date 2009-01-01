@@ -23,7 +23,7 @@
 		<item>
 			<title>Children</title>
 			<cdml:code language="dml-xpath">
-( /title, $block[not( /title )]+ )
+( /title, $block[not( /title | /citation )]+ )
 			</cdml:code>
 		</item>
 		<item>

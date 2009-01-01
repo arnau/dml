@@ -25,10 +25,10 @@
 		<item>
 			<title>Children</title>
 			<cdml:code language="dml-xpath">
-( /title, $block[not( /title )]+ )
+( /title, $block[not( /title | /citation )]+ )
 
 (: this expression is more accurated but necessary? :)
-( /title, $block[not( /title | preceding-sibling::/section )]+, /section* )
+( /title, $block[not( /title | /citation | preceding-sibling::/section )]+, /section* )
 			</cdml:code>
 		</item>
 		<item>

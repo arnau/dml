@@ -5,7 +5,81 @@
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">quote</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A generic embedded media object (image, video, audio).</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">object</cdml:node> element represents a generic embedded media object like images, videos, audio and other types of multimedia files.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Draft</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p>When its parent is an inline element or a block element that only allows inline elements its flow is <span href="#inline-flow">inline</span>, otherwise its flow is <span href="#block-flow">block</span>.</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( $block* | ( $inline | text() )* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @src | @type? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /dml | $block | $inline )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+	<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:code>xs:anyURI</cdml:code>) of the resource.</p>
+	<p>The <cdml:node role="attribute">type</cdml:node> attribute <em>may</em> be used to provide the mime type of the resource.</p>
+
+	<p>The children of the <cdml:node role="element">object</cdml:node> element <em>must</em> be used to provide an alternative content if the resource provided by <cdml:node role="attribute">src</cdml:node> fails to load.</p>
+	<p>The alternative content <em>must</em> be <em>inline</em> or <em>block</em> in accordance of the flow of its <cdml:node role="element">object</cdml:node> parent.</p>
+
+
+	<example xml:id="ex-block-object">
+		<title>Usage of block flow <cdml:node role="element">object</cdml:node> element.</title>
+		<cdml:code language="xml">
+&lt;figure xml:id="fig-markup-trends"&gt;
+  &lt;title&gt;Usage of markup language in %&lt;/title&gt;
+  &lt;object src="markup-trends.svg" type="application/svg+xml"&gt;
+    &lt;list role="leaded"&gt;
+      &lt;item&gt;
+        &lt;title&gt;HTML&lt;/title&gt;
+        &lt;p&gt;98%&lt;/p&gt;
+      &lt;/item&gt;
+      &lt;item&gt;
+        &lt;title&gt;DocBook&lt;/title&gt;
+        &lt;p&gt;1%&lt;/p&gt;
+      &lt;/item&gt;
+      &lt;item&gt;
+        &lt;title&gt;Other&lt;/title&gt;
+        &lt;p&gt;1%&lt;/p&gt;
+      &lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/object&gt;
+&lt;/figure&gt;
+		</cdml:code>
+	</example>
+
+	<example xml:id="ex-inline-object">
+		<title>Usage of inline flow <cdml:node role="element">object</cdml:node> element.</title>
+		<cdml:code language="xml">
+&lt;p&gt;
+  Press the &lt;object src="accept-call-button-icon.svg"&gt;&lt;em&gt;accept call&lt;/em&gt;&lt;/object&gt; button to allow an incoming call.
+&lt;/p&gt;
+		</cdml:code>
+	</example>
+
 
 </section>

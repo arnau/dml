@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-p" status="draft"
+<section xml:lang="en" xml:id="element-p"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">p</cdml:node> element</title>
-
-	<p>…?</p>
+	<metadata>
+		<list>
+			<item property="dct:description">A paragraph of text.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">p</cdml:node> element represents a generic block of text usually a paragraph.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( $inline | text() )+
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /dml | $block[$block] )
+			</cdml:code>
+		</item>
+	</list>
 
 </section>

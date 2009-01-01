@@ -35,7 +35,6 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( $block[not( /p | /title )] )
 ( /dml | $block[$block[not( self::/list )]] )
 			</cdml:code>
 		</item>
