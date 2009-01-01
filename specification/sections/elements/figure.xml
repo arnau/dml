@@ -10,7 +10,7 @@
 			<item property="dct:description">A figure container.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">figure</cdml:node> element is a figure container; usually it contains an illustration or something to show graphically.</p>
+	<p>The <cdml:node role="element">figure</cdml:node> element is a figure container; it usually contains an illustration or something to show graphically.</p>
 	<list>
 		<item>
 			<title>Status</title>

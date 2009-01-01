@@ -41,7 +41,7 @@
 	</list>
 	
 	<p><span href="#attribute-content">The <cdml:node role="attribute">content</cdml:node> attribute</span> <em>may</em> be used to provide an expansion of the abbreviation.</p>
-	<p><span href="#attribute-about">The <cdml:node role="attribute">about</cdml:node> attribute</span> <em>may</em> be used to provide a resource which provide the expansion form.</p>
+	<p><span href="#attribute-about">The <cdml:node role="attribute">about</cdml:node> attribute</span> <em>may</em> be used to provide a resource which provides the expansion form.</p>
 	<p><cdml:node role="attribute">content</cdml:node> and <cdml:node role="attribute">about</cdml:node> attributes are mutually exclusive.</p>
 
 	

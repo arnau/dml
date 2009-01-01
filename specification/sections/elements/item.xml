@@ -23,7 +23,7 @@
 		<item>
 			<title>Children</title>
 			<cdml:code language="dml-xpath">
-( ( /title?, $block[not( /item | /title )]+ ) | ( $inline | text() )+ )
+( ( /title*, $block[not( /item | /title )]+ ) | ( $inline | text() )+ )
 			</cdml:code>
 		</item>
 		<item>
@@ -40,7 +40,7 @@
 		</item>
 	</list>
 
-	<p status="draft">The functionality of <cdml:node role="element">item[<cdml:node role="attribute">role="header"</cdml:node>]</cdml:node> is too specific for DML? maybe yes. Reevaluate.</p>
+	<p status="draft">The functionality of <cdml:node role="element">item[<cdml:node role="attribute">role="footer"</cdml:node>]</cdml:node> is too specific for DML? maybe yes. Reevaluate.</p>
 	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">item</cdml:node> element when is the last child of a <cdml:node role="element">list[<cdml:node role="attribute">role="leaded"</cdml:node>]</cdml:node> element. The only possible value is <cdml:value>footer</cdml:value>.</p>
 
 </section>

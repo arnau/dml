@@ -10,7 +10,7 @@
 			<item property="dct:description">A note or annotation in a document.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">note</cdml:node> element represents a generic document note or annotation. It <em>may</em> be used as root element in <em status="review">DML islands</em> in non-DML documents.</p>
+	<p>The <cdml:node role="element">note</cdml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em status="review">DML islands</em> in non-DML documents.</p>
 	<list>
 		<item>
 			<title>Status</title>
@@ -34,9 +34,9 @@
 		</item>
 		<item>
 			<title>Parents</title>
-			<!-- Allow /quote[parent::$block] ? -->
 			<cdml:code language="dml-xpath">
 ( /dml | /object[parent::$block] | /section )
+( /dml | $block[$block[not( self::/note )]] )
 			</cdml:code>
 		</item>
 	</list>
@@ -58,7 +58,7 @@
 			</item>
 			<item>
 				<title><cdml:value>footnote</cdml:value></title>
-				<p status="review">A footnote. Footnotes in paged medias usually occur at the end of the page which cite it.</p>
+				<p>A footnote. Footnotes in paged medias usually occur at the end of the page which cite it.</p>
 			</item>
 		</list>
 
