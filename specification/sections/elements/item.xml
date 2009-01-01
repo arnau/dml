@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-item" status="draft"
+<section xml:lang="en" xml:id="element-item"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">item</cdml:node> element</title>
+	<metadata>
+		<list>
+			<item property="dct:description">A list item.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">item</cdml:node> element is a list item container.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#block-flow">Block</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code language="dml-xpath">
+( /title?, $block[not( /item | /title )]+ )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code language="dml-xpath">
+( $core.attrs* | $meta.attrs* | @role? )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code language="dml-xpath">
+( /list )
+			</cdml:code>
+		</item>
+	</list>
 
-	<p>…?</p>
+	<p status="draft">The functionality of <cdml:node role="element">item[<cdml:node role="attribute">role="header"</cdml:node>]</cdml:node> is too specific for DML? maybe yes. Reevaluate.</p>
+	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">item</cdml:node> element when is the last child of a <cdml:node role="element">list[<cdml:node role="attribute">role="leaded"</cdml:node>]</cdml:node> element. The only possible value is <cdml:value>footer</cdml:value>.</p>
 
 </section>
