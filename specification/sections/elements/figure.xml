@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">figure</cdml:node> element is a figure container; it usually contains an illustration or something to be shown graphically.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Released</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#block-flow">Block</p>
 		</item>

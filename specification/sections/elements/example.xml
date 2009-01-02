@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">example</cdml:node> element represents an example.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Released</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#block-flow">Block</p>
 		</item>

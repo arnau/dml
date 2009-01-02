@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">quote</cdml:node> element represents a generic quotation container.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Draft</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p>When its parent is an inline element or a block element that only allows inline elements its flow is <span href="#inline-flow">inline</span>, otherwise its flow is <span href="#block-flow">block</span>.</p>
 		</item>

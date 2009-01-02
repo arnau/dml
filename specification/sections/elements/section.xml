@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">section</cdml:node> element represents a generic document section.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Draft</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#block-flow">Block</p>
 		</item>

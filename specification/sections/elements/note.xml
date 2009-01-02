@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">note</cdml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em status="review">DML islands</em> in non-DML documents.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Draft</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#block-flow">Block</p>
 		</item>

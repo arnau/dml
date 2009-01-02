@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">metadata</cdml:node> element represents a metadata container.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Released</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#block-flow">Block</p>
 		</item>

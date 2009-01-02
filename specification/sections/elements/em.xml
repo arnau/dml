@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">em</cdml:node> element represents an emphasized text.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Released</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#inline-flow">Inline</p>
 		</item>

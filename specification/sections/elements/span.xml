@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">span</cdml:node> element has no specific semantic. It is provided as a container of inline content.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Released</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#inline-flow">Inline</p>
 		</item>

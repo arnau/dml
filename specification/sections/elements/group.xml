@@ -13,10 +13,6 @@
 	<p>The <cdml:node role="element">group</cdml:node> element represents a generic table cell container.</p>
 	<list>
 		<item>
-			<title>Status</title>
-			<p>Released</p>
-		</item>
-		<item>
 			<title>Flow</title>
 			<p href="#table-flow">Table</p>
 		</item>
