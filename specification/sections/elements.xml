@@ -11,6 +11,7 @@
 
 	<xi:include href="elements/abbr.xml"/>
 	<xi:include href="elements/cell.xml"/>
+	<xi:include href="elements/citation.xml"/>
 	<xi:include href="elements/dml.xml"/>
 	<xi:include href="elements/em.xml"/>
 	<xi:include href="elements/example.xml"/>
