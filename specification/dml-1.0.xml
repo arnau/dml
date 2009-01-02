@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dml xml:id="dml-spec" xml:lang="en"
-	xmlns="http://purl.oclc.org/NET/dml/1.0" 
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0" 
+	xmlns="http://purl.oclc.org/NET/dml/1.0/" 
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/" 
 	xmlns:dct="http://purl.org/dc/terms/"
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -12,7 +12,7 @@
 			<item property="dct:creator">Arnau Siches</item>
 			<item property="dct:created">2008-12-29</item>
 			<item property="dct:modified">2008-12-29</item>
-			<item property="dct:identifier">http://purl.oclc.org/NET/dml/1.0</item>
+			<item property="dct:identifier">http://purl.oclc.org/NET/dml/1.0/</item>
 			<item property="dct:description">This specification defines the Document Markup Language (DML), a markup language for books, articles, documents, notes, etc.</item>
 			<item property="dct:subject">
 				<list>

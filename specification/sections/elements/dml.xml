@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-dml" class="element"
-	xmlns="http://purl.oclc.org/NET/dml/1.0"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">dml</cdml:node> element</title>
@@ -42,7 +42,7 @@
 	<example xml:id="ex-simple-dml-document">
 		<title>Simple DML document</title>
 		<cdml:code language="xml">
-&lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0"&gt;
+&lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0/"&gt;
   &lt;title&gt;Simple DML document&lt;/title&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
 &lt;/example&gt;
@@ -52,7 +52,7 @@
 	<example xml:id="ex-dml-document-with-metadata">
 		<title>DML document with metadata</title>
 		<cdml:code language="xml">
-&lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0" xmlns:dct="http://purl.org/dc/terms/"&gt;
+&lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0/" xmlns:dct="http://purl.org/dc/terms/"&gt;
   &lt;title&gt;DML document&lt;/title&gt;
   &lt;metadata about=""&gt;
     &lt;list&gt;

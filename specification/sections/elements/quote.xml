@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-quote" class="element"
-	xmlns="http://purl.oclc.org/NET/dml/1.0"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">quote</cdml:node> element</title>

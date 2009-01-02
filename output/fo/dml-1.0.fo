@@ -135,7 +135,7 @@ element.<fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline><
 
 	        <fo:block space-before="1.5em" space-after="1.5em" page-break-inside="avoid" border-bottom="2pt solid #ccc" border-top="0" role="dml:example" id="ex-simple-dml-document">
 		          <fo:block space-after="1em" text-align="center" border-bottom="2pt solid #ccc" padding="3pt 0" role="dml:title" id="d14e704"><fo:inline font-weight="bold">Example 1.4-1: </fo:inline>Simple DML document</fo:block>
-		          <fo:block font-size="0.87em" font-family="monospace" white-space="pre" space-before="1em" space-after="1em" padding="0 3pt"><fo:inline color="#067">&lt;<fo:inline color="#056"/>dml <fo:inline color="#067">xmlns="<fo:inline color="#090">http://purl.oclc.org/NET/dml/1.0</fo:inline>"</fo:inline>&gt;</fo:inline>
+		          <fo:block font-size="0.87em" font-family="monospace" white-space="pre" space-before="1em" space-after="1em" padding="0 3pt"><fo:inline color="#067">&lt;<fo:inline color="#056"/>dml <fo:inline color="#067">xmlns="<fo:inline color="#090">http://purl.oclc.org/NET/dml/1.0/</fo:inline>"</fo:inline>&gt;</fo:inline>
   <fo:inline color="#067">&lt;<fo:inline color="#056"/>title&gt;</fo:inline>Simple DML document<fo:inline color="#067">&lt;/<fo:inline color="#056"/>title&gt;</fo:inline>
   <fo:inline color="#067">&lt;<fo:inline color="#056"/>p&gt;</fo:inline>Lorem ipsum dolor sit amet…<fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline>
 <fo:inline color="#067">&lt;/<fo:inline color="#056"/>example&gt;</fo:inline></fo:block>
@@ -143,7 +143,7 @@ element.<fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline><
 
 	        <fo:block space-before="1.5em" space-after="1.5em" page-break-inside="avoid" border-bottom="2pt solid #ccc" border-top="0" role="dml:example" id="ex-dml-document-with-metadata">
 		          <fo:block space-after="1em" text-align="center" border-bottom="2pt solid #ccc" padding="3pt 0" role="dml:title" id="d14e714"><fo:inline font-weight="bold">Example 1.4-2: </fo:inline>DML document with metadata</fo:block>
-		          <fo:block font-size="0.87em" font-family="monospace" white-space="pre" space-before="1em" space-after="1em" padding="0 3pt"><fo:inline color="#067">&lt;<fo:inline color="#056"/>dml <fo:inline color="#067">xmlns="<fo:inline color="#090">http://purl.oclc.org/NET/dml/1.0</fo:inline>"</fo:inline> 
+		          <fo:block font-size="0.87em" font-family="monospace" white-space="pre" space-before="1em" space-after="1em" padding="0 3pt"><fo:inline color="#067">&lt;<fo:inline color="#056"/>dml <fo:inline color="#067">xmlns="<fo:inline color="#090">http://purl.oclc.org/NET/dml/1.0/</fo:inline>"</fo:inline> 
 <fo:inline color="#067"><fo:inline color="#056">xmlns:</fo:inline>dct="<fo:inline color="#090">http://purl.org/dc/terms/</fo:inline>"</fo:inline>&gt;</fo:inline>
   <fo:inline color="#067">&lt;<fo:inline color="#056"/>title&gt;</fo:inline>DML document<fo:inline color="#067">&lt;/<fo:inline color="#056"/>title&gt;</fo:inline>
   <fo:inline color="#067">&lt;<fo:inline color="#056"/>metadata <fo:inline color="#067">about=""</fo:inline>&gt;</fo:inline>
