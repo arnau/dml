@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-span" status="draft"
+<section xml:lang="en" xml:id="element-span"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="element">span</cdml:node> element</title>
-
-	<p>…?</p>
+	<metadata>
+		<list>
+			<item property="dct:description">A span of text.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="element">span</cdml:node> element has no specific semantic. It is provided as a container of inline content.</p>
+	<list>
+		<item>
+			<title>Status</title>
+			<p>Released</p>
+		</item>
+		<item>
+			<title>Flow</title>
+			<p href="#inline-flow">Inline</p>
+		</item>
+		<item>
+			<title>Children</title>
+			<cdml:code>
+( $inline | text() )+
+			</cdml:code>
+		</item>
+		<item>
+			<title>Attributes</title>
+			<cdml:code>
+( $core.attrs* | $meta.attrs* )
+			</cdml:code>
+		</item>
+		<item>
+			<title>Parents</title>
+			<cdml:code>
+( $block | $inline )
+			</cdml:code>
+		</item>
+	</list>
 
 </section>
