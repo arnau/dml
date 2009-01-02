@@ -10,7 +10,7 @@
 			<item property="dct:description">A table data group.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">group</cdml:node> element is a generic table cell container.</p>
+	<p>The <cdml:node role="element">group</cdml:node> element represents a generic table cell container.</p>
 	<list>
 		<item>
 			<title>Status</title>
