@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="element-table"
+<section xml:lang="en" xml:id="element-table" class="element"
 	xmlns="http://purl.oclc.org/NET/dml/1.0"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0"
 	xmlns:dct="http://purl.org/dc/terms/">
@@ -35,7 +35,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /dml | $block[not( /table )] )
+( /dml | $block[$block] )
 			</cdml:code>
 		</item>
 	</list>
