@@ -39,6 +39,31 @@
 		</item>
 	</list>
 
-	<p status="draft">TODO: examples</p>
+	<example xml:id="ex-simple-dml-document">
+		<title>Simple DML document</title>
+		<cdml:code language="xml">
+&lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0"&gt;
+  &lt;title&gt;Simple DML document&lt;/title&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
+&lt;/example&gt;
+		</cdml:code>
+	</example>
+
+	<example xml:id="ex-dml-document-with-metadata">
+		<title>DML document with metadata</title>
+		<cdml:code language="xml">
+&lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0" xmlns:dct="http://purl.org/dc/terms/"&gt;
+  &lt;title&gt;DML document&lt;/title&gt;
+  &lt;metadata about=""&gt;
+    &lt;list&gt;
+      &lt;item property="dct:creator"&gt;Arnau Siches&lt;/item&gt;
+      &lt;item property="dct:created"&gt;2009-01-02&lt;/item&gt;
+    &lt;/list&gt;
+  &lt;/metadata&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
+&lt;/example&gt;
+		</cdml:code>
+	</example>
+
 
 </section>
