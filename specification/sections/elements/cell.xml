@@ -19,7 +19,7 @@
 		<item>
 			<title>Children</title>
 			<cdml:code language="dml-xpath" status="review">
-( ( /example | /figure | /list | /note | /p | /quote )+ | ( $inline | text() )+ )
+( ( example | figure | list | note | p | quote )+ | ( $inline | text() )+ )
 			</cdml:code>
 		</item>
 		<item>
@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /group )
+( group )
 			</cdml:code>
 		</item>
 	</list>

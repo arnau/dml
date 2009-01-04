@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /dml | $block | $inline )
+( dml | $block | $inline )
 			</cdml:code>
 		</item>
 	</list>
@@ -72,7 +72,7 @@
 		<title>Usage of inline flow <cdml:node role="element">object</cdml:node> element.</title>
 		<cdml:code language="xml">
 &lt;p&gt;
-  Press the &lt;object src="accept-call-button-icon.svg"&gt;&lt;em&gt;accept call&lt;/em&gt;&lt;/object&gt; button to allow an incoming call.
+  Press the &lt;object src="accept-call-button-icon.svg"/&gt;&lt;em&gt;accept call&lt;/em&gt;&lt;/object&gt; button to allow an incoming call.
 &lt;/p&gt;
 		</cdml:code>
 	</example>

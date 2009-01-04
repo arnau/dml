@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /table )
+( table )
 			</cdml:code>
 		</item>
 	</list>

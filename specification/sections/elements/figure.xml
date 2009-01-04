@@ -19,7 +19,7 @@
 		<item>
 			<title>Children</title>
 			<cdml:code language="dml-xpath">
-( /title?, $block[not( /example | /figure | /citation | /quote )]+ )
+( title?, $block[not( example | figure | citation | quote )]+ )
 			</cdml:code>
 		</item>
 		<item>
@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /dml | /example | /note | /section )
+( dml | example | note | section )
 			</cdml:code>
 		</item>
 	</list>

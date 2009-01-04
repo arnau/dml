@@ -19,7 +19,7 @@
 		<item>
 			<title>Children</title>
 			<cdml:code>
-( $inline[not( /abbr )] | text() )+
+( $inline[not( abbr )] | text() )+
 			</cdml:code>
 		</item>
 		<item>
@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code>
-( $block | $inline[not( /abbr )] )
+( $block | $inline[not( abbr )] )
 			</cdml:code>
 		</item>
 	</list>
@@ -44,13 +44,13 @@
 	<example>
 		<title><cdml:node role="element">abbr</cdml:node> element with inline expansion</title>
 		<cdml:code language="xml">
-&lt;p&gt;Example of &lt;abbr content="Document Markup Language"&gt;DML&lt;/abbr&gt;'s /abbr element.&lt;/p&gt;
+&lt;p&gt;Example of &lt;abbr content="Document Markup Language"&gt;DML&lt;/abbr&gt;'s abbr element.&lt;/p&gt;
 		</cdml:code>
 	</example>
 	<example>
 		<title><cdml:node role="element">abbr</cdml:node> element with remote expansion</title>
 		<cdml:code language="xml">
-&lt;p&gt;Example of &lt;abbr about="http://example.org/glossary#dml"&gt;DML&lt;/abbr&gt;'s /abbr element.&lt;/p&gt;
+&lt;p&gt;Example of &lt;abbr about="http://example.org/glossary#dml"&gt;DML&lt;/abbr&gt;'s abbr element.&lt;/p&gt;
 		</cdml:code>
 	</example>
 

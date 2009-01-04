@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /dml | $block[$block] )
+( dml | $block[$block] )
 			</cdml:code>
 		</item>
 	</list>

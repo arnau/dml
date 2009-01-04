@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<cdml:code language="dml-xpath">
-( /quote )
+( quote )
 			</cdml:code>
 		</item>
 	</list>
