@@ -18,7 +18,7 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 (
   ( title*, $block[not( item | title | citation )]+ ) |
   ( $inline | text() )+
@@ -27,13 +27,13 @@
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( $core.attrs* | $meta.attrs* )
 			</cdml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( list )
 			</cdml:code>
 		</item>

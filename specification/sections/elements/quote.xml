@@ -18,19 +18,19 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( $block[not( quote | citation )]+ citation | ( $inline | text() )+ )
 			</cdml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @citation? )
 			</cdml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( dml | $block[not( quote | citation )] | $inline[not( quote )] )
 			</cdml:code>
 		</item>

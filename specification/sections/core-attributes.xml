@@ -6,7 +6,7 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 
 	<title>Core attributes</title>
-	<cdml:code language="dml-xpath">
+	<cdml:code language="xpath">
 $core.attrs ::= ( @xml:id | @xml:lang | @xml:base | @dir | @class | @href | @status )
 	</cdml:code>
 	<p>These attributes <em>must not</em> be repeated.</p>

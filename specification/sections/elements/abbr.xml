@@ -18,19 +18,19 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code>
+			<cdml:code language="xpath">
 ( $inline[not( abbr )] | text() )+
 			</cdml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code>
+			<cdml:code language="xpath">
 ( $core.attrs* | $meta.attrs* )
 			</cdml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code>
+			<cdml:code language="xpath">
 ( $block | $inline[not( abbr )] )
 			</cdml:code>
 		</item>

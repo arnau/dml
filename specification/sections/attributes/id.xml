@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-id" status="draft"
+<section xml:lang="en" xml:id="attribute-id"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
 
 	<title>The <cdml:node role="attribute">xml:id</cdml:node> attribute</title>
-
-	<p>…?</p>
+	<metadata about="#attribute-id">
+		<list>
+			<item property="dct:description">ID value of the element.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">xml:id</cdml:node> attribute identifies the unique ID (xs:ID) value of the element.</p>
+	<p>Its value <em>must</em> be interpreted according <span href="#xml-id">xml:id W3C recomendation</span>.</p>
 
 </section>

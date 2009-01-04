@@ -82,7 +82,7 @@ section[@role]
 
 		<section>
 			<title><span href="#w3c-ebnf-notation">EBNF</span> definitions</title>
-			<p status="draft">TODO: define dml-xpath syntax used in chlidren, attribute and parent definitions.</p>
+			<p status="draft">TODO: define xpath syntax used in chlidren, attribute and parent definitions.</p>
 			<list>
 				<item xml:id="ebnf-element">
 					<cdml:code language="ebnf">Element ::= <span href="#ebnf-name">Name</span> ('[' <span href="#ebnf-attribute">Attribute</span> ']')*</cdml:code>

@@ -18,20 +18,20 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( title?, item+ )
 			</cdml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="dml-xpath">
+			<cdml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @role? )
 			</cdml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="dml-xpath">
-( dml | $block[$block[not( self::/list )]] )
+			<cdml:code language="xpath">
+( dml | $block[$block[not( self::list )]] )
 			</cdml:code>
 		</item>
 	</list>
