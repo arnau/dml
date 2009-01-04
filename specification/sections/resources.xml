@@ -22,8 +22,9 @@
 		<item xml:id="rfc4646"><span href="http://www.apps.ietf.org/rfc/rfc4646.html">RFC 4646: Tags for the Identification of Languages</span>. A. Phillips, Ed., M. Davis. 2006.</item>
 	</list>
 	<list>
-		<title>xml:id</title>
-		<item xml:id="xml-id"><span href="http://www.w3.org/TR/2005/REC-xml-id-20050909/">xml:id Version 1.0</span>. N. Walsh, D. Veillard, J. Marsh 2005.</item>
+		<title>xml namespace</title>
+		<item xml:id="xml-id"><span href="http://www.w3.org/TR/2005/REC-xml-id-20050909/">xml:id Version 1.0</span>. N. Walsh, D. Veillard, J. Marsh. 2005.</item>
+		<item xml:id="xml-lang"><span href="http://www.w3.org/TR/REC-xml/#sec-lang-tag">Extensible Markup Language (XML) 1.0 (Fifth Edition), 2.12 Language Identification</span>. T. Bray, J. Paoli, C. M. Sperberg-McQueen, E. Maler, F. Yergeau. 2008.</item>
 	</list>
 	<list>
 		<title>RDFa</title>
