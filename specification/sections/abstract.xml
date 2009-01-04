@@ -4,7 +4,7 @@
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 	<title>Abstract</title>
-	<p>This specification defines the Document Markup Language (DML), a markup language for books, articles, notes and other types of documents. DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions.</p>
+	<p>This specification defines the Document Markup Language (DML), a markup language for books, articles, notes and other types of document. DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions.</p>
 	<section>
 		<title>Conventions</title>
 

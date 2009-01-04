@@ -49,7 +49,7 @@
 &lt;figure xml:id="fig-markup-trends"&gt;
   &lt;title&gt;Usage of markup language in %&lt;/title&gt;
   &lt;object src="markup-trends.svg" type="application/svg+xml"&gt;
-    &lt;list role="leaded"&gt;
+    &lt;list&gt;
       &lt;item&gt;
         &lt;title&gt;HTML&lt;/title&gt;
         &lt;p&gt;98%&lt;/p&gt;
