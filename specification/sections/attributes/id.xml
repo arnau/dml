@@ -9,7 +9,7 @@
 			<item property="dct:description">ID value of the element.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">xml:id</cdml:node> attribute identifies the unique ID (xs:ID) value of the element.</p>
+	<p>The <cdml:node role="attribute">xml:id</cdml:node> attribute identifies the unique ID (<cdml:datatype>xs:ID</cdml:datatype>) value of the element.</p>
 	<p>Its value <em>must</em> be interpreted according <span href="#xml-id">xml:id W3C recomendation</span>.</p>
 
 </section>

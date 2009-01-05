@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-class" status="draft"
+<section xml:lang="en" xml:id="attribute-class" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="attribute">class</cdml:node> attribute</title>
-
-	<p>…?</p>
+	<metadata about="#attribute-class">
+		<list>
+			<item property="dct:description">Provides additional user-specified classification for an element.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">class</cdml:node> attribute provides additional user-specified classification for an element. Value type is <cdml:datatype>xs:NMTOKENS</cdml:datatype>.</p>
+	<p>Any number of elements <em>may</em> be assigned the same class name.</p>
 
 </section>

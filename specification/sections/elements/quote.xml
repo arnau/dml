@@ -36,7 +36,7 @@
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">citation</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:code>xs:anyURI</cdml:code>) of the resource cited when the flow of <cdml:node role="element">quote</cdml:node> element is <em>inline</em>, otherwise <em>must not</em> be used.</p>
+	<p>The <cdml:node role="attribute">citation</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource cited when the flow of <cdml:node role="element">quote</cdml:node> element is <em>inline</em>, otherwise <em>must not</em> be used.</p>
 
 
 	<example xml:id="ex-block-quote" status="draft">

@@ -36,7 +36,7 @@
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:code>xs:anyURI</cdml:code>) of the resource.</p>
+	<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource.</p>
 	<p>The <cdml:node role="attribute">type</cdml:node> attribute <em>may</em> be used to provide the mime type of the resource.</p>
 	
 	<p>The children of the <cdml:node role="element">object</cdml:node> element <em>must</em> be used to provide an alternative content if the resource provided by <cdml:node role="attribute">src</cdml:node> fails to load.</p>
