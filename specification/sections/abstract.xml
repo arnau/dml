@@ -79,6 +79,39 @@ section[@role]
 		</list>
 		<p status="review">Therefore, to indicate that an “status” attribute is optional the expression will be <cdml:node role="attribute">status?</cdml:node>. Or, if a “section” element is repeatable the expression will be <cdml:node role="element">section+</cdml:node>.</p>
 
+		<p>For brevity, throughout this document, assume that the following namespace prefixes have been defined:</p>
+		<list>
+			<item>
+				<title><cdml:value>dct</cdml:value></title>
+				<p>http://purl.org/dc/terms/</p>
+			</item>
+			<item>
+				<title><cdml:value>dml</cdml:value></title>
+				<p>http://purl.oclc.org/NET/dml/1.0/</p>
+			</item>
+			<item>
+				<title><cdml:value>rdf</cdml:value></title>
+				<p>http://www.w3.org/1999/02/22-rdf-syntax-ns#</p>
+			</item>
+		<!--
+			<item>
+				<title><cdml:value>foaf</cdml:value></title>
+				<p>http://xmlns.com/foaf/0.1/</p>
+			</item>
+			<item>
+				<title><cdml:value>cc</cdml:value></title>
+				<p>http://creativecommons.org/ns#</p>
+			</item>
+		-->
+			<item>
+				<title><cdml:value>xi</cdml:value></title>
+				<p>http://www.w3.org/2001/XInclude</p>
+			</item>
+			<item>
+				<title><cdml:value>xs</cdml:value></title>
+				<p>http://www.w3.org/2001/XMLSchema</p>
+			</item>
+		</list>
 
 		<section>
 			<title><span href="#w3c-ebnf-notation">EBNF</span> definitions</title>
