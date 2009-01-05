@@ -25,6 +25,7 @@
 		<title>xml namespace</title>
 		<item xml:id="xml-id"><span href="http://www.w3.org/TR/2005/REC-xml-id-20050909/">xml:id Version 1.0</span>. N. Walsh, D. Veillard, J. Marsh. 2005.</item>
 		<item xml:id="xml-lang"><span href="http://www.w3.org/TR/REC-xml/#sec-lang-tag">Extensible Markup Language (XML) 1.0 (Fifth Edition), 2.12 Language Identification</span>. T. Bray, J. Paoli, C. M. Sperberg-McQueen, E. Maler, F. Yergeau. 2008.</item>
+		<item xml:id="xml-base"><span href="http://www.w3.org/TR/2001/REC-xmlbase-20010627/">XML Base</span>. J. Marsh. 2001.</item>
 	</list>
 	<list>
 		<title>RDFa</title>

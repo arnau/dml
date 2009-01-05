@@ -7,24 +7,19 @@
 
 	<title>Core attributes</title>
 	<cdml:code language="xpath">
-$core.attrs ::= ( @xml:id | @xml:lang | @xml:base | @dir | @class | @href | @status )
+$core.attrs ::= (
+  @class | @dir | @href | @status | @xml:base | @xml:id | @xml:lang
+)
 	</cdml:code>
-	<p>These attributes <em>must not</em> be repeated.</p>
-	<list>
-		<item><cdml:node role="attribute">xml:id</cdml:node></item>
-		<item><cdml:node role="attribute">xml:lang</cdml:node></item>
-		<item><cdml:node role="attribute" status="draft">xml:base</cdml:node></item>
-		<item><cdml:node role="attribute" status="draft">dir</cdml:node></item>
-		<item><cdml:node role="attribute">class</cdml:node></item>
-		<item><cdml:node role="attribute">href</cdml:node></item>
-		<item><cdml:node role="attribute">status</cdml:node></item>
-	</list>
+	<p>These attributes <em>must not</em> be repeated in same element.</p>
 
-	<xi:include href="attributes/id.xml"/>
-	<xi:include href="attributes/lang.xml"/>
 	<xi:include href="attributes/class.xml"/>
+	<xi:include href="attributes/dir.xml"/>
 	<xi:include href="attributes/href.xml"/>
 	<xi:include href="attributes/status.xml"/>
+	<xi:include href="attributes/base.xml"/>
+	<xi:include href="attributes/id.xml"/>
+	<xi:include href="attributes/lang.xml"/>
 
 
 </section>

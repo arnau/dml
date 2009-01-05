@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-lang"
+<section xml:lang="en" xml:id="attribute-lang" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="attribute">xml:lang</cdml:node> attribute</title>
-	<metadata about="#attribute-id">
+	<metadata about="#attribute-lang">
 		<list>
 			<item property="dct:description">Language value of the element and its descendants.</item>
 		</list>
