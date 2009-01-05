@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-href" status="draft"
+<section xml:lang="en" xml:id="attribute-href" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>The <cdml:node role="attribute">href</cdml:node> attribute</title>
 
-	<p>…?</p>
+	<metadata about="#attribute-href">
+		<list>
+			<item property="dct:description">Specifies the location of a resource.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">href</cdml:node> attribute specifies the location of a resource throught an URI (<cdml:datatype>xs:anyURI</cdml:datatype>).</p>
 
 </section>

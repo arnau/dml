@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="attribute-dir" class="attribute"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
+
+	<title>The <cdml:node role="attribute">dir</cdml:node> attribute</title>
+	<metadata about="#attribute-dir">
+		<list>
+			<item property="dct:description">Identifies the direction of text in the element.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">dir</cdml:node> attribute specifies the direction of the element and its descendants. Allowed values are:</p>
+	<list>
+		<item>
+			<title><cdml:value>ltr</cdml:value></title>
+			<p>Left to right text.</p>
+		</item>
+		<item>
+			<title><cdml:value>rtl</cdml:value></title>
+			<p>Right to left text.</p>
+		</item>
+	</list>
+
+</section>
