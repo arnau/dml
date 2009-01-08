@@ -29,8 +29,10 @@
 	</list>
 	<list>
 		<title>RDFa</title>
-		<item xml:id="#rdfa-syntax"><span href="http://www.w3.org/TR/2008/REC-rdfa-syntax-20081014">RDFa in XHTML: Syntax and Processing</span>. B. Adida, M. Birbeck, S. McCarron, S. Pemberton. 2008.</item>
-		<item xml:id="#rdfa-primer"><span href="http://www.w3.org/TR/2008/NOTE-xhtml-rdfa-primer-20081014/">RDFa Primer</span>. B. Adida, M. Birbeck. 2008.</item>
+		<item xml:id="rdfa-syntax"><span href="http://www.w3.org/TR/2008/REC-rdfa-syntax-20081014">RDFa in XHTML: Syntax and Processing</span>. B. Adida, M. Birbeck, S. McCarron, S. Pemberton. 2008.</item>
+		<item xml:id="rdfa-primer"><span href="http://www.w3.org/TR/2008/NOTE-xhtml-rdfa-primer-20081014/">RDFa Primer</span>. B. Adida, M. Birbeck. 2008.</item>
+		<item xml:id="CURIE"><span href="http://www.w3.org/TR/rdfa-syntax/#dt_curie">RDFa in XHTML: Syntax and Processing, CURIE definition</span>. B. Adida, M. Birbeck, S. McCarron, S. Pemberton. 2008.</item>
+		<item xml:id="URIorSafeCURIE"><span href="http://www.w3.org/TR/rdfa-syntax/#dt_uriorsafecurie">RDFa in XHTML: Syntax and Processing, URIorSafeCURIE definition</span>. B. Adida, M. Birbeck, S. McCarron, S. Pemberton. 2008.</item>
 	</list>
 	<list>
 		<title>Dublin Core Metadata Initiative</title>

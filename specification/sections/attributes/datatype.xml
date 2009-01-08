@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-datatype" status="draft"
+<section xml:lang="en" xml:id="attribute-datatype" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
 
 	<title>The <cdml:node role="attribute">datatype</cdml:node> attribute</title>
-
-	<p>…?</p>
-
+	<metadata about="#attribute-datatype">
+		<list>
+			<item property="dct:description">Provides a datatype of a literal.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">datatype</cdml:node> attribute provides a datatype of a literal through a <span href="#CURIE">CURIE</span>.</p>
 </section>

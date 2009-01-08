@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-content" status="draft"
+<section xml:lang="en" xml:id="attribute-content" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
 
 	<title>The <cdml:node role="attribute">content</cdml:node> attribute</title>
-
-	<p>…?</p>
-
+	<metadata about="#attribute-content">
+		<list>
+			<item property="dct:description">Provides a machine-readable content for a literal.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">content</cdml:node> attribute provides a machine-readable content for a literal in an RDF triple.</p>
 </section>

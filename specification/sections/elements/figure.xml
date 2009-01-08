@@ -40,7 +40,7 @@
 		<title>Usage of <cdml:node role="element">figure</cdml:node> element</title>
 		<cdml:code language="xml">
 &lt;figure xml:id="figure-identifier"&gt;
-  &lt;title&gt;It shown an illustration throught a figure element&lt;/title&gt;
+  &lt;title&gt;It shown an illustration through a figure element&lt;/title&gt;
   &lt;object src="path/to/illustration"/&gt;
 &lt;/figure&gt;
 		</cdml:code>

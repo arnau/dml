@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-about" status="draft"
+<section xml:lang="en" xml:id="attribute-about" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
 
 	<title>The <cdml:node role="attribute">about</cdml:node> attribute</title>
-
-	<p>…?</p>
+	<metadata about="#attribute-about">
+		<list>
+			<item property="dct:description">Provides a subject for an RDF triple.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">about</cdml:node> attribute provides a <em>subject</em> for an RDF triple through an <span href="#URIorSafeCURIE">URIorSafeCURIE</span>.</p>
 
 </section>

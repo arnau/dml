@@ -11,6 +11,6 @@
 			<item property="dct:description">Specifies the location of a resource.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">href</cdml:node> attribute specifies the location of a resource throught an URI (<cdml:datatype>xs:anyURI</cdml:datatype>).</p>
+	<p>The <cdml:node role="attribute">href</cdml:node> attribute specifies the location of a resource through an URI (<cdml:datatype>xs:anyURI</cdml:datatype>).</p>
 
 </section>
