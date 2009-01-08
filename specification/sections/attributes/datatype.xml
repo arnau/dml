@@ -10,4 +10,5 @@
 		</list>
 	</metadata>
 	<p>The <cdml:node role="attribute">datatype</cdml:node> attribute provides a datatype of a literal through a <span href="#CURIE">CURIE</span>.</p>
+	<p>This attribute is part of <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 </section>

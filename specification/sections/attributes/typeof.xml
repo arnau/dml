@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:lang="en" xml:id="attribute-typeof" status="draft"
+<section xml:lang="en" xml:id="attribute-typeof" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
 	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
 
 	<title>The <cdml:node role="attribute">typeof</cdml:node> attribute</title>
-
-	<p>…?</p>
-
+	<metadata about="#attribute-typeof">
+		<list>
+			<item property="dct:description">Provides the type(s) associated with a subject for an RDF triple.</item>
+		</list>
+	</metadata>
+	<p>The <cdml:node role="attribute">typeof</cdml:node> attribute provides the type(s) associated with a subject for an RDF triple through a whitespace separated list of <span href="#CURIE">CURIEs</span>.</p>
+	<p>This attribute is part of <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 </section>

@@ -10,4 +10,5 @@
 		</list>
 	</metadata>
 	<p>The <cdml:node role="attribute">content</cdml:node> attribute provides a machine-readable content for a literal in an RDF triple.</p>
+	<p>This attribute is part of <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 </section>

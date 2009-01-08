@@ -36,7 +36,7 @@
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource.</p>
+	<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource. It also specifies a <em>resource object</em> in RDF triple, as its described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 	<p>The <cdml:node role="attribute">type</cdml:node> attribute <em>may</em> be used to provide the mime type of the resource.</p>
 	
 	<p>The children of the <cdml:node role="element">object</cdml:node> element <em>must</em> be used to provide an alternative content if the resource provided by <cdml:node role="attribute">src</cdml:node> fails to load.</p>

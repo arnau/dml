@@ -10,5 +10,5 @@
 		</list>
 	</metadata>
 	<p>The <cdml:node role="attribute">about</cdml:node> attribute provides a <em>subject</em> for an RDF triple through an <span href="#URIorSafeCURIE">URIorSafeCURIE</span>.</p>
-
+	<p>This attribute is part of <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 </section>

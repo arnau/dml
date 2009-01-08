@@ -17,7 +17,9 @@ $meta.attrs ::= (
 	<xi:include href="attributes/content.xml"/>
 	<xi:include href="attributes/datatype.xml"/>
 	<xi:include href="attributes/property.xml"/>
+	<xi:include href="attributes/rel.xml"/>
 	<xi:include href="attributes/resource.xml"/>
+	<xi:include href="attributes/rev.xml"/>
 	<xi:include href="attributes/typeof.xml"/>
 
 </section>
