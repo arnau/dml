@@ -43,9 +43,9 @@ section[@role]
 				<title xml:id="def-value">Value:</title>
 				<p>When a value is mentioned in the text, it is always preceded and followed by an quote (<cdml:code>"</cdml:code>). <span href="#ebnf-value">Value EBNF definition</span>.</p>
 				<example xml:id="ex-value-definition">
-					<title>Notation for the <cdml:node role="attribute">role</cdml:node> value</title>
+					<title>Notation for the <cdml:value>chapter</cdml:value> value</title>
 					<cdml:code>
-"value"
+"chapter"
 					</cdml:code>
 				</example>
 			</item>
@@ -54,8 +54,8 @@ section[@role]
 				<p>When a tag is mentioned in the text, it is always preceded by a less-than symbol (<cdml:code>&lt;</cdml:code>) and it is followed by a greater-than symbol (<cdml:code>&gt;</cdml:code>). <span href="#ebnf-tag">Tag EBNF definition</span>.</p>
 				<p>When a tag is mentioned with some omitted attributes it has an ellipsis symbol (<cdml:code>…</cdml:code>) preceding greater-than symbol (<cdml:code>&gt;</cdml:code>).</p>
 				<example xml:id="ex-tag-definition">
-					<title>Notation for the start tag <cdml:code>&lt;section …&gt;</cdml:code></title>
-					<cdml:code>
+					<title>Notation for the start tag <cdml:code language="xml">&lt;section …&gt;</cdml:code></title>
+					<cdml:code language="xml">
 &lt;section role="chapter" …&gt;
 					</cdml:code>
 				</example>

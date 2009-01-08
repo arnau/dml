@@ -9,8 +9,7 @@
 			<item property="dct:description">Specifies de base URI of the element and its descendants.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">xml:base</cdml:node> attribute specifies the base URI (<cdml:datatype>xs:anyURI
-</cdml:datatype>) of the element and its descendants.</p>
+	<p>The <cdml:node role="attribute">xml:base</cdml:node> attribute specifies the base URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the element and its descendants.</p>
 	<p>Its value <em>must</em> be interpreted according <span href="#xml-base">xml:base W3C recomendation</span>.</p>
 
 </section>

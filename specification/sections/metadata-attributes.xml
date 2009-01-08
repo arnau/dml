@@ -6,22 +6,18 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 
 	<title>Metadata attributes</title>
-
-	<list>
-		<item><cdml:node role="attribute">about?</cdml:node></item>
-		<item><cdml:node role="attribute">content?</cdml:node></item>
-		<item><cdml:node role="attribute">datatype?</cdml:node></item>
-		<item><cdml:node role="attribute">typeof?</cdml:node></item>
-		<item><cdml:node role="attribute">property?</cdml:node></item>
-		<item><cdml:node role="attribute">resource?</cdml:node></item>
-	</list>
+	<cdml:code language="xpath">
+$meta.attrs ::= (
+  @about | @content | @datatype | @property | @rel | @resource | @rev | @typeof
+)
+	</cdml:code>
+	<p>These attributes <em>must not</em> be repeated in same element.</p>
 
 	<xi:include href="attributes/about.xml"/>
 	<xi:include href="attributes/content.xml"/>
 	<xi:include href="attributes/datatype.xml"/>
-	<xi:include href="attributes/typeof.xml"/>
 	<xi:include href="attributes/property.xml"/>
 	<xi:include href="attributes/resource.xml"/>
-
+	<xi:include href="attributes/typeof.xml"/>
 
 </section>
