@@ -52,7 +52,6 @@
 		<item>
 			<title><cdml:value>sidebar</cdml:value></title>
 			<p>A note that is isolated from the main narrative flow.</p>
-			<p status="draft">section[@role="aside"] or note[@role="aside"] or @role="sidebar" …?</p>
 		</item>
 		<item>
 			<title><cdml:value>footnote</cdml:value></title>
