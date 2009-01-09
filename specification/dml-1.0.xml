@@ -61,11 +61,7 @@
 	</section>
 	<section>
 		<title>Namespace</title>
-		<p>The DML namespace has de URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. Usually it is used associated with <cdml:value>dml</cdml:value> prefix.</p>
-	</section>
-	<section status="draft">
-		<title>Relationship with RDFa</title>
-		<p>…?</p>
+		<p>The DML namespace has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. Usually it is used associated with <cdml:value>dml</cdml:value> prefix.</p>
 	</section>
 
 	<section status="draft">
