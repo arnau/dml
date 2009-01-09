@@ -39,8 +39,9 @@
 	</section>
 
 	<!-- TODO 
-	<xi:include href="sections/introduction.xml"/>
+
 	-->
+	<xi:include href="sections/introduction.xml"/>
 
 	<xi:include href="sections/elements.xml"/>
 	<xi:include href="sections/core-attributes.xml"/>
@@ -58,10 +59,6 @@
 		<section xml:id="inline-flow">
 			<title>Inline</title>
 		</section>
-	</section>
-	<section>
-		<title>Namespace</title>
-		<p>The DML namespace has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. Usually it is used associated with <cdml:value>dml</cdml:value> prefix.</p>
 	</section>
 
 	<section status="draft">
