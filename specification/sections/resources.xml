@@ -40,6 +40,10 @@
 		<item xml:id="dcmi-html"><span href="http://dublincore.org/documents/2008/08/04/dc-html/">Expressing Dublin Core metadata using HTML/XHTML meta and link elements</span>. P. Jhonston, A. Powell. 2008.</item>
 	</list>
 
+	<list>
+		<title>Discuss</title>
+		<item xml:id="dml-discuss" href="http://groups.google.com/group/dml-discuss">DML-discuss mailing list</item>
+	</list>
 <!-- 		<item href="http://www.loc.gov/standards/iso639-2/php/code_list.php" xml:id="iso-639-2">Language codes (ISO-639-2)</item>
 		<item href="http://www.iso.org/iso/english_country_names_and_code_elements" xml:id="iso-3166-1" xml:lang="en">English country names and code elements (ISO-3166-1)</item>
 		<item xml:id="iso-8601" xml:lang="en">Wikipedia. <span href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601: Numeric representation of Dates and Time</span>.</item> -->

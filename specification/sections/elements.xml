@@ -7,8 +7,6 @@
 
 	<title>Elements</title>
 
-	<p status="draft">Add /listing for program listing? in cdml?</p>
-
 	<xi:include href="elements/abbr.xml"/>
 	<xi:include href="elements/cell.xml"/>
 	<xi:include href="elements/citation.xml"/>
