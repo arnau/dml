@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:lang="en" xml:id="conventions" role="appendix"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
+
+	<title>Conventions</title>
+
+	<p>The keywords <em>must</em>, <em>must not</em>, <em>required</em>, <em>shall</em>, <em>shall not</em>, <em>should</em>, <em>should not</em>, <em>recommended</em>, <em>may</em>, and <em>optional</em>, when emphasized, are to be interpreted as described in <span href="#rfc2119">IETF RFC 2119</span>.</p>
+
+	<list>
+		<item>A <cdml:code>monospaced</cdml:code> font is used for code, elements, atributes, tags and value literals.</item>
+		<item>An <cdml:variable>italic monospaced</cdml:variable> font is used for variables.</item>
+	</list>
+	<!-- Italic is used for filenames and (in the print version of the book) URLs. -->
+	<p>The expressions to define allowed <em>children</em>, <em>attributes</em> and <em>parent</em> for an element uses <span href="#xpath-grammar">XPath 2.0 grammar</span>.</p>
+
+	<list>
+		<item>
+			<title xml:id="def-element">Element:</title>
+			<p status="review">When an element (node with type <cdml:value>element</cdml:value>) is mentioned in the text with an associated <span href="#def-attribute">attribute</span> it is always showed as a predicate. <span href="#ebnf-element">Element EBNF definition</span>.</p>
+			<example xml:id="ex-element-definition">
+				<title>Notation for the <cdml:node role="element">section</cdml:node> element</title>
+				<cdml:code>
+section
+section[@role]
+				</cdml:code>
+			</example>
+		</item>
+		<item>
+			<title xml:id="def-attribute">Attribute:</title>
+			<p>When an attribute (node with type <cdml:value>attribute</cdml:value>) is mentioned in the text, it is always preceded by an at-sign (<cdml:code>@</cdml:code>) and it optionally has an associated value. <span href="#ebnf-attribute">Attribute EBNF definition</span>.</p>
+			<example xml:id="ex-attribute-definition">
+				<title>Notation for the <cdml:node role="attribute">role</cdml:node> attribute</title>
+				<cdml:code>
+@role
+@role="chapter"
+				</cdml:code>
+			</example>
+		</item>
+		<item>
+			<title xml:id="def-value">Value:</title>
+			<p>When a value is mentioned in the text, it is always preceded and followed by an quote (<cdml:code>"</cdml:code>). <span href="#ebnf-value">Value EBNF definition</span>.</p>
+			<example xml:id="ex-value-definition">
+				<title>Notation for the <cdml:value>chapter</cdml:value> value</title>
+				<cdml:code>
+"chapter"
+				</cdml:code>
+			</example>
+		</item>
+		<item>
+			<title xml:id="def-tag">Tag:</title>
+			<p>When a tag is mentioned in the text, it is always preceded by a less-than symbol (<cdml:code>&lt;</cdml:code>) and it is followed by a greater-than symbol (<cdml:code>&gt;</cdml:code>). <span href="#ebnf-tag">Tag EBNF definition</span>.</p>
+			<p>When a tag is mentioned with some omitted attributes it has an ellipsis symbol (<cdml:code>…</cdml:code>) preceding greater-than symbol (<cdml:code>&gt;</cdml:code>).</p>
+			<example xml:id="ex-tag-definition">
+				<title>Notation for the start tag <cdml:code language="xml">&lt;section …&gt;</cdml:code></title>
+				<cdml:code language="xml">
+&lt;section role="chapter" …&gt;
+				</cdml:code>
+			</example>
+		</item>
+	</list>
+
+	<p>Any element or attribute can be modified by a quantifier modificator as follows:</p>
+	<list>
+		<item>
+			<title><cdml:code>?</cdml:code></title>
+			<p>Zero or one time.</p>
+		</item>
+		<item>
+			<title><cdml:code>+</cdml:code></title>
+			<p>One or more times.</p>
+		</item>
+		<item>
+			<title><cdml:code>*</cdml:code></title>
+			<p>Zero or more times.</p>
+		</item>
+	</list>
+	<p status="review">Therefore, to indicate that an “status” attribute is optional the expression will be <cdml:node role="attribute">status?</cdml:node>. Or, if a “section” element is repeatable the expression will be <cdml:node role="element">section+</cdml:node>.</p>
+
+	<p>For brevity, throughout this document, assume that the following namespace prefixes have been defined:</p>
+	<list>
+		<item>
+			<title><cdml:value>dct</cdml:value></title>
+			<p>http://purl.org/dc/terms/</p>
+		</item>
+		<item>
+			<title><cdml:value>dml</cdml:value></title>
+			<p>http://purl.oclc.org/NET/dml/1.0/</p>
+		</item>
+		<item>
+			<title><cdml:value>rdf</cdml:value></title>
+			<p>http://www.w3.org/1999/02/22-rdf-syntax-ns#</p>
+		</item>
+		<item>
+			<title><cdml:value>xi</cdml:value></title>
+			<p>http://www.w3.org/2001/XInclude</p>
+		</item>
+		<item>
+			<title><cdml:value>xs</cdml:value></title>
+			<p>http://www.w3.org/2001/XMLSchema</p>
+		</item>
+	</list>
+
+	<section>
+		<title><span href="#w3c-ebnf-notation">EBNF</span> definitions</title>
+		<p status="draft">TODO: define xpath syntax used in chlidren, attribute and parent definitions.</p>
+		<list>
+			<item xml:id="ebnf-element">
+				<cdml:code language="ebnf">Element ::= <span href="#ebnf-name">Name</span> ('[' <span href="#ebnf-attribute">Attribute</span> ']')*</cdml:code>
+			</item>
+			<item xml:id="ebnf-attribute">
+				<cdml:code language="ebnf">Attribute ::= '@' <span href="#ebnf-name">Name</span> ('=' <span href="#ebnf-value">Value</span>)?</cdml:code>
+			</item>
+			<item xml:id="ebnf-tag">
+				<cdml:code language="ebnf">Tag ::= '&lt;' <span href="#ebnf-name">Name</span>  (<span href="#ebnf-space">S</span> <span href="#ebnf-name">Name</span> '=' <span href="#ebnf-value">Value</span>)* <span href="#ebnf-space">S</span>? '…'? '/'? '&gt;'</cdml:code>
+			</item>
+			<item xml:id="ebnf-name"><cdml:code langugae="ebnf">Name ::= ([A-Za-z]+ ':')? [A-Za-z_] [A-Za-z0-9_-.]*</cdml:code></item>
+			<item xml:id="ebnf-value"><cdml:code language="ebnf">Value ::= '"' [^&lt;&gt;"]+ '"'</cdml:code></item>
+			<item xml:id="ebnf-space"><cdml:code language="ebnf">S ::= (#x20 | #x9 | #xD | #xA)+</cdml:code></item>
+		</list>
+
+	</section>
+
+	<note xml:id="w3c-ebnf-notation" role="footnote">
+		<span href="http://www.w3.org/TR/REC-xml/#sec-notation">W3C notation</span>
+	</note>
+
+</section>
