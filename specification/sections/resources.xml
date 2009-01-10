@@ -39,6 +39,10 @@
 		<item xml:id="dcmi" href="http://dublincore.org/">Dublin Core Metadata Initiative Home page.</item>
 		<item xml:id="dcmi-html"><span href="http://dublincore.org/documents/2008/08/04/dc-html/">Expressing Dublin Core metadata using HTML/XHTML meta and link elements</span>. P. Jhonston, A. Powell. 2008.</item>
 	</list>
+	<list>
+		<title>XPath</title>
+		<item xml:id="xpath-grammar"><span href="http://www.w3.org/TR/xpath20/#id-grammar">XML Path Language (XPath) 2.0, A.1 EBNF</span>. A. Berglund, S. Boag, D. Chamberlin, M. F. Fernández, M. Kay, J. Robie, J. Siméon. 2007.</item>
+	</list>
 
 	<list>
 		<title>Discuss</title>

@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="introduction"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
+	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+
 	<title>Introduction</title>
 	<p>DML is general purpose XML schema particulary well suited to books, articles and annotations in other XML sources.</p>
 	<p>DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions to cover all cases.</p>
 	
 	<p>DML is a simple set of elements and attributes which define the basic semantics for a generic document. Its designed keeping in mind that all specialization may be defined through an scoped XML schema. <span status="draft">For example, to markup code it may be used the <em>CodeML schema</em>.</span></p>
 
-	<p>The <em>DML namespace</em> has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. Usually it is used associated with <cdml:value>dml</cdml:value> prefix.</p>
-
 	<p>The <em>metadata model</em> use a set of <span href="#metadata-attributes">metadata attributes</span> which are originally defined in <span href="#rdfa-syntax">RDFa Syntax</span> from W3C.</p>
 
-	<p>Use the <span href="#dml-discuss">DML-discuss mailing list</span> to discuss and learn about Document Markup Language.</p>
+	<p>This specification has an style and nomenclature <span href="#conventions">conventions</span> to simplify reading process.</p>
+
+	<section>
+		<title>Namespace</title>
+		<p>The <em>DML namespace</em> has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. Usually it is used associated with <cdml:value>dml</cdml:value> prefix.</p>
+	</section>
+
+	<section>
+		<title>Status of this document</title>
+		<p>This is a <em>draft</em> and it may change at any time based on comments and on its development process.</p>
+		<p>Use the <span href="#dml-discuss">DML-discuss mailing list</span> to discuss and learn about Document Markup Language.</p>
+
+	</section>
 
 </section>
