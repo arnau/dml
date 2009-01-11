@@ -12,7 +12,7 @@
 		<item>An <cdml:variable>italic monospaced</cdml:variable> font is used for variables.</item>
 	</list>
 	<!-- Italic is used for filenames and (in the print version of the book) URLs. -->
-	<p>The expressions to define allowed <em>children</em>, <em>attributes</em> and <em>parent</em> for an element uses <span href="#xpath-grammar">XPath 2.0 grammar</span>.</p>
+	<p>The expressions to define allowed <em>children</em>, <em>attributes</em> and <em>parent</em> for an element uses <span href="#xpath-grammar">XPath 2.0 grammar</span> with addition of <span href="#quantifiers">quantifier modificators</span>.</p>
 
 	<list>
 		<item>
@@ -60,7 +60,7 @@ section[@role]
 		</item>
 	</list>
 
-	<p>Any element or attribute can be modified by a quantifier modificator as follows:</p>
+	<p xml:id="quantifiers">Any element or attribute can be modified by a quantifier modificator as follows:</p>
 	<list>
 		<item>
 			<title><cdml:code>?</cdml:code></title>

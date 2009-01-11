@@ -55,24 +55,41 @@
 			<p>An appendix in a document. Appendixes usually occur at the end of a document.</p>
 		</item>
 		<item>
-			<title><cdml:value status="draft">header</cdml:value></title>
-			<p status="draft">description …?</p>
+			<title><cdml:value>header</cdml:value></title>
+			<p>A header section. Usually it groups common parts like a tagline, author, version history information, etc.</p>
 		</item>
 		<item>
-			<title><cdml:value status="draft">footer</cdml:value></title>
-			<p status="draft">description …?</p>
+			<title><cdml:value>footer</cdml:value></title>
+			<p>A footer section. Usually it groups information about its parent such as rights, related links, etc.</p>
 		</item>
 		<item>
 			<title><cdml:value status="draft">toc</cdml:value></title>
 			<p status="draft">description …?</p>
 		</item>
-		<item>
-			<title><cdml:value>license</cdml:value></title>
-			<p status="draft">description …?</p>
-		</item>
 	</list>
 
+	<example xml:id="ex-section">
+		<title>Usage of <node role="element">section</node> element</title>
+		<cdml:code language="xml">
+&lt;section xml:id="introduction"&gt;
+  &lt;title&gt;Introduction&lt;/title&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit…
+  &lt;/p&gt;
+&lt;/section&gt;
+		</cdml:code>
+	</example>
 
-	<p status="draft">TODO: examples</p>
+	<example xml:id="ex-section-license">
+		<title>An appendix section</title>
+		<cdml:code language="xml">
+&lt;section role="appendix"&gt;
+  &lt;title&gt;Resources&lt;/title&gt;
+  &lt;list&gt;
+    ( … )
+  &lt;/list&gt;
+&lt;/section&gt;
+		</cdml:code>
+	</example>
 
 </section>
