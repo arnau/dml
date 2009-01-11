@@ -60,6 +60,29 @@
 	</list>
 
 
-	<p status="draft">TODO: examples</p>
+	<example xml:id="ex-note">
+		<title>Usage of <cdml:node role="element">note</cdml:node> element</title>
+		<cdml:code language="xml">
+&lt;note&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit…
+  &lt;/p&gt;
+&lt;/section&gt;
+		</cdml:code>
+	</example>
 
+	<example xml:id="ex-footnote">
+		<title>Usage of <cdml:node role="element">note[<cdml:node role="attribute">role=<cdml:value>footnote</cdml:value></cdml:node>]</cdml:node> element</title>
+		<cdml:code language="xml">
+&lt;p&gt;
+  Lorem ipsum dolor sit amet, &lt;span href="#a-footnote"&gt;consectetur adipisicing&lt;/span&gt; elit…
+&lt;/p&gt;
+( … )
+&lt;note xml:id="a-footnote"&gt;
+  &lt;p&gt;
+    …sunt in culpa qui officia deserunt mollit anim id est laborum.
+  &lt;/p&gt;
+&lt;/section&gt;
+		</cdml:code>
+	</example>
 </section>

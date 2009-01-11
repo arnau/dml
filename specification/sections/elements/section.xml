@@ -69,7 +69,7 @@
 	</list>
 
 	<example xml:id="ex-section">
-		<title>Usage of <node role="element">section</node> element</title>
+		<title>Usage of <cdml:node role="element">section</cdml:node> element</title>
 		<cdml:code language="xml">
 &lt;section xml:id="introduction"&gt;
   &lt;title&gt;Introduction&lt;/title&gt;
