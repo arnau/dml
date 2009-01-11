@@ -7,7 +7,7 @@
 
 	<title>Metadata attributes</title>
 	<cdml:code language="xpath">
-$meta.attrs ::= (
+$meta.attrs = (
   @about | @content | @datatype | @property | @rel | @resource | @rev | @typeof
 )
 	</cdml:code>

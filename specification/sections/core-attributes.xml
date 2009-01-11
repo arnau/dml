@@ -7,7 +7,7 @@
 
 	<title>Core attributes</title>
 	<cdml:code language="xpath">
-$core.attrs ::= (
+$core.attrs = (
   @class | @dir | @href | @status | @xml:base | @xml:id | @xml:lang
 )
 	</cdml:code>

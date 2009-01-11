@@ -44,18 +44,14 @@
 
 	<section>
 		<title>Flow</title>
-		<p status="draft">Usually elements pertains to an only flow type: block, inline or table but in two cases (<span href="#element-object">object</span> and <cdml:node role="element" href="#element-quote">quote</cdml:node>) it changes its type conditioned by its siblings elements.</p>
+		<p>Usually elements pertains to an only to block or inline flow type but in two cases (<cdml:node role="element">object</cdml:node> and <cdml:node role="element">quote</cdml:node>) it changes its type conditioned by its siblings elements.</p>
 		<section xml:id="block-flow">
 			<title>Block</title>
-			<p status="review">Block elements are containers of other block elements or wrappers of <span href="#inline-flow">inline</span> elements and raw text.<span status="draft"> Those elements are usually associated with the <span href="#css-display-block"><cdml:code language="css">display: block</cdml:code> defined in CSS 2.1 specification</span>.</span></p>
+			<p>Block elements are containers of other block elements or wrappers of <span href="#inline-flow">inline</span> elements and raw text.</p>
 		</section>
 		<section xml:id="inline-flow">
 			<title>Inline</title>
-			<p status="draft">Inline elements are used to mark up running text. It <em>may</em> contain inline elements and raw text.</p>
-		</section>
-		<section xml:id="table-flow">
-			<title>Table</title>
-			<p status="draft">http://www.w3.org/TR/CSS21/tables.html</p>
+			<p>Inline elements are used to mark up running text. It <em>may</em> contain inline elements and raw text.</p>
 		</section>
 	</section>
 
