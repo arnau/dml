@@ -32,10 +32,8 @@
 		</list>
 	</metadata>
 
-
-
 	<xi:include href="sections/abstract.xml"/>
-	
+
 	<xi:include href="sections/introduction.xml"/>
 
 	<xi:include href="sections/elements.xml"/>

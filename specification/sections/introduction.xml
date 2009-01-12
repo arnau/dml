@@ -23,7 +23,8 @@
 		<title>Status of this document</title>
 		<p>This is a <em>draft</em> and it may change at any time based on comments and on its development process.</p>
 		<p>Use the <span href="#dml-discuss">DML-discuss mailing list</span> to discuss and learn about Document Markup Language.</p>
-
 	</section>
+
+	<xi:include href="acknowledgments.xml"/>
 
 </section>

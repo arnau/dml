@@ -67,7 +67,7 @@
   &lt;p&gt;
     Lorem ipsum dolor sit amet, consectetur adipisicing elit…
   &lt;/p&gt;
-&lt;/section&gt;
+&lt;/note&gt;
 		</cdml:code>
 	</example>
 
@@ -82,7 +82,7 @@
   &lt;p&gt;
     …sunt in culpa qui officia deserunt mollit anim id est laborum.
   &lt;/p&gt;
-&lt;/section&gt;
+&lt;/note&gt;
 		</cdml:code>
 	</example>
 </section>
