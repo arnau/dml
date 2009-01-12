@@ -78,7 +78,7 @@
   Lorem ipsum dolor sit amet, &lt;span href="#a-footnote"&gt;consectetur adipisicing&lt;/span&gt; elit…
 &lt;/p&gt;
 ( … )
-&lt;note xml:id="a-footnote"&gt;
+&lt;note role="footnote" xml:id="a-footnote"&gt;
   &lt;p&gt;
     …sunt in culpa qui officia deserunt mollit anim id est laborum.
   &lt;/p&gt;
