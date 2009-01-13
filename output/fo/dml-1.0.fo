@@ -393,22 +393,26 @@ element.<fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline><
 	        <fo:block space-before="0.5em" space-after="0.5em" role="dml:p" id="d14e1534">The <fo:inline font-size="0.95em" font-family="monospace" color="#090" role="dml:node" id="d14e1536"><fo:character character="@"/>citation</fo:inline> attribute <fo:inline font-style="italic" role="dml:em" id="d14e1539">must</fo:inline> be used to provide the URI (<fo:inline font-size="0.87em" font-family="monospace" role="dml:datatype" id="d14e1542">xs:anyURI</fo:inline>) of the resource cited when the flow of <fo:inline font-size="0.95em" font-family="monospace" color="#090" role="dml:node" id="d14e1545">quote</fo:inline> element is <fo:inline font-style="italic" role="dml:em" id="d14e1548">inline</fo:inline>, otherwise it <fo:inline font-style="italic" role="dml:em" id="d14e1552">must not</fo:inline> be used.</fo:block>
 
 
-	        <fo:block space-before="1.5em" space-after="1.5em" page-break-inside="avoid" border-bottom="2pt solid #ccc" border-top="0" role="dml:example" id="ex-block-quote" background-color="#FFE862"><fo:inline>(Draft) </fo:inline>
+	        <fo:block space-before="1.5em" space-after="1.5em" page-break-inside="avoid" border-bottom="2pt solid #ccc" border-top="0" role="dml:example" id="ex-block-quote">
 		          <fo:block space-after="1em" text-align="center" border-bottom="2pt solid #ccc" padding="3pt 0" role="dml:title" id="d14e1559"><fo:inline font-weight="bold">Example 2.15-1: </fo:inline>Usage of block flow <fo:inline font-size="0.95em" font-family="monospace" color="#090" role="dml:node" id="d14e1561">quote</fo:inline> element.</fo:block>
 		          <fo:block font-size="0.87em" font-family="monospace" white-space="pre" space-before="1em" space-after="1em" padding="0 3pt"><fo:inline color="#067">&lt;<fo:inline color="#056"/>section&gt;</fo:inline>
   ( … )
   <fo:inline color="#067">&lt;<fo:inline color="#056"/>quote&gt;</fo:inline>
-    <fo:inline color="#067">&lt;<fo:inline color="#056"/>p&gt;</fo:inline>Lorem ipsum<fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline>
-    <fo:inline color="#067">&lt;<fo:inline color="#056"/>citation&gt;</fo:inline>??? <fo:inline color="#067">&lt;<fo:inline color="#056"/>span <fo:inline color="#067">href="<fo:inline color="#090">http://some.resource</fo:inline>"</fo:inline>&gt;</fo:inline>???<fo:inline color="#067">&lt;/<fo:inline color="#056"/>span&gt;</fo:inline> ??? <fo:inline color="#067">&lt;/<fo:inline color="#056"/>citation&gt;</fo:inline>
+    <fo:inline color="#067">&lt;<fo:inline color="#056"/>p&gt;</fo:inline>DML is general purpose XML schema particulary well suited to books, 
+    articles and annotations in other XML sources.<fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline>
+    <fo:inline color="#067">&lt;<fo:inline color="#056"/>citation&gt;</fo:inline><fo:inline color="#067">&lt;<fo:inline color="#056"/>span <fo:inline color="#067">href="<fo:inline color="#090">http://purl.oclc.org/NET/dml/1.0/</fo:inline>"</fo:inline>&gt;</fo:inline>Document Markup 
+    Language Specification 1.0, Introduction<fo:inline color="#067">&lt;/<fo:inline color="#056"/>span&gt;</fo:inline>. A. Siches. 2009<fo:inline color="#067">&lt;/<fo:inline color="#056"/>citation&gt;</fo:inline>
   <fo:inline color="#067">&lt;/<fo:inline color="#056"/>quote&gt;</fo:inline>
   ( … )
 <fo:inline color="#067">&lt;/<fo:inline color="#056"/>section&gt;</fo:inline></fo:block>
 	        </fo:block>
 
-	        <fo:block space-before="1.5em" space-after="1.5em" page-break-inside="avoid" border-bottom="2pt solid #ccc" border-top="0" role="dml:example" id="ex-inline-quote" background-color="#FFE862"><fo:inline>(Draft) </fo:inline>
+	        <fo:block space-before="1.5em" space-after="1.5em" page-break-inside="avoid" border-bottom="2pt solid #ccc" border-top="0" role="dml:example" id="ex-inline-quote">
 		          <fo:block space-after="1em" text-align="center" border-bottom="2pt solid #ccc" padding="3pt 0" role="dml:title" id="d14e1571"><fo:inline font-weight="bold">Example 2.15-2: </fo:inline>Usage of inline flow <fo:inline font-size="0.95em" font-family="monospace" color="#090" role="dml:node" id="d14e1573">quote</fo:inline> element.</fo:block>
 		          <fo:block font-size="0.87em" font-family="monospace" white-space="pre" space-before="1em" space-after="1em" padding="0 3pt"><fo:inline color="#067">&lt;<fo:inline color="#056"/>p&gt;</fo:inline>
-  ??? <fo:inline color="#067">&lt;<fo:inline color="#056"/>quote <fo:inline color="#067">citation="<fo:inline color="#090">http://some.resource</fo:inline>"</fo:inline>&gt;</fo:inline>cite<fo:inline color="#067">&lt;/<fo:inline color="#056"/>quote&gt;</fo:inline> ???
+  […] in that case, when the DML specification says <fo:inline color="#067">&lt;<fo:inline color="#056"/>quote 
+  <fo:inline color="#067">citation="<fo:inline color="#090">http://purl.oclc.org/NET/dml/1.0/</fo:inline>"</fo:inline>&gt;</fo:inline>suited to books, articles and 
+annotations<fo:inline color="#067">&lt;/<fo:inline color="#056"/>quote&gt;</fo:inline> it means […]
 <fo:inline color="#067">&lt;/<fo:inline color="#056"/>p&gt;</fo:inline></fo:block>
 	        </fo:block>
 

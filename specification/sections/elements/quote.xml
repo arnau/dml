@@ -39,25 +39,25 @@
 	<p>The <cdml:node role="attribute">citation</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource cited when the flow of <cdml:node role="element">quote</cdml:node> element is <em>inline</em>, otherwise it <em>must not</em> be used.</p>
 
 
-	<example xml:id="ex-block-quote" status="draft">
+	<example xml:id="ex-block-quote">
 		<title>Usage of block flow <cdml:node role="element">quote</cdml:node> element.</title>
 		<cdml:code language="xml">
 &lt;section&gt;
   ( … )
   &lt;quote&gt;
-    &lt;p&gt;Lorem ipsum&lt;/p&gt;
-    &lt;citation&gt;??? &lt;span href="http://some.resource"&gt;???&lt;/span&gt; ??? &lt;/citation&gt;
+    &lt;p&gt;DML is general purpose XML schema particulary well suited to books, articles and annotations in other XML sources.&lt;/p&gt;
+    &lt;citation&gt;&lt;span href="http://purl.oclc.org/NET/dml/1.0/"&gt;Document Markup Language Specification 1.0, Introduction&lt;/span&gt;. A. Siches. 2009&lt;/citation&gt;
   &lt;/quote&gt;
   ( … )
 &lt;/section&gt;
 		</cdml:code>
 	</example>
 
-	<example xml:id="ex-inline-quote" status="draft">
+	<example xml:id="ex-inline-quote">
 		<title>Usage of inline flow <cdml:node role="element">quote</cdml:node> element.</title>
 		<cdml:code language="xml">
 &lt;p&gt;
-  ??? &lt;quote citation="http://some.resource"&gt;cite&lt;/quote&gt; ???
+  […] in that case, when the DML specification says &lt;quote citation="http://purl.oclc.org/NET/dml/1.0/"&gt;suited to books, articles and annotations&lt;/quote&gt; it means […]
 &lt;/p&gt;
 		</cdml:code>
 	</example>
