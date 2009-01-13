@@ -11,5 +11,5 @@
 			<item property="dct:description">Specifies the location of a resource.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">href</cdml:node> attribute specifies the location of a resource through an URI (<cdml:datatype>xs:anyURI</cdml:datatype>). It also specifies a <em>resource object</em> in RDF triple, as its described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
+	<p>The <cdml:node role="attribute">href</cdml:node> attribute specifies the location of a resource through an URI (<cdml:datatype>xs:anyURI</cdml:datatype>). It also specifies a <em>resource object</em> in RDF triple, as it is described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 </section>

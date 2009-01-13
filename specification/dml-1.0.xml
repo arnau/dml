@@ -42,7 +42,7 @@
 
 	<section>
 		<title>Flow</title>
-		<p>Usually elements pertains to an only to block or inline flow type but in two cases (<cdml:node role="element">object</cdml:node> and <cdml:node role="element">quote</cdml:node>) it changes its type conditioned by its siblings elements.</p>
+		<p>Usually elements belong only to block or inline flow type but in two cases (<cdml:node role="element">object</cdml:node> and <cdml:node role="element">quote</cdml:node>) it changes its type conditioned by its sibling elements.</p>
 		<section xml:id="block-flow">
 			<title>Block</title>
 			<p>Block elements are containers of other block elements or wrappers of <span href="#inline-flow">inline</span> elements and raw text.</p>

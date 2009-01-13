@@ -8,15 +8,15 @@
 	<p>DML is general purpose XML schema particulary well suited to books, articles and annotations in other XML sources.</p>
 	<p>DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions to cover all cases.</p>
 	
-	<p>DML is a simple set of elements and attributes which define the basic semantics for a generic document. Its designed keeping in mind that all specialization may be defined through an scoped XML schema. <span status="draft">For example, to markup code it may be used the <em>CodeML schema</em>.</span></p>
+	<p>DML is a simple set of elements and attributes which define the basic semantics for a generic document. It is designed keeping in mind that all specialization may be defined through an scoped XML schema. <span status="draft">For example, to markup code it may be used the <em>CodeML schema</em>.</span></p>
 
 	<p>The <em>metadata model</em> use a set of <span href="#metadata-attributes">metadata attributes</span> which are originally defined in <span href="#rdfa-syntax">RDFa Syntax</span> from W3C.</p>
 
-	<p>This specification has an style and nomenclature <span href="#conventions">conventions</span> to simplify reading process.</p>
+	<p>This specification has a style and nomenclature <span href="#conventions">conventions</span> to simplify the reading process.</p>
 
 	<section>
 		<title>Namespace</title>
-		<p>The <em>DML namespace</em> has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. Usually it is used associated with <cdml:value>dml</cdml:value> prefix.</p>
+		<p>The <em>DML namespace</em> has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. It is usually used associated with <cdml:value>dml</cdml:value> prefix.</p>
 	</section>
 
 	<section>

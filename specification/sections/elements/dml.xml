@@ -21,9 +21,6 @@
 		<item>
 			<title>Children</title>
 			<cdml:code language="xpath">
-( title, $block[not( title | citation )]+ )
-
-(: this expression is more accurated but necessary? :)
 (
   title,
   $block[not( title | citation | preceding-sibling::section )]+,

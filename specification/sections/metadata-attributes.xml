@@ -11,7 +11,7 @@ $meta.attrs = (
   @about | @content | @datatype | @property | @rel | @resource | @rev | @typeof
 )
 	</cdml:code>
-	<p>These attributes <em>must not</em> be repeated in same element.</p>
+	<p>These attributes <em>must not</em> be repeated in the same element.</p>
 
 	<xi:include href="attributes/about.xml"/>
 	<xi:include href="attributes/content.xml"/>

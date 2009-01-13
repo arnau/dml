@@ -11,7 +11,7 @@ $core.attrs = (
   @class | @dir | @href | @status | @xml:base | @xml:id | @xml:lang
 )
 	</cdml:code>
-	<p>These attributes <em>must not</em> be repeated in same element.</p>
+	<p>These attributes <em>must not</em> be repeated in the same element.</p>
 
 	<xi:include href="attributes/class.xml"/>
 	<xi:include href="attributes/dir.xml"/>

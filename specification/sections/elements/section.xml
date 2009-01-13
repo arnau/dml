@@ -36,7 +36,7 @@
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the <cdml:node role="element">section</cdml:node> element meaning. Allowed values are:</p>
+	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the meaning of the <cdml:node role="element">section</cdml:node> element. Allowed values are:</p>
 	<list>
 		<item>
 			<title><cdml:value>abstract</cdml:value></title>

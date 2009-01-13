@@ -10,7 +10,7 @@
 			<item property="dct:description">Specifies the status of the element.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">status</cdml:node> attribute specifies the status of content in the element. Allowed values are:</p>
+	<p>The <cdml:node role="attribute">status</cdml:node> attribute specifies the status of the content in the element. Allowed values are:</p>
 	<list>
 		<item>
 			<title><cdml:value>added</cdml:value></title>
@@ -30,7 +30,7 @@
 		</item>
 		<item>
 			<title><cdml:variable>user-value</cdml:variable></title>
-			<p>Specific status defined by the users according they publishing process. This value <em>must</em> be an <cdml:datatype>xs:NMTOKEN</cdml:datatype>.</p>
+			<p>Specific status defined by the users according their publishing process. This value <em>must</em> be an <cdml:datatype>xs:NMTOKEN</cdml:datatype>.</p>
 		</item>
 	</list>
 
