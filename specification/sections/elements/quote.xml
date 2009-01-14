@@ -45,7 +45,7 @@
 &lt;section&gt;
   ( … )
   &lt;quote&gt;
-    &lt;p&gt;DML is general purpose XML schema particulary well suited to books, articles and annotations in other XML sources.&lt;/p&gt;
+    &lt;p&gt;DML is a general-purpose XML schema, particularly well suited to books, articles and annotations in other XML sources.&lt;/p&gt;
     &lt;citation&gt;&lt;span href="http://purl.oclc.org/NET/dml/1.0/"&gt;Document Markup Language Specification 1.0, Introduction&lt;/span&gt;. A. Siches. 2009&lt;/citation&gt;
   &lt;/quote&gt;
   ( … )
@@ -57,7 +57,7 @@
 		<title>Usage of inline flow <cdml:node role="element">quote</cdml:node> element.</title>
 		<cdml:code language="xml">
 &lt;p&gt;
-  […] in that case, when the DML specification says &lt;quote citation="http://purl.oclc.org/NET/dml/1.0/"&gt;suited to books, articles and annotations&lt;/quote&gt; it means […]
+  […] in that case, when the DML specification says &lt;quote citation="http://purl.oclc.org/NET/dml/1.0/"&gt;well suited to books, articles and annotations&lt;/quote&gt; it means […]
 &lt;/p&gt;
 		</cdml:code>
 	</example>
