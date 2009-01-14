@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dml xml:id="dml-spec" xml:lang="en"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/" 
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/" 
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/" 
 	xmlns:dct="http://purl.org/dc/terms/"
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -42,7 +42,7 @@
 
 	<section>
 		<title>Flow</title>
-		<p>Usually any elements belong to a single flow type, block or inline flow type but there are two cases (<cdml:node role="element">object</cdml:node> and <cdml:node role="element">quote</cdml:node>) where they change their type depending on their sibling elements.</p>
+		<p>Usually any elements belong to a single flow type, block or inline flow type but there are two cases (<pml:node role="element">object</pml:node> and <pml:node role="element">quote</pml:node>) where they change their type depending on their sibling elements.</p>
 		<section xml:id="block-flow">
 			<title>Block</title>
 			<p>Block elements are containers of other block elements or wrappers of <span href="#inline-flow">inline</span> elements and raw text.</p>

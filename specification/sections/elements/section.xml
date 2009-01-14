@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-section" class="block"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">section</cdml:node> element</title>
+	<title>The <pml:node role="element">section</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A logical section of a document.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">section</cdml:node> element represents a generic document section.</p>
+	<p>The <pml:node role="element">section</pml:node> element represents a generic document section.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,78 +18,78 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( title, $block[not( title | citation )]+ )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @role? )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | note | object[parent::$block] | quote[parent::$block] | section )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide a form to refine the meaning of the <cdml:node role="element">section</cdml:node> element. Allowed values are:</p>
+	<p>The <pml:node role="attribute">role</pml:node> attribute <em>may</em> be used to provide a form to refine the meaning of the <pml:node role="element">section</pml:node> element. Allowed values are:</p>
 	<list>
 		<item>
-			<title><cdml:value>abstract</cdml:value></title>
+			<title><pml:value>abstract</pml:value></title>
 			<p>A summary or statement of the contents of a document.</p>
 		</item>
 		<item>
-			<title><cdml:value>part</cdml:value></title>
+			<title><pml:value>part</pml:value></title>
 			<p>A part of a book. Parts usually group related chapters in a book.</p>
 		</item>
 		<item>
-			<title><cdml:value>chapter</cdml:value></title>
+			<title><pml:value>chapter</pml:value></title>
 			<p status="review">A main division of a book.</p>
 		</item>
 		<item>
-			<title><cdml:value>appendix</cdml:value></title>
+			<title><pml:value>appendix</pml:value></title>
 			<p>An appendix in a document. Appendixes usually occur at the end of a document.</p>
 		</item>
 		<item>
-			<title><cdml:value>header</cdml:value></title>
+			<title><pml:value>header</pml:value></title>
 			<p>A header section. Usually it groups common parts like a tagline, author, version history information, etc.</p>
 		</item>
 		<item>
-			<title><cdml:value>footer</cdml:value></title>
+			<title><pml:value>footer</pml:value></title>
 			<p>A footer section. Usually it groups information about its parent such as rights, related links, etc.</p>
 		</item>
 		<item>
-			<title><cdml:value status="draft">toc</cdml:value></title>
+			<title><pml:value status="draft">toc</pml:value></title>
 			<p status="draft">description …?</p>
 		</item>
 	</list>
 
 	<example xml:id="ex-section">
-		<title>Usage of <cdml:node role="element">section</cdml:node> element</title>
-		<cdml:code language="xml">
+		<title>Usage of <pml:node role="element">section</pml:node> element</title>
+		<pml:code language="xml">
 &lt;section xml:id="introduction"&gt;
   &lt;title&gt;Introduction&lt;/title&gt;
   &lt;p&gt;
     Lorem ipsum dolor sit amet, consectetur adipisicing elit…
   &lt;/p&gt;
 &lt;/section&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 	<example xml:id="ex-section-license">
 		<title>An appendix section</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;section role="appendix"&gt;
   &lt;title&gt;Resources&lt;/title&gt;
   &lt;list&gt;
     ( … )
   &lt;/list&gt;
 &lt;/section&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 </section>

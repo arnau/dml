@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="resources" role="appendix"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
 	<title>Resources</title>
@@ -47,6 +47,10 @@
 	<list>
 		<title>Discuss</title>
 		<item xml:id="dml-discuss" href="http://groups.google.com/group/dml-discuss">DML-discuss mailing list</item>
+	</list>
+	<list>
+		<title>XML Schemes</title>
+		<item xml:id="pml-specification" href="http://purl.oclc.org/NET/pml/1.0/">Programming Markup Language Specification 1.0</item>
 	</list>
 	<list>
 		<title>CSS</title>

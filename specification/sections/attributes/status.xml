@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="attribute-status" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="attribute">status</cdml:node> attribute</title>
+	<title>The <pml:node role="attribute">status</pml:node> attribute</title>
 	<metadata about="#attribute-status">
 		<list>
 			<item property="dct:description">Specifies the status of the element.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">status</cdml:node> attribute specifies the status of the content in the element. Allowed values are:</p>
+	<p>The <pml:node role="attribute">status</pml:node> attribute specifies the status of the content in the element. Allowed values are:</p>
 	<list>
 		<item>
-			<title><cdml:value>added</cdml:value></title>
+			<title><pml:value>added</pml:value></title>
 			<p>Added text since last revision.</p>
 		</item>
 		<item>
-			<title><cdml:value>deleted</cdml:value></title>
+			<title><pml:value>deleted</pml:value></title>
 			<p>Deleted text since last revision.</p>
 		</item>
 		<item>
-			<title><cdml:value>draft</cdml:value></title>
+			<title><pml:value>draft</pml:value></title>
 			<p>Text work in progress.</p>
 		</item>
 		<item>
-			<title><cdml:value>review</cdml:value></title>
+			<title><pml:value>review</pml:value></title>
 			<p>Text to evaluate or reevaluate but publishable.</p>
 		</item>
 		<item>
-			<title><cdml:variable>user-value</cdml:variable></title>
-			<p>Specific status defined by the users according their publishing process. This value <em>must</em> be an <cdml:datatype>xs:NMTOKEN</cdml:datatype>.</p>
+			<title><pml:variable>user-value</pml:variable></title>
+			<p>Specific status defined by the users according their publishing process. This value <em>must</em> be an <pml:datatype>xs:NMTOKEN</pml:datatype>.</p>
 		</item>
 	</list>
 

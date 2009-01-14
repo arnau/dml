@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-quote" class="block inline"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">quote</cdml:node> element</title>
+	<title>The <pml:node role="element">quote</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A quotation.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">quote</cdml:node> element represents a generic quotation container.</p>
+	<p>The <pml:node role="element">quote</pml:node> element represents a generic quotation container.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,30 +18,30 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $block[not( quote | citation )]+ citation | ( $inline | text() )+ )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @citation? )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | $block[not( quote | citation )] | $inline[not( quote )] )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">citation</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource cited when the flow of <cdml:node role="element">quote</cdml:node> element is <em>inline</em>, otherwise it <em>must not</em> be used.</p>
+	<p>The <pml:node role="attribute">citation</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource cited when the flow of <pml:node role="element">quote</pml:node> element is <em>inline</em>, otherwise it <em>must not</em> be used.</p>
 
 
 	<example xml:id="ex-block-quote">
-		<title>Usage of block flow <cdml:node role="element">quote</cdml:node> element.</title>
-		<cdml:code language="xml">
+		<title>Usage of block flow <pml:node role="element">quote</pml:node> element.</title>
+		<pml:code language="xml">
 &lt;section&gt;
   ( … )
   &lt;quote&gt;
@@ -50,16 +50,16 @@
   &lt;/quote&gt;
   ( … )
 &lt;/section&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 	<example xml:id="ex-inline-quote">
-		<title>Usage of inline flow <cdml:node role="element">quote</cdml:node> element.</title>
-		<cdml:code language="xml">
+		<title>Usage of inline flow <pml:node role="element">quote</pml:node> element.</title>
+		<pml:code language="xml">
 &lt;p&gt;
   […] in that case, when the DML specification says &lt;quote citation="http://purl.oclc.org/NET/dml/1.0/"&gt;well suited to books, articles and annotations&lt;/quote&gt; it means […]
 &lt;/p&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 

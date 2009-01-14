@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-note" class="block"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">note</cdml:node> element</title>
+	<title>The <pml:node role="element">note</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A note or annotation in a document.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">note</cdml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em status="review">DML islands</em> in non-DML documents.</p>
+	<p>The <pml:node role="element">note</pml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em status="review">DML islands</em> in non-DML documents.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,62 +18,62 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( 
   ( title?, $block[not( title | note | citation )]+ ) |
   ( $inline | text() )+
 )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @role? )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | $block[$block[not( self::note )]] )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">role</cdml:node> attribute may be used to provide a form to refine the <cdml:node role="element">note</cdml:node> element meaning. Allowed values are:</p>
+	<p>The <pml:node role="attribute">role</pml:node> attribute may be used to provide a form to refine the <pml:node role="element">note</pml:node> element meaning. Allowed values are:</p>
 	<list>
 		<item>
-			<title><cdml:value>tip</cdml:value></title>
+			<title><pml:value>tip</pml:value></title>
 			<p>A suggestion, tip or trick.</p>
 		</item>
 		<item>
-			<title><cdml:value>warning</cdml:value></title>
+			<title><pml:value>warning</pml:value></title>
 			<p>An admonition note.</p>
 		</item>
 		<item>
-			<title><cdml:value>sidebar</cdml:value></title>
+			<title><pml:value>sidebar</pml:value></title>
 			<p>A note that is isolated from the main narrative flow.</p>
 		</item>
 		<item>
-			<title><cdml:value>footnote</cdml:value></title>
+			<title><pml:value>footnote</pml:value></title>
 			<p>A footnote. Footnotes in paged media usually occur at the end of the page that reference it.</p>
 		</item>
 	</list>
 
 
 	<example xml:id="ex-note">
-		<title>Usage of <cdml:node role="element">note</cdml:node> element</title>
-		<cdml:code language="xml">
+		<title>Usage of <pml:node role="element">note</pml:node> element</title>
+		<pml:code language="xml">
 &lt;note&gt;
   &lt;p&gt;
     Lorem ipsum dolor sit amet, consectetur adipisicing elit…
   &lt;/p&gt;
 &lt;/note&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 	<example xml:id="ex-footnote">
-		<title>Usage of <cdml:node role="element">note[<cdml:node role="attribute">role=<cdml:value>footnote</cdml:value></cdml:node>]</cdml:node> element</title>
-		<cdml:code language="xml">
+		<title>Usage of <pml:node role="element">note[<pml:node role="attribute">role=<pml:value>footnote</pml:value></pml:node>]</pml:node> element</title>
+		<pml:code language="xml">
 &lt;p&gt;
   Lorem ipsum dolor sit amet, &lt;span href="#a-footnote"&gt;consectetur adipisicing&lt;/span&gt; elit…
 &lt;/p&gt;
@@ -83,6 +83,6 @@
     …sunt in culpa qui officia deserunt mollit anim id est laborum.
   &lt;/p&gt;
 &lt;/note&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 </section>

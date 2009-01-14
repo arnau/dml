@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-em" class="inline"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">em</cdml:node> element</title>
+	<title>The <pml:node role="element">em</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">An emphasized text.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">em</cdml:node> element represents an emphasized text.</p>
+	<p>The <pml:node role="element">em</pml:node> element represents an emphasized text.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,33 +18,33 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $inline | text() )+
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @role? )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $block | $inline )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to provide strong emphasized text with <cdml:value>strong</cdml:value> value.</p>
+	<p>The <pml:node role="attribute">role</pml:node> attribute <em>may</em> be used to provide strong emphasized text with <pml:value>strong</pml:value> value.</p>
 
 	<example>
-		<title>Usage of <cdml:node role="element">em</cdml:node> element</title>
-		<cdml:code language="xml">
+		<title>Usage of <pml:node role="element">em</pml:node> element</title>
+		<pml:code language="xml">
 &lt;p&gt;
   &lt;em&gt;Lorem ipsum&lt;/em&gt; dolor sit amet, consectetur adipisicing elit, sed do &lt;em role="strong"&gt;eiusmod tempor incididunt ut labore&lt;/em&gt; et dolore magna aliqua.
 &lt;/p&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 </section>

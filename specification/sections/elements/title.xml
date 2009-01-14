@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-title" class="block"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">title</cdml:node> element</title>
+	<title>The <pml:node role="element">title</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A title of an element.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">title</cdml:node> element represents a header container.</p>
+	<p>The <pml:node role="element">title</pml:node> element represents a header container.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,21 +18,21 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $inline | text() )+
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | $block[$block] )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 

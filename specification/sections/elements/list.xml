@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-list" class="block"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">list</cdml:node> element</title>
+	<title>The <pml:node role="element">list</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A list container.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">list</cdml:node> element represents a list of items.</p>
+	<p>The <pml:node role="element">list</pml:node> element represents a list of items.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,60 +18,60 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( title?, item+ )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @role? )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | $block[$block[not( self::list )]] )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">role</cdml:node> attribute <em>may</em> be used to define an ordered list with <cdml:value>ordered</cdml:value> value.</p>
+	<p>The <pml:node role="attribute">role</pml:node> attribute <em>may</em> be used to define an ordered list with <pml:value>ordered</pml:value> value.</p>
 
 	<example xml:id="ex-simple-list">
 		<title>Simple list</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;list&gt;
   &lt;item&gt;sugar&lt;/item&gt;
   &lt;item&gt;salt&lt;/item&gt;
   &lt;item&gt;pepper&lt;/item&gt;
 &lt;/list&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 	<example xml:id="ex-ordered-list">
 		<title>Ordered list</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;list role="ordered"&gt;
   &lt;item&gt;first&lt;/item&gt;
   &lt;item&gt;second&lt;/item&gt;
   &lt;item&gt;third&lt;/item&gt;
 &lt;/list&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 	<example xml:id="ex-list-with-title">
 		<title>List with title</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;list&gt;
   &lt;title&gt;List title&lt;/title&gt;
   &lt;item&gt;first&lt;/item&gt;
   &lt;item&gt;second&lt;/item&gt;
   &lt;item&gt;third&lt;/item&gt;
 &lt;/list&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 	<example xml:id="ex-definition-list">
 		<title>Definition list</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;list&gt;
   &lt;item&gt;
     &lt;title&gt;Dweeb&lt;/title&gt;
@@ -86,12 +86,12 @@
     &lt;p&gt;Technically bright but socially inept person.&lt;/p&gt;
   &lt;/item&gt;
 &lt;/list&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 	<example xml:id="ex-definition-list-multiple">
 		<title>Definition list with multiple terms and definitions</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;list&gt;
   &lt;item&gt;
     &lt;title&gt;Center&lt;/title&gt;
@@ -107,7 +107,7 @@
     &lt;p&gt;The property possessed by an object of producing different sensations on the eye.&lt;/p&gt;
   &lt;/item&gt;
 &lt;/list&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 </section>

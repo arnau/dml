@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="introduction"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 
 	<title>Introduction</title>
 	<p>DML is a general-purpose XML schema, particularly well suited to books, articles and annotations in other XML sources.</p>
 	<p>DML is normatively available as a <span href="#iso-19757-2">RELAX NG</span> schema with additional <span href="#iso-19757-3">Schematron</span> assertions to cover all missing cases.</p>
 	
-	<p>DML is a simple set of elements and attributes which define the basic semantics for a generic document. It is designed keeping in mind that all specialization may be defined through an scoped XML schema. <span status="draft">For example, to markup code it may be used the <em>CodeML schema</em>.</span></p>
+	<p>DML is a simple set of elements and attributes which define the basic semantics for a generic document. It is designed keeping in mind that all specialization may be defined through a scoped XML schema. For example, to mark up code it may be used the <em href="#pml-specification">Programming Markup Language</em>.</p>
 
 	<p>The <em>metadata model</em> use a set of <span href="#metadata-attributes">metadata attributes</span> which are originally defined in <span href="#rdfa-syntax">RDFa Syntax</span> from W3C.</p>
 
@@ -16,7 +16,7 @@
 
 	<section>
 		<title>Namespace</title>
-		<p>The <em>DML namespace</em> has the URI <cdml:value>http://purl.oclc.org/NET/dml/1.0/</cdml:value>. It is usually associated with the <cdml:value>dml</cdml:value> prefix.</p>
+		<p>The <em>DML namespace</em> has the URI <pml:value>http://purl.oclc.org/NET/dml/1.0/</pml:value>. It is usually associated with the <pml:value>dml</pml:value> prefix.</p>
 	</section>
 
 	<section>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-table" class="block"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">table</cdml:node> element</title>
+	<title>The <pml:node role="element">table</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A table container.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">table</cdml:node> element represents a table container.</p>
+	<p>The <pml:node role="element">table</pml:node> element represents a table container.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,25 +18,25 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( title?, summary, group+ )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @scope )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | $block[$block] )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">scope</cdml:node> attribute <em>must</em> be used to provide the primary scope of groups. Allowed values are: <cdml:value>row</cdml:value> and <cdml:value>column</cdml:value>.</p>
+	<p>The <pml:node role="attribute">scope</pml:node> attribute <em>must</em> be used to provide the primary scope of groups. Allowed values are: <pml:value>row</pml:value> and <pml:value>column</pml:value>.</p>
 
 	<p status="draft">TODO: examples</p>
 

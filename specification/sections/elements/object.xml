@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-object" class="block inline"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">object</cdml:node> element</title>
+	<title>The <pml:node role="element">object</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">A generic embedded media object (image, video, audio).</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">object</cdml:node> element represents a generic embedded media object like images, videos, audio and other types of multimedia files.</p>
+	<p>The <pml:node role="element">object</pml:node> element represents a generic embedded media object like images, videos, audio and other types of multimedia files.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,34 +18,34 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $block* | ( $inline | text() )* )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @src | @type? )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( dml | $block | $inline )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
-	<p>The <cdml:node role="attribute">src</cdml:node> attribute <em>must</em> be used to provide the URI (<cdml:datatype>xs:anyURI</cdml:datatype>) of the resource. It also specifies a <em>resource object</em> in RDF triple, as it is described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
-	<p>The <cdml:node role="attribute">type</cdml:node> attribute <em>may</em> be used to provide the mime type of the resource.</p>
+	<p>The <pml:node role="attribute">src</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource. It also specifies a <em>resource object</em> in RDF triple, as it is described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
+	<p>The <pml:node role="attribute">type</pml:node> attribute <em>may</em> be used to provide the mime type of the resource.</p>
 	
-	<p>The children of the <cdml:node role="element">object</cdml:node> element <em>must</em> be used to provide an alternative content if the resource provided by <cdml:node role="attribute">src</cdml:node> fails to load.</p>
-	<p>The alternative content <em>must</em> be <em>inline</em> or <em>block</em> in accordance of the flow of its <cdml:node role="element">object</cdml:node> parent.</p>
+	<p>The children of the <pml:node role="element">object</pml:node> element <em>must</em> be used to provide an alternative content if the resource provided by <pml:node role="attribute">src</pml:node> fails to load.</p>
+	<p>The alternative content <em>must</em> be <em>inline</em> or <em>block</em> in accordance of the flow of its <pml:node role="element">object</pml:node> parent.</p>
 
 
 	<example xml:id="ex-block-object">
-		<title>Usage of block flow <cdml:node role="element">object</cdml:node> element.</title>
-		<cdml:code language="xml">
+		<title>Usage of block flow <pml:node role="element">object</pml:node> element.</title>
+		<pml:code language="xml">
 &lt;figure xml:id="fig-markup-trends"&gt;
   &lt;title&gt;Usage of markup language in %&lt;/title&gt;
   &lt;object src="markup-trends.svg" type="application/svg+xml"&gt;
@@ -65,16 +65,16 @@
     &lt;/list&gt;
   &lt;/object&gt;
 &lt;/figure&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 	<example xml:id="ex-inline-object">
-		<title>Usage of inline flow <cdml:node role="element">object</cdml:node> element.</title>
-		<cdml:code language="xml">
+		<title>Usage of inline flow <pml:node role="element">object</pml:node> element.</title>
+		<pml:code language="xml">
 &lt;p&gt;
   Press the &lt;object src="accept-call-button-icon.svg"/&gt;&lt;em&gt;accept call&lt;/em&gt;&lt;/object&gt; button to allow an incoming call.
 &lt;/p&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 

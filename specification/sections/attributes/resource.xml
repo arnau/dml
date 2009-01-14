@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="attribute-resource" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/">
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/">
 
-	<title>The <cdml:node role="attribute">resource</cdml:node> attribute</title>
+	<title>The <pml:node role="attribute">resource</pml:node> attribute</title>
 	<metadata about="#attribute-resource">
 		<list>
 			<item property="dct:description">Provides an object for an RDF triple.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">resource</cdml:node> attribute provides an object for an RDF triple through a <span href="#URIorSafeCURIE">URIorSafeCURIE</span>.</p>
+	<p>The <pml:node role="attribute">resource</pml:node> attribute provides an object for an RDF triple through a <span href="#URIorSafeCURIE">URIorSafeCURIE</span>.</p>
 	<p>This attribute is part of <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 </section>

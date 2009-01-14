@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-dml"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">dml</cdml:node> element</title>
+	<title>The <pml:node role="element">dml</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">The root element of a document.</item>
 		</list>
 	</metadata>
 
-	<p>The <cdml:node role="element">dml</cdml:node> element is the root element for a DML document.</p>
+	<p>The <pml:node role="element">dml</pml:node> element is the root element for a DML document.</p>
 	
 	<list>
 		<item>
@@ -20,35 +20,35 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 (
   title,
   $block[not( title | citation | preceding-sibling::section )]+,
   section*
 )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 
 	<example xml:id="ex-simple-dml-document">
 		<title>Simple DML document</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0/"&gt;
   &lt;title&gt;Simple DML document&lt;/title&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
 &lt;/example&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 	<example xml:id="ex-dml-document-with-metadata">
 		<title>DML document with metadata</title>
-		<cdml:code language="xml">
+		<pml:code language="xml">
 &lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0/" xmlns:dct="http://purl.org/dc/terms/"&gt;
   &lt;title&gt;DML document&lt;/title&gt;
   &lt;metadata about=""&gt;
@@ -59,7 +59,7 @@
   &lt;/metadata&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
 &lt;/example&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 

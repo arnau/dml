@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="element-abbr" class="inline"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="element">abbr</cdml:node> element</title>
+	<title>The <pml:node role="element">abbr</pml:node> element</title>
 	<metadata>
 		<list>
 			<item property="dct:description">An abbreviated form.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="element">abbr</cdml:node> element represents an abbreviation or acronym.</p>
+	<p>The <pml:node role="element">abbr</pml:node> element represents an abbreviation or acronym.</p>
 	<list>
 		<item>
 			<title>Flow</title>
@@ -18,40 +18,40 @@
 		</item>
 		<item>
 			<title>Children</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $inline[not( abbr )] | text() )+
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Attributes</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* )
-			</cdml:code>
+			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
-			<cdml:code language="xpath">
+			<pml:code language="xpath">
 ( $block | $inline[not( abbr )] )
-			</cdml:code>
+			</pml:code>
 		</item>
 	</list>
 	
-	<p><span href="#attribute-content">The <cdml:node role="attribute">content</cdml:node> attribute</span> <em>may</em> be used to provide an expansion of the abbreviation.</p>
-	<p><span href="#attribute-about">The <cdml:node role="attribute">about</cdml:node> attribute</span> <em>may</em> be used to provide a resource which contains the expanded form.</p>
-	<p><cdml:node role="attribute">content</cdml:node> and <cdml:node role="attribute">about</cdml:node> attributes are mutually exclusive.</p>
+	<p><span href="#attribute-content">The <pml:node role="attribute">content</pml:node> attribute</span> <em>may</em> be used to provide an expansion of the abbreviation.</p>
+	<p><span href="#attribute-about">The <pml:node role="attribute">about</pml:node> attribute</span> <em>may</em> be used to provide a resource which contains the expanded form.</p>
+	<p><pml:node role="attribute">content</pml:node> and <pml:node role="attribute">about</pml:node> attributes are mutually exclusive.</p>
 
 	
 	<example>
-		<title><cdml:node role="element">abbr</cdml:node> element with inline expansion</title>
-		<cdml:code language="xml">
+		<title><pml:node role="element">abbr</pml:node> element with inline expansion</title>
+		<pml:code language="xml">
 &lt;p&gt;Example of &lt;abbr content="Document Markup Language"&gt;DML&lt;/abbr&gt;'s abbr element.&lt;/p&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 	<example>
-		<title><cdml:node role="element">abbr</cdml:node> element with remote expansion</title>
-		<cdml:code language="xml">
+		<title><pml:node role="element">abbr</pml:node> element with remote expansion</title>
+		<pml:code language="xml">
 &lt;p&gt;Example of &lt;abbr about="http://example.org/glossary#dml"&gt;DML&lt;/abbr&gt;'s abbr element.&lt;/p&gt;
-		</cdml:code>
+		</pml:code>
 	</example>
 
 </section>

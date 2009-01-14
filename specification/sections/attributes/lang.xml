@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:lang="en" xml:id="attribute-lang" class="attribute"
 	xmlns="http://purl.oclc.org/NET/dml/1.0/"
-	xmlns:cdml="http://purl.oclc.org/NET/cdml/1.0/"
+	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/"
 	xmlns:dct="http://purl.org/dc/terms/">
 
-	<title>The <cdml:node role="attribute">xml:lang</cdml:node> attribute</title>
+	<title>The <pml:node role="attribute">xml:lang</pml:node> attribute</title>
 	<metadata about="#attribute-lang">
 		<list>
 			<item property="dct:description">Language value of the element and its descendants.</item>
 		</list>
 	</metadata>
-	<p>The <cdml:node role="attribute">xml:lang</cdml:node> attribute identifies the language of the element and its descendants.</p>
+	<p>The <pml:node role="attribute">xml:lang</pml:node> attribute identifies the language of the element and its descendants.</p>
 	<p>Its value <em>must</em> be interpreted according <span href="#xml-lang">XML 1.0</span>.</p>
 
 </section>
