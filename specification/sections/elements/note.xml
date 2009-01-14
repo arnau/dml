@@ -10,7 +10,7 @@
 			<item property="dct:description">A note or annotation in a document.</item>
 		</list>
 	</metadata>
-	<p>The <pml:node role="element">note</pml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em status="review">DML islands</em> in non-DML documents.</p>
+	<p>The <pml:node role="element">note</pml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em>DML islands</em> in non-DML documents.</p>
 	<list>
 		<item>
 			<title>Flow</title>

@@ -11,7 +11,7 @@
 			<item property="dct:publisher">Arnau Siches</item>
 			<item property="dct:creator">Arnau Siches</item>
 			<item property="dct:created">2008-12-29</item>
-			<item property="dct:modified">2009-01-10</item>
+			<item property="dct:modified">2009-01-14</item>
 			<item property="dct:identifier">http://purl.oclc.org/NET/dml/1.0/</item>
 			<item property="dct:hasFormat">http://purl.oclc.org/NET/dml/1.0/pdf/</item>
 			<item property="dct:description">This specification defines the Document Markup Language (DML), a markup language for books, articles, documents, notes, etc.</item>

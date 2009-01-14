@@ -64,7 +64,7 @@ section[@role]
 			<p>Zero or more times.</p>
 		</item>
 	</list>
-	<p status="review">Therefore, to indicate that an “status” attribute is optional the expression will be <pml:node role="attribute">status?</pml:node>. Or, if a “section” element is repeatable the expression will be <pml:node role="element">section+</pml:node>.</p>
+	<p>Therefore, to indicate that an “status” attribute is optional the expression will be <pml:node role="attribute">status?</pml:node>. Or, if a “section” element is repeatable the expression will be <pml:node role="element">section+</pml:node>.</p>
 
 	<p>For brevity, throughout this document, assume that the following namespace prefixes have been defined:</p>
 	<list>

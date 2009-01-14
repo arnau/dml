@@ -36,6 +36,20 @@
 		</item>
 	</list>
 
-	<p status="draft">TODO: examples</p>
-
+	<example xml:id="ex-metadata">
+		<title>Usage of <pml:node role="element">metadata</pml:node> element</title>
+		<pml:code language="xml">
+&lt;metadata about="#document-id"&gt;
+  &lt;list&gt;
+    &lt;item property="dct:creator"&gt;Arnau Siches&lt;/item&gt;
+    &lt;item property="dct:created"&gt;2008-12-29&lt;/item&gt;
+    &lt;item property="dct:description"&gt;
+      &lt;p&gt;
+        This specification defines the Document Markup Language (DML), a markup language for books, articles, documents, notes, etc.
+      &lt;/p&gt;
+    &lt;/item&gt;
+  &lt;/list&gt;
+&lt;/metadata&gt;
+		</pml:code>
+	</example>
 </section>

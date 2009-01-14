@@ -48,7 +48,7 @@
 		</item>
 		<item>
 			<title><pml:value>chapter</pml:value></title>
-			<p status="review">A main division of a book.</p>
+			<p>A main division of a book.</p>
 		</item>
 		<item>
 			<title><pml:value>appendix</pml:value></title>
@@ -63,8 +63,8 @@
 			<p>A footer section. Usually it groups information about its parent such as rights, related links, etc.</p>
 		</item>
 		<item>
-			<title><pml:value status="draft">toc</pml:value></title>
-			<p status="draft">description …?</p>
+			<title><pml:value>toc</pml:value></title>
+			<p>A table of contents.</p>
 		</item>
 	</list>
 
