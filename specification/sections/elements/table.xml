@@ -38,6 +38,29 @@
 
 	<p>The <pml:node role="attribute">scope</pml:node> attribute <em>must</em> be used to provide the primary scope of groups. Allowed values are: <pml:value>row</pml:value> and <pml:value>column</pml:value>.</p>
 
-	<p status="draft">TODO: examples</p>
+	<example xml:id="ex-table">
+		<title>Usage of <pml:node role="element">table</pml:node> element</title>
+		<pml:code language="xml">
+&lt;table scope="row"&gt;
+  &lt;title&gt;ISO-639-1 codes&lt;/title&gt;
+  &lt;summary&gt;Common ISO-639-1 codes with its english name&lt;/summary&gt;
+  &lt;group role="header"&gt;
+    &lt;title&gt;Name&lt;/title&gt;
+    &lt;title&gt;Code&lt;/title&gt;
+  &lt;/group&gt;
+  &lt;group&gt;
+    &lt;group&gt;
+      &lt;cell&gt;English&lt;/cell&gt;
+      &lt;cell&gt;en&lt;/cell&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;cell&gt;German&lt;/cell&gt;
+      &lt;cell&gt;de&lt;/cell&gt;
+    &lt;/group&gt;
+  &lt;/group&gt;
+&lt;/table&gt;
+		</pml:code>
+	</example>
+
 
 </section>

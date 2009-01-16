@@ -50,7 +50,7 @@
 	</list>
 	<list>
 		<title>XML Schemes</title>
-		<item xml:id="pml-specification" href="http://purl.oclc.org/NET/pml/1.0/">Programming Markup Language Specification 1.0</item>
+		<item xml:id="pml-specification"><span href="http://purl.oclc.org/NET/pml/1.0/">Programming Markup Language Specification 1.0</span>. A. Siches. 2009.</item>
 	</list>
 	<list>
 		<title>CSS</title>
