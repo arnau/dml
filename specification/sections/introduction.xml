@@ -10,6 +10,8 @@
 	
 	<p>DML is a simple set of elements and attributes which define the basic semantics for a generic document. It is designed keeping in mind that all specialization may be defined through a scoped XML schema. For example, to mark up code it may be used the <em href="#pml-specification">Programming Markup Language</em>.</p>
 
+	<!-- Talking about why strucute is hierarchical (and not sequencial like html) -->
+
 	<p>The <em>metadata model</em> use a set of <span href="#metadata-attributes">metadata attributes</span> which are originally defined in <span href="#rdfa-syntax">RDFa Syntax</span> from W3C.</p>
 
 	<p>This specification has a style and nomenclature <span href="#conventions">conventions</span> to simplify the reading process.</p>

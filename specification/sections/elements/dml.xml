@@ -42,7 +42,7 @@
 &lt;dml xmlns="http://purl.oclc.org/NET/dml/1.0/"&gt;
   &lt;title&gt;Simple DML document&lt;/title&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
-&lt;/example&gt;
+&lt;/dml&gt;
 		</pml:code>
 	</example>
 
@@ -58,7 +58,7 @@
     &lt;/list&gt;
   &lt;/metadata&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet…&lt;/p&gt;
-&lt;/example&gt;
+&lt;/dml&gt;
 		</pml:code>
 	</example>
 
