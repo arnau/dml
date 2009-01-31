@@ -106,11 +106,8 @@ section[@role]
 			<item xml:id="ebnf-value"><pml:code language="ebnf">Value ::= '"' [^&lt;&gt;"]+ '"'</pml:code></item>
 			<item xml:id="ebnf-space"><pml:code language="ebnf">S ::= (#x20 | #x9 | #xD | #xA)+</pml:code></item>
 		</list>
-
+		<note xml:id="w3c-ebnf-notation" role="footnote">
+			<span href="http://www.w3.org/TR/REC-xml/#sec-notation">W3C notation</span>
+		</note>
 	</section>
-
-	<note xml:id="w3c-ebnf-notation" role="footnote">
-		<span href="http://www.w3.org/TR/REC-xml/#sec-notation">W3C notation</span>
-	</note>
-
 </section>

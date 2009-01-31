@@ -764,8 +764,8 @@ section[@role]</fo:block>
 
 	     <fo:block role="dml:section" id="d14e3265">
 		       <fo:block space-before="2em" space-after="0.83em" font-size="1.8em" font-weight="normal" keep-with-next.within-column="always" keep-together.within-column="always" role="dml:title" id="d14e3267">B.1 <fo:inline role="dml:span" id="d14e3268"><fo:footnote><fo:inline><fo:basic-link color="#005A9C" internal-destination="w3c-ebnf-notation">EBNF</fo:basic-link><fo:inline vertical-align="super" font-size="0.8em">[1]</fo:inline></fo:inline><fo:footnote-body><fo:block font-size="9pt" start-indent="0" padding="0" text-align="left" id="w3c-ebnf-notation"><fo:inline vertical-align="super" font-size="0.8em">[1]</fo:inline>
-		       <fo:inline role="dml:span" id="d14e3342"><fo:basic-link color="#005A9C" external-destination="http://www.w3.org/TR/REC-xml/#sec-notation">W3C notation</fo:basic-link><fo:inline> (http://www.w3.org/TR/REC-xml/#sec-notation)</fo:inline></fo:inline>
-	     </fo:block></fo:footnote-body></fo:footnote></fo:inline> definitions</fo:block>
+			         <fo:inline role="dml:span" id="d14e3341"><fo:basic-link color="#005A9C" external-destination="http://www.w3.org/TR/REC-xml/#sec-notation">W3C notation</fo:basic-link><fo:inline> (http://www.w3.org/TR/REC-xml/#sec-notation)</fo:inline></fo:inline>
+		       </fo:block></fo:footnote-body></fo:footnote></fo:inline> definitions</fo:block>
 		       <fo:list-block space-before="10pt" space-after="10pt" role="dml:list" id="d14e3272"><fo:list-item relative-align="baseline" padding-bottom="1pt" role="dml:item" id="ebnf-element"><fo:list-item-label end-indent="label-end()" text-align="end" wrap-option="no-wrap"><fo:block><fo:inline font="6pt ZapfDingbats" baseline-shift="0.4pt">●</fo:inline></fo:block></fo:list-item-label><fo:list-item-body start-indent="body-start()"><fo:block>
 				           <fo:inline font-size="0.87em" font-family="monospace">Element ::= <fo:basic-link color="#005A9C" internal-destination="ebnf-name">Name</fo:basic-link> ('[' <fo:basic-link color="#005A9C" internal-destination="ebnf-attribute">Attribute</fo:basic-link> ']')*</fo:inline>
 			         </fo:block></fo:list-item-body></fo:list-item><fo:list-item relative-align="baseline" padding-bottom="1pt" role="dml:item" id="ebnf-attribute"><fo:list-item-label end-indent="label-end()" text-align="end" wrap-option="no-wrap"><fo:block><fo:inline font="6pt ZapfDingbats" baseline-shift="0.4pt">●</fo:inline></fo:block></fo:list-item-label><fo:list-item-body start-indent="body-start()"><fo:block>
@@ -780,11 +780,8 @@ section[@role]</fo:block>
             </fo:block></fo:list-item-body></fo:list-item><fo:list-item relative-align="baseline" padding-bottom="1pt" role="dml:item" id="ebnf-space"><fo:list-item-label end-indent="label-end()" text-align="end" wrap-option="no-wrap"><fo:block><fo:inline font="6pt ZapfDingbats" baseline-shift="0.4pt">●</fo:inline></fo:block></fo:list-item-label><fo:list-item-body start-indent="body-start()"><fo:block>
                <fo:inline font-size="0.87em" font-family="monospace">S ::= (#x20 | #x9 | #xD | #xA)+</fo:inline>
             </fo:block></fo:list-item-body></fo:list-item></fo:list-block>
-
+		       
 	     </fo:block>
-
-	     
-
    </fo:block><fo:block role="dml:section" id="fdl-license">
 		    <fo:block font-size="2em" font-weight="normal" space-before="2em" space-after="0.67em" keep-with-next.within-column="always" keep-together.within-column="always" role="dml:title" id="d14e3350"><fo:marker marker-class-name="title"><fo:block-container position="absolute" top="40pt" left="0" width="15pt"><fo:block font-weight="bold" font-size="1.5em" text-align="center">C</fo:block></fo:block-container><fo:block margin-left="25pt">GNU Free Documentation License</fo:block></fo:marker>Appendix C — GNU Free Documentation License</fo:block>
       
