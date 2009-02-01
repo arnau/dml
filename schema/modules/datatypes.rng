@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Datatype Module -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+	datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+<define name="rfc4646.datatype">
+	<data type="language"/>
+</define>
+<!-- ContentTypes -->
+<define name="rfc2045.datatype">
+	<text/>
+</define>
+
+<define name="URI.datatype">
+	<data type="anyURI"/>
+</define>
+<!-- A space-separated list of Uniform Resource Identifiers, see [URI] -->
+<define name="URIs.datatype">
+	<text/>
+</define>
+
+<define name="URIorSafeCURIE.datatype">
+	<text/>
+</define>
+
+<define name="CURIE.datatype">
+	<text/>
+</define>
+
+<define name="CURIEs.datatype">
+	<text/>
+</define>
+
+<define name="NMTOKEN.datatype">
+	<data type="NMTOKEN"/>
+</define>
+
+<define name="NMTOKENS.datatype">
+	<data type="NMTOKENS"/>
+</define>
+
+<define name="ID.datatype">
+	<data type="ID"/>
+</define>
+
+<define name="IDREF.datatype">
+	<data type="IDREF"/>
+</define>
+
+<define name="IDREFS.datatype">
+	<data type="IDREFS"/>
+</define>
+
+</grammar>

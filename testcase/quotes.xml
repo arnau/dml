@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dml xml:lang="en"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:dct="http://purl.org/dc/terms/">
+	<title>Quotes</title>
+	<metadata about="">
+		<list>
+			<item property="dct:creator">Arnau Siches</item>
+			<item property="dct:created">2009-02-01</item>
+		</list>
+	</metadata>
+	<p>Lorem <quote>ipsum dolor</quote> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem <quote citation="http://resource">ipsum dolor</quote> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<quote>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<citation>some resource</citation>
+	</quote>
+</dml>

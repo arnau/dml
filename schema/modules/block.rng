@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Block Module -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<start>
+	<choice>
+		<ref name="dml.element"/>
+		<ref name="note.element"/>
+	</choice>
+</start>
+
+<define name="example.element">
+	<element name="example">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<optional>
+			<ref name="title.element"/>
+		</optional>
+		<ref name="block.flow"/>
+	</element>
+</define>
+
+<define name="figure.element">
+	<element name="figure">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<optional>
+			<ref name="title.element"/>
+		</optional>
+		<ref name="block.flow"/>
+	</element>
+</define>
+
+<define name="item.element">
+	<element name="item">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<choice>
+			<group>
+				<zeroOrMore>
+					<ref name="title.element"/>
+				</zeroOrMore>
+				<ref name="block.flow"/>
+			</group>
+			<ref name="inline.flow"/>
+		</choice>
+	</element>
+</define>
+
+<define name="list.element">
+	<element name="list">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="role.list.attribute"/>
+		<optional>
+			<ref name="title.element"/>
+		</optional>
+		<oneOrMore>
+			<ref name="item.element"/>
+		</oneOrMore>
+	</element>
+</define>
+
+<define name="metadata.element">
+	<element name="metadata">
+		<ref name="metadata.attributes"/>
+		<ref name="block.flow"/>
+	</element>
+</define>
+
+<define name="note.element">
+	<element name="note">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="role.note.attribute"/>
+		<ref name="inline.block.flow"/>
+	</element>
+</define>
+
+<define name="object.block.element">
+	<element name="object">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="src.attribute"/>
+		<ref name="type.attribute"/>
+		<choice>
+			<ref name="block.flow"/>
+			<zeroOrMore>
+				<ref name="section.element"/>
+			</zeroOrMore>
+		</choice>
+	</element>
+</define>
+
+<define name="p.element">
+	<element name="p">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="quote.block.element">
+	<element name="quote">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<oneOrMore>
+			<choice>
+				<ref name="example.element"/>
+				<ref name="figure.element"/>
+				<ref name="list.element"/>
+				<ref name="metadata.element"/>
+				<ref name="note.element"/>
+				<ref name="object.block.element"/>
+				<ref name="p.element"/>
+				<ref name="section.element"/>
+				<ref name="table.element"/>
+				<ref name="section.element"/>
+				<ref name="other"/>
+			</choice>
+		</oneOrMore>
+		<optional>
+			<ref name="citation.element"/>
+		</optional>
+	</element>
+</define>
+<define name="citation.element">
+	<element name="citation">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="section.element">
+	<element name="section">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="role.section.attribute"/>
+		<ref name="title.element"/>
+		<ref name="block.flow"/>
+		<zeroOrMore>
+			<ref name="section.element"/>
+		</zeroOrMore>
+	</element>
+</define>
+
+<define name="title.element">
+	<element name="title">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="dml.element">
+	<element name="dml">
+		<ref name="core.attributes"/>
+		<ref name="title.element"/>
+		<ref name="block.flow"/>
+		<zeroOrMore>
+			<ref name="section.element"/>
+		</zeroOrMore>
+	</element>
+</define>
+
+<define name="block.flow">
+	<zeroOrMore>
+		<choice>
+			<ref name="example.element"/>
+			<ref name="figure.element"/>
+			<ref name="list.element"/>
+			<ref name="metadata.element"/>
+			<ref name="note.element"/>
+			<ref name="object.block.element"/>
+			<ref name="p.element"/>
+			<ref name="quote.block.element"/>
+			<ref name="table.element"/>
+			<ref name="other"/>
+		</choice>
+	</zeroOrMore>
+</define>
+
+<define name="inline.block.flow">
+	<choice>
+		<group>
+			<optional>
+				<ref name="title.element"/>
+			</optional>
+			<ref name="block.flow"/>
+			<zeroOrMore>
+				<ref name="section.element"/>
+			</zeroOrMore>
+		</group>
+		<ref name="inline.flow"/>
+	</choice>
+</define>
+
+<!-- silent errors for non DML elements -->
+<define name="other">
+	<zeroOrMore>
+		<element>
+			<anyName>
+				<except>
+					<nsName/>
+				</except>
+			</anyName>
+			<zeroOrMore>
+				<choice>
+					<attribute>
+						<anyName/>
+					</attribute>
+					<ref name="block.flow"/>
+					<ref name="inline.flow"/>
+					<ref name="other"/>
+				</choice>
+			</zeroOrMore>
+		</element>
+	</zeroOrMore>
+</define>
+
+</grammar>

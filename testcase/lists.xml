@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dml xml:lang="en"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:dct="http://purl.org/dc/terms/">
+	<title>List structure</title>
+	<metadata about="">
+		<list>
+			<item property="dct:creator">Arnau Siches</item>
+			<item property="dct:created">2009-01-31</item>
+		</list>
+	</metadata>
+	<list>
+		<item>item</item>
+		<item>item</item>
+		<item>item</item>
+	</list>
+	<list>
+		<title>list title</title>
+		<item>item</item>
+		<item>item</item>
+		<item>item</item>
+	</list>
+	<list role="ordered">
+		<item>item</item>
+		<item>item</item>
+		<item>item</item>
+	</list>
+	<list>
+		<item>
+			<title>term</title>
+			<p>value</p>
+		</item>
+		<item>
+			<title>term</title>
+			<p>value</p>
+		</item>
+		<item>
+			<title>term</title>
+			<p>value</p>
+		</item>
+	</list>
+	<list>
+		<item>
+			<title>term</title>
+			<title>term2</title>
+			<p>value</p>
+		</item>
+		<item>
+			<title>term</title>
+			<p>value</p>
+			<p>value</p>
+		</item>
+	</list>
+</dml>

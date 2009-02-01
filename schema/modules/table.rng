@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Table Module -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<define name="table.element">
+	<element name="table">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="scope.attribute"/>
+		<optional>
+			<ref name="title.element"/>
+		</optional>
+		<ref name="summary.element"/>
+		<oneOrMore>
+			<ref name="group.element"/>
+		</oneOrMore>
+	</element>
+</define>
+<define name="summary.element">
+	<element name="summary">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+<define name="group.element">
+	<element name="group">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="role.group.attribute"/>
+			<choice>
+				<oneOrMore>
+					<ref name="group.element"/>
+				</oneOrMore>
+				<group>
+					<oneOrMore>
+						<choice>
+							<ref name="title.element"/>
+							<ref name="cell.element"/>
+						</choice>
+					</oneOrMore>
+				</group>
+			</choice>
+	</element>
+</define>
+<define name="cell.element">
+	<element name="cell">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<optional>
+			<ref name="title.element"/>
+		</optional>
+		<choice>
+			<ref name="block.flow"/>
+			<ref name="inline.flow"/>
+		</choice>
+	</element>
+</define>
+
+</grammar>

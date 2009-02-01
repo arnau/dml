@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dml xml:lang="en"
+	xmlns="http://purl.oclc.org/NET/dml/1.0/"
+	xmlns:dct="http://purl.org/dc/terms/">
+	<title>Basic structure with metadata</title>
+	<metadata about="">
+		<list>
+			<item property="dct:creator">Arnau Siches</item>
+			<item property="dct:created">2009-01-31</item>
+		</list>
+	</metadata>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<list>
+		<item>item</item>
+		<item>item</item>
+		<item>item</item>
+	</list>
+	<note>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</note>
+	<note xml:id="simple-footnote" role="footnote">
+		definition of something
+	</note>
+</dml>

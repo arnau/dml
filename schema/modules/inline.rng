@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Inline Module -->
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<define name="abbr.element">
+	<element name="abbr">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<oneOrMore>
+			<choice>
+				<text/>
+				<ref name="em.element"/>
+				<ref name="object.inline.element"/>
+				<ref name="span.element"/>
+				<ref name="sub.element"/>
+				<ref name="sup.element"/>
+				<ref name="other"/>
+			</choice>
+		</oneOrMore>
+	</element>
+</define>
+<define name="em.element">
+	<element name="em">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="role.em.attribute"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+<define name="object.inline.element">
+	<element name="object">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="src.attribute"/>
+		<ref name="type.attribute"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="quote.inline.element">
+	<element name="quote">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="citation.attribute"/>
+		<oneOrMore>
+			<choice>
+				<text/>
+				<ref name="em.element"/>
+				<ref name="object.inline.element"/>
+				<ref name="span.element"/>
+				<ref name="sub.element"/>
+				<ref name="sup.element"/>
+				<ref name="other"/>
+			</choice>
+		</oneOrMore>
+	</element>
+</define>
+
+<define name="span.element">
+	<element name="span">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="sub.element">
+	<element name="sub">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="sup.element">
+	<element name="sup">
+		<ref name="core.attributes"/>
+		<ref name="metadata.attributes"/>
+		<ref name="inline.flow"/>
+	</element>
+</define>
+
+<define name="inline.class">
+	<choice>
+		<ref name="abbr.element"/>
+		<ref name="em.element"/>
+		<ref name="object.inline.element"/>
+		<ref name="quote.inline.element"/>
+		<ref name="span.element"/>
+		<ref name="sub.element"/>
+		<ref name="sup.element"/>
+	</choice>
+</define>
+
+<define name="inline.flow">
+	<oneOrMore>
+		<choice>
+			<text/>
+			<ref name="inline.class"/>
+			<ref name="other"/>
+		</choice>
+	</oneOrMore>
+</define>
+
+</grammar>
