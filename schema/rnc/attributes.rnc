@@ -1,0 +1,67 @@
+# Attributes Module
+
+base.attribute = attribute xml:base { URI.datatype }?
+class.attribute = attribute class { NMTOKENS.datatype }?
+dir.attribute = attribute dir { string "ltr" | string "rtl" }?
+href.attribute = attribute href { URI.datatype }?
+id.attribute = attribute xml:id { ID.datatype }?
+lang.attribute = attribute xml:lang { rfc4646.datatype }?
+status.attribute =
+  attribute status {
+    string "added"
+    | string "deleted"
+    | string "draft"
+    | string "review"
+    | NMTOKEN.datatype
+  }?
+about.attribute = attribute about { URIorSafeCURIE.datatype }?
+content.attribute = attribute content { text }?
+datatype.attribute = attribute datatype { CURIE.datatype }?
+property.attribute = attribute property { CURIEs.datatype }?
+rel.attribute = attribute rel { CURIEs.datatype }?
+resource.attribute = attribute resource { URIorSafeCURIE.datatype }?
+rev.attribute = attribute rev { CURIEs.datatype }?
+typeof.attribute = attribute typeof { CURIEs.datatype }?
+core.attributes =
+  base.attribute,
+  class.attribute,
+  dir.attribute,
+  href.attribute,
+  id.attribute,
+  lang.attribute,
+  status.attribute
+metadata.attributes =
+  about.attribute,
+  content.attribute,
+  datatype.attribute,
+  property.attribute,
+  rel.attribute,
+  resource.attribute,
+  rev.attribute,
+  typeof.attribute
+# object attributes
+src.attribute = attribute src { URI.datatype }
+type.attribute = attribute type { rfc2045.datatype }?
+# quote.inline attribute
+citation.attribute = attribute citation { URI.datatype }?
+role.em.attribute = attribute role { string "strong" }?
+role.list.attribute = attribute role { string "ordered" }?
+role.note.attribute =
+  attribute role {
+    string "tip"
+    | string "warning"
+    | string "sidebar"
+    | string "footnote"
+  }?
+role.section.attribute =
+  attribute role {
+    string "part"
+    | string "chapter"
+    | string "appendix"
+    | string "header"
+    | string "footer"
+    | string "toc"
+  }?
+scope.attribute = attribute scope { string "row" | string "column" }
+role.group.attribute =
+  attribute role { string "header" | string "footer" }?

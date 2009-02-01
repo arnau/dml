@@ -1,0 +1,54 @@
+# Inline Module
+
+abbr.element =
+  element abbr {
+    core.attributes,
+    metadata.attributes,
+    (text
+     | em.element
+     | object.inline.element
+     | span.element
+     | sub.element
+     | sup.element
+     | other)+
+  }
+em.element =
+  element em {
+    core.attributes, metadata.attributes, role.em.attribute, inline.flow
+  }
+object.inline.element =
+  element object {
+    core.attributes,
+    metadata.attributes,
+    src.attribute,
+    type.attribute,
+    inline.flow
+  }
+quote.inline.element =
+  element quote {
+    core.attributes,
+    metadata.attributes,
+    citation.attribute,
+    (text
+     | em.element
+     | object.inline.element
+     | span.element
+     | sub.element
+     | sup.element
+     | other)+
+  }
+span.element =
+  element span { core.attributes, metadata.attributes, inline.flow }
+sub.element =
+  element sub { core.attributes, metadata.attributes, inline.flow }
+sup.element =
+  element sup { core.attributes, metadata.attributes, inline.flow }
+inline.class =
+  abbr.element
+  | em.element
+  | object.inline.element
+  | quote.inline.element
+  | span.element
+  | sub.element
+  | sup.element
+inline.flow = (text | inline.class | other)+

@@ -1,0 +1,27 @@
+# Table Module
+
+table.element =
+  element table {
+    core.attributes,
+    metadata.attributes,
+    scope.attribute,
+    title.element?,
+    summary.element,
+    group.element+
+  }
+summary.element =
+  element summary { core.attributes, metadata.attributes, inline.flow }
+group.element =
+  element group {
+    core.attributes,
+    metadata.attributes,
+    role.group.attribute,
+    (group.element+ | (title.element | cell.element)+)
+  }
+cell.element =
+  element cell {
+    core.attributes,
+    metadata.attributes,
+    title.element?,
+    (block.flow | inline.flow)
+  }

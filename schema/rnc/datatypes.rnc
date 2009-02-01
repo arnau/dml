@@ -1,0 +1,16 @@
+# Datatype Module
+
+rfc4646.datatype = xsd:language
+# ContentTypes
+rfc2045.datatype = text
+URI.datatype = xsd:anyURI
+# A space-separated list of Uniform Resource Identifiers, see [URI]
+URIs.datatype = text
+URIorSafeCURIE.datatype = text
+CURIE.datatype = text
+CURIEs.datatype = text
+NMTOKEN.datatype = xsd:NMTOKEN
+NMTOKENS.datatype = xsd:NMTOKENS
+ID.datatype = xsd:ID
+IDREF.datatype = xsd:IDREF
+IDREFS.datatype = xsd:IDREFS

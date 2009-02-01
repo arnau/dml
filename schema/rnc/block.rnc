@@ -1,0 +1,100 @@
+# Block Module
+
+namespace inherit = inherit
+
+start = dml.element | note.element
+example.element =
+  element example {
+    core.attributes, metadata.attributes, title.element?, block.flow
+  }
+figure.element =
+  element figure {
+    core.attributes, metadata.attributes, title.element?, block.flow
+  }
+item.element =
+  element item {
+    core.attributes,
+    metadata.attributes,
+    ((title.element*, block.flow) | inline.flow)
+  }
+list.element =
+  element list {
+    core.attributes,
+    metadata.attributes,
+    role.list.attribute,
+    title.element?,
+    item.element+
+  }
+metadata.element = element metadata { metadata.attributes, block.flow }
+note.element =
+  element note {
+    core.attributes,
+    metadata.attributes,
+    role.note.attribute,
+    inline.block.flow
+  }
+object.block.element =
+  element object {
+    core.attributes,
+    metadata.attributes,
+    src.attribute,
+    type.attribute,
+    (block.flow | section.element*)
+  }
+p.element =
+  element p { core.attributes, metadata.attributes, inline.flow }
+quote.block.element =
+  element quote {
+    core.attributes,
+    metadata.attributes,
+    (example.element
+     | figure.element
+     | list.element
+     | metadata.element
+     | note.element
+     | object.block.element
+     | p.element
+     | section.element
+     | table.element
+     | section.element
+     | other)+,
+    citation.element?
+  }
+citation.element =
+  element citation { core.attributes, metadata.attributes, inline.flow }
+section.element =
+  element section {
+    core.attributes,
+    metadata.attributes,
+    role.section.attribute,
+    title.element,
+    block.flow,
+    section.element*
+  }
+title.element =
+  element title { core.attributes, metadata.attributes, inline.flow }
+dml.element =
+  element dml {
+    core.attributes, title.element, block.flow, section.element*
+  }
+block.flow =
+  (example.element
+   | figure.element
+   | list.element
+   | metadata.element
+   | note.element
+   | object.block.element
+   | p.element
+   | quote.block.element
+   | table.element
+   | other)*
+inline.block.flow =
+  (title.element?, block.flow, section.element*) | inline.flow
+# silent errors for non DML elements
+other =
+  element * - inherit:* {
+    (attribute * { text }
+     | block.flow
+     | inline.flow
+     | other)*
+  }*

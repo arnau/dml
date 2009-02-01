@@ -1,0 +1,9 @@
+# XHTML Strict
+
+namespace ns1 = "http://purl.oclc.org/NET/dml/1.0/"
+
+include "datatypes.rnc" inherit = ns1
+include "attributes.rnc" inherit = ns1
+include "inline.rnc" inherit = ns1
+include "block.rnc" inherit = ns1
+include "table.rnc" inherit = ns1
