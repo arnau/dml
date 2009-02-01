@@ -20,6 +20,7 @@
 		<title>IETF (Internet Engineering Task Force)</title>
 		<item xml:id="rfc2119"><span href="http://www.apps.ietf.org/rfc/rfc2119.html">RFC 2119: Key words for use in RFCs to Indicate Requirement Levels</span>. S. Bradner. 1997.</item>
 		<item xml:id="rfc4646"><span href="http://www.apps.ietf.org/rfc/rfc4646.html">RFC 4646: Tags for the Identification of Languages</span>. A. Phillips, Ed., M. Davis. 2006.</item>
+		<item xml:id="rfc2045"><span href="http://www.apps.ietf.org/rfc/rfc2045.html">RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies</span>. N. Freed, N. Borenstein. 1996.</item>
 	</list>
 	<list>
 		<title>xml namespace</title>
