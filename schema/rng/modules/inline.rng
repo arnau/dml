@@ -33,6 +33,8 @@
 		<ref name="metadata.attributes"/>
 		<ref name="src.attribute"/>
 		<ref name="type.attribute"/>
+		<ref name="width.attribute"/>
+		<ref name="height.attribute"/>
 		<ref name="inline.flow"/>
 	</element>
 </define>

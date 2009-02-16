@@ -26,6 +26,7 @@
 			<title>Attributes</title>
 			<pml:code language="xpath">
 ( $core.attrs* | $meta.attrs* | @src | @type? )
+>>>>>>>>>>>>>>>>>>>( $core.attrs* | $meta.attrs* | @src | @type? | @width? | @height? )
 			</pml:code>
 		</item>
 		<item>

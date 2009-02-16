@@ -14,3 +14,5 @@ NMTOKENS.datatype = xsd:NMTOKENS
 ID.datatype = xsd:ID
 IDREF.datatype = xsd:IDREF
 IDREFS.datatype = xsd:IDREFS
+dimension.datatype =
+  xsd:string { pattern = "[1-9][0-9\.?]*(px|%|em|ex|pt|in|cm|mm|pc)" }

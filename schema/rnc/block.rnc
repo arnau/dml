@@ -39,6 +39,8 @@ object.block.element =
     metadata.attributes,
     src.attribute,
     type.attribute,
+    width.attribute,
+    height.attribute,
     (block.flow | section.element*)
   }
 p.element =

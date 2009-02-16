@@ -22,6 +22,8 @@ object.inline.element =
     metadata.attributes,
     src.attribute,
     type.attribute,
+    width.attribute,
+    height.attribute,
     inline.flow
   }
 quote.inline.element =

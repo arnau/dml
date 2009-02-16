@@ -166,6 +166,20 @@
 		</attribute>
 	</optional>
 </define>
+<define name="height.attribute">
+	<optional>
+		<attribute name="height">
+			<ref name="dimension.datatype"/>
+		</attribute>
+	</optional>
+</define>
+<define name="width.attribute">
+	<optional>
+		<attribute name="width">
+			<ref name="dimension.datatype"/>
+		</attribute>
+	</optional>
+</define>
 <!-- quote.inline attribute -->
 <define name="citation.attribute">
 	<optional>

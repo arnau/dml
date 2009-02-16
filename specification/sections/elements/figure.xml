@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<pml:code language="xpath">
-( dml | example | note | section )
+( dml | example | note | section | item | cell )
 			</pml:code>
 		</item>
 	</list>
