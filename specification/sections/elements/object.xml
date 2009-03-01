@@ -25,20 +25,24 @@
 		<item>
 			<title>Attributes</title>
 			<pml:code language="xpath">
-( $core.attrs* | $meta.attrs* | @src | @type? )
->>>>>>>>>>>>>>>>>>>( $core.attrs* | $meta.attrs* | @src | @type? | @width? | @height? )
+( $core.attrs* | $meta.attrs* | @src | @type? | @width? | @height? )
 			</pml:code>
 		</item>
 		<item>
 			<title>Parents</title>
 			<pml:code language="xpath">
-( dml | $block | $inline )
+(
+  abbr | cell | citation | dml | em | example | figure | item | note | object | p | quote | section | span | sub | sup | title
+)
 			</pml:code>
 		</item>
 	</list>
 
 	<p>The <pml:node role="attribute">src</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource. It also specifies a <em>resource object</em> in RDF triple, as it is described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 	<p>The <pml:node role="attribute">type</pml:node> attribute <em>may</em> be used to provide the <span href="#rfc2045">MIME type</span> of the resource.</p>
+	<p>The <pml:node role="attribute">width</pml:node> attribute <em>may</em> be used to provide the width dimension of the resource.</p>
+	<p>The <pml:node role="attribute">height</pml:node> attribute <em>may</em> be used to provide the height dimension of the resource.</p>
+	
 	
 	<p>The children of the <pml:node role="element">object</pml:node> element <em>must</em> be used to provide an alternative content if the resource provided by <pml:node role="attribute">src</pml:node> fails to load.</p>
 	<p>The alternative content <em>must</em> be <em>inline</em> or <em>block</em> in accordance of the flow of its <pml:node role="element">object</pml:node> parent.</p>
