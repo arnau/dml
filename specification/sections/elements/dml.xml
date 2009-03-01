@@ -23,7 +23,7 @@
 			<pml:code language="xpath">
 (
   title,
-  $block[not( title | citation | preceding-sibling::section )]+,
+  ( example | figure | list | metadata | note | object | p | quote | table )*,
   section*
 )
 			</pml:code>
