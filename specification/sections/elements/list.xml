@@ -31,7 +31,7 @@
 		<item>
 			<title>Parents</title>
 			<pml:code language="xpath">
-( dml | $block[$block[not( self::list )]] )
+( cell | dml | example | figure | metadata | note | object | quote | section )
 			</pml:code>
 		</item>
 	</list>
