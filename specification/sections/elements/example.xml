@@ -19,7 +19,10 @@
 		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
-( title?, $block[not( example | citation )]+ )
+(
+  title?,
+  ( figure | list | metadata | note | object | p | quote | table )+
+)
 			</pml:code>
 		</item>
 		<item>
