@@ -19,7 +19,13 @@
 		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
-( title, $block[not( title | citation )]+ )
+(
+  title,
+  (
+    example | figure | list | metadata | note |
+    object | p | quote | section | table
+  )+
+)
 			</pml:code>
 		</item>
 		<item>
@@ -31,7 +37,7 @@
 		<item>
 			<title>Parents</title>
 			<pml:code language="xpath">
-( dml | note | object[parent::$block] | quote[parent::$block] | section )
+( dml | note | object | quote | section )
 			</pml:code>
 		</item>
 	</list>
