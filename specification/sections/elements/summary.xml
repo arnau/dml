@@ -19,7 +19,7 @@
 		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
-( $inline | text() )+
+( abbr | em | span | sub | sup | text() )+
 			</pml:code>
 		</item>
 		<item>
