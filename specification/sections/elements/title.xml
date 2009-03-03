@@ -19,7 +19,7 @@
 		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
-( $inline | text() )+
+( abbr | em | span | sub | sup | text() )+
 			</pml:code>
 		</item>
 		<item>
@@ -31,7 +31,10 @@
 		<item>
 			<title>Parents</title>
 			<pml:code language="xpath">
-( dml | $block[$block] )
+(
+  dml | example | figure | group | item | list | note |
+  object | quote | section | table
+)
 			</pml:code>
 		</item>
 	</list>
