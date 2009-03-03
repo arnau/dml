@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">figure</pml:node> element is a figure container; it usually contains an illustration or something to be shown graphically.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 (

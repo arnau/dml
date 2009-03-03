@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">note</pml:node> element represents a generic document note or annotation. It <em>may</em> be used as a root element in <em>DML islands</em> in non-DML documents.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 (

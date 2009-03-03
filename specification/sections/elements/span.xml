@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">span</pml:node> element has no specific semantic. It is provided as a container of inline content.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#inline-flow">Inline</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( abbr | em | span | sub | sup | text() )+

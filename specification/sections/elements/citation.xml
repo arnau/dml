@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">citation</pml:node> element represents a citation reference of a quotation block.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( abbr | em | metadata | object | quote | span | sub | sup | text() )+

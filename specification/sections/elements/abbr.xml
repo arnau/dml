@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">abbr</pml:node> element represents an abbreviation or acronym.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#inline-flow">Inline</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( em | metadata | object | quote | span | sub | sup | text() )+

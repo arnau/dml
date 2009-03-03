@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">summary</pml:node> element is a tabular data summary.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( abbr | em | span | sub | sup | text() )+

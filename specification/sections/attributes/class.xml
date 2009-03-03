@@ -11,6 +11,7 @@
 		</list>
 	</metadata>
 	<p>The <pml:node role="attribute">class</pml:node> attribute provides additional user-specified classification for an element. Value type is <pml:datatype>xs:NMTOKENS</pml:datatype>.</p>
+	<!-- explanation of xs:NMTOKENS cos it seems too hard for somebody -->
 	<p>Any number of elements <em>may</em> be assigned the same class name.</p>
 
 </section>

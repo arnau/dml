@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">object</pml:node> element represents a generic embedded media object like images, videos, audio and other types of multimedia files.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p>When its parent is an inline element or a block element that only allows inline elements its flow is <span href="#inline-flow">inline</span>, otherwise its flow is <span href="#block-flow">block</span>.</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 (
@@ -44,6 +40,8 @@
 			</pml:code>
 		</item>
 	</list>
+
+	<p>When its parent is an inline element or a block element that only allows inline elements its flow is inline, otherwise its flow is block.</p>
 
 	<p>The <pml:node role="attribute">src</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource. It also specifies a <em>resource object</em> in RDF triple, as it is described in <span href="#rdfa-syntax">RDFa Recomendation</span> of W3C.</p>
 	<p>The <pml:node role="attribute">type</pml:node> attribute <em>may</em> be used to provide the <span href="#rfc2045">MIME type</span> of the resource.</p>

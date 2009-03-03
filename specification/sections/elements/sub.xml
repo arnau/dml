@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">sub</pml:node> element represents a subscript.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#inline-flow">Inline</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( abbr | em | span | sub | sup | text() )+

@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">list</pml:node> element represents a list of items.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( title?, item+ )

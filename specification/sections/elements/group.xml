@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">group</pml:node> element represents a generic table cell container.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 ( group+ | title+ | ( title?, cell+ ) )

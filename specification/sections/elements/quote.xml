@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">quote</pml:node> element represents a generic quotation container.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p>When its parent is an inline element or a block element that only allows inline elements its flow is <span href="#inline-flow">inline</span>, otherwise its flow is <span href="#block-flow">block</span>.</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 (
@@ -45,8 +41,9 @@
 		</item>
 	</list>
 
-	<p>The <pml:node role="attribute">citation</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource cited when the flow of <pml:node role="element">quote</pml:node> element is <em>inline</em>, otherwise it <em>must not</em> be used.</p>
+	<p>When its parent is an inline element or a block element that only allows inline elements its flow is inline, otherwise its flow is block.</p>
 
+	<p>The <pml:node role="attribute">citation</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource cited when the flow of <pml:node role="element">quote</pml:node> element is <em>inline</em>, otherwise it <em>must not</em> be used.</p>
 
 	<example xml:id="ex-block-quote">
 		<title>Usage of block flow <pml:node role="element">quote</pml:node> element.</title>

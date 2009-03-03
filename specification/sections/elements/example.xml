@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">example</pml:node> element represents an example.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 (

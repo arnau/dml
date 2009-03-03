@@ -13,10 +13,6 @@
 	<p>The <pml:node role="element">cell</pml:node> element represents a table data container.</p>
 	<list>
 		<item>
-			<title>Flow</title>
-			<p href="#block-flow">Block</p>
-		</item>
-		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
 (
