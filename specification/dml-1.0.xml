@@ -45,7 +45,7 @@
 		<p>Usually any elements belong to a single flow type, block or inline flow type but there are two cases (<pml:node role="element">object</pml:node> and <pml:node role="element">quote</pml:node>) where they change their type depending on their sibling elements.</p>
 		<section xml:id="block-flow">
 			<title>Block</title>
-			<p>Block elements are containers of other block elements or wrappers of <span href="#inline-flow">inline</span> elements and raw text.</p>
+			<p>Block elements are containers of other block elements or wrappers of inline elements and raw text.</p>
 		</section>
 		<section xml:id="inline-flow">
 			<title>Inline</title>
@@ -53,9 +53,22 @@
 		</section>
 	</section>
 
-	<section status="draft">
+	<section xml:id="dml-schema">
 		<title>Schema</title>
-		<p>RELAX NG and Schematron references</p>
+		<p>This section is <em>informative</em>.</p>
+		<section xml:id="dml-rng">
+			<title>Relax NG for DML</title>
+			<pml:code language="xml">
+<xi:include href="../schema/rng/dml-all-in-one.rng" parse="text"/>
+			</pml:code>
+		</section>
+		<section xml:id="dml-sch" status="draft">
+			<title>Schematron for DML</title>
+			<pml:code language="xml">
+				<p>coming soon</p>
+<!-- <xi:include href="../schema/rng/dml-all-in-one.rng" parse="text"/> -->
+			</pml:code>
+		</section>
 	</section>
 
 	<xi:include href="sections/resources.xml"/>
