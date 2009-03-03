@@ -19,7 +19,13 @@
 		<item>
 			<title>Children</title>
 			<pml:code language="xpath">
-( $block[not( quote | citation )]+ citation? | ( $inline | text() )+ )
+(
+  (
+    example | figure | list | note | object | p | section | table | title
+  )+, citation? | (
+    abbr | em | object | span | sub | sup | text()
+  )+
+)
 			</pml:code>
 		</item>
 		<item>
@@ -31,7 +37,10 @@
 		<item>
 			<title>Parents</title>
 			<pml:code language="xpath">
-( dml | $block[not( quote | citation )] | $inline[not( quote )] )
+(
+  abbr | cell | dml | em | example | figure | item | note |
+  object | p | section | span | title
+)
 			</pml:code>
 		</item>
 	</list>
