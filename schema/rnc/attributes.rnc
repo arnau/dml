@@ -44,8 +44,6 @@ src.attribute = attribute src { URI.datatype }
 type.attribute = attribute type { rfc2045.datatype }?
 height.attribute = attribute height { dimension.datatype }?
 width.attribute = attribute width { dimension.datatype }?
-# quote.inline attribute
-citation.attribute = attribute citation { URI.datatype }?
 role.em.attribute = attribute role { string "strong" }?
 role.list.attribute = attribute role { string "ordered" }?
 role.note.attribute =

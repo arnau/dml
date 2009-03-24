@@ -30,14 +30,15 @@ quote.inline.element =
   element quote {
     core.attributes,
     metadata.attributes,
-    citation.attribute,
     (text
      | em.element
+     | metadata.element
      | object.inline.element
      | span.element
      | sub.element
      | sup.element
-     | other)+
+     | other)+,
+    citation.element?
   }
 span.element =
   element span { core.attributes, metadata.attributes, inline.flow }

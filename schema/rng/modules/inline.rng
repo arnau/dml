@@ -43,11 +43,11 @@
 	<element name="quote">
 		<ref name="core.attributes"/>
 		<ref name="metadata.attributes"/>
-		<ref name="citation.attribute"/>
 		<oneOrMore>
 			<choice>
 				<text/>
 				<ref name="em.element"/>
+				<ref name="metadata.element"/>
 				<ref name="object.inline.element"/>
 				<ref name="span.element"/>
 				<ref name="sub.element"/>
@@ -55,6 +55,9 @@
 				<ref name="other"/>
 			</choice>
 		</oneOrMore>
+		<optional>
+			<ref name="citation.element"/>
+		</optional>
 	</element>
 </define>
 

@@ -180,14 +180,6 @@
 		</attribute>
 	</optional>
 </define>
-<!-- quote.inline attribute -->
-<define name="citation.attribute">
-	<optional>
-		<attribute name="citation">
-			<ref name="URI.datatype"/>
-		</attribute>
-	</optional>
-</define>
 
 <define name="role.em.attribute">
 	<optional>

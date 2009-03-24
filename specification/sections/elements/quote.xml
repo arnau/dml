@@ -27,7 +27,7 @@
 		<item>
 			<title>Attributes</title>
 			<pml:code language="xpath">
-( $core.attrs* | $meta.attrs* | @citation? )
+( $core.attrs* | $meta.attrs* )
 			</pml:code>
 		</item>
 		<item>
@@ -42,8 +42,6 @@
 	</list>
 
 	<p>When its parent is an inline element or a block element that only allows inline elements its flow is inline, otherwise its flow is block.</p>
-
-	<p>The <pml:node role="attribute">citation</pml:node> attribute <em>must</em> be used to provide the URI (<pml:datatype>xs:anyURI</pml:datatype>) of the resource cited when the flow of <pml:node role="element">quote</pml:node> element is <em>inline</em>, otherwise it <em>must not</em> be used.</p>
 
 	<example xml:id="ex-block-quote">
 		<title>Usage of block flow <pml:node role="element">quote</pml:node> element.</title>
@@ -63,7 +61,7 @@
 		<title>Usage of inline flow <pml:node role="element">quote</pml:node> element.</title>
 		<pml:code language="xml">
 &lt;p&gt;
-  […] in that case, when the DML specification says &lt;quote citation="http://purl.oclc.org/NET/dml/1.0/"&gt;well suited to books, articles and annotations&lt;/quote&gt; it means […]
+  […] in that case, when the DML specification says &lt;quote about="http://purl.oclc.org/NET/dml/1.0/"&gt;well suited to books, articles and annotations&lt;/quote&gt; it means […]
 &lt;/p&gt;
 		</pml:code>
 	</example>

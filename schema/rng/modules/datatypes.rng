@@ -6,7 +6,7 @@
 <define name="rfc4646.datatype">
 	<data type="language"/>
 </define>
-<!-- ContentTypes -->
+
 <define name="rfc2045.datatype">
 	<text/>
 </define>
@@ -14,7 +14,7 @@
 <define name="URI.datatype">
 	<data type="anyURI"/>
 </define>
-<!-- A space-separated list of Uniform Resource Identifiers, see [URI] -->
+
 <define name="URIs.datatype">
 	<text/>
 </define>
