@@ -153,7 +153,6 @@
 </define>
 
 
-<!-- object attributes -->
 <define name="src.attribute">
 	<attribute name="src">
 		<ref name="URI.datatype"/>

@@ -198,7 +198,7 @@
 	</choice>
 </define>
 
-<!-- silent errors for non DML elements -->
+<!-- Silent errors for non DML elements -->
 <define name="other">
 	<zeroOrMore>
 		<element>

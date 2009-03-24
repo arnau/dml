@@ -935,8 +935,7 @@ annotations<fo:inline color="#067">&lt;/<fo:inline color="#056"/>quote&gt;</fo:i
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>ref <fo:inline color="#067">name="<fo:inline color="#090">rev.attribute</fo:inline>"</fo:inline>/&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>ref <fo:inline color="#067">name="<fo:inline color="#090">typeof.attribute</fo:inline>"</fo:inline>/&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
-   <fo:inline font-style="italic">&lt;!-- object attributes --&gt;</fo:inline>
-<fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">src.attribute</fo:inline>"</fo:inline>&gt;</fo:inline>
+   <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">src.attribute</fo:inline>"</fo:inline>&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>attribute <fo:inline color="#067">name="<fo:inline color="#090">src</fo:inline>"</fo:inline>&gt;</fo:inline>
 		       <fo:inline color="#067">&lt;<fo:inline color="#056"/>ref <fo:inline color="#067">name="<fo:inline color="#090">URI.datatype</fo:inline>"</fo:inline>/&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;/<fo:inline color="#056"/>attribute&gt;</fo:inline>
@@ -1303,7 +1302,7 @@ annotations<fo:inline color="#067">&lt;/<fo:inline color="#056"/>quote&gt;</fo:i
 		       <fo:inline color="#067">&lt;<fo:inline color="#056"/>ref <fo:inline color="#067">name="<fo:inline color="#090">inline.flow</fo:inline>"</fo:inline>/&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;/<fo:inline color="#056"/>choice&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
-   <fo:inline font-style="italic">&lt;!-- silent errors for non DML elements --&gt;</fo:inline>
+   <fo:inline font-style="italic">&lt;!-- Silent errors for non DML elements --&gt;</fo:inline>
 <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">other</fo:inline>"</fo:inline>&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>zeroOrMore&gt;</fo:inline>
 		       <fo:inline color="#067">&lt;<fo:inline color="#056"/>element&gt;</fo:inline>

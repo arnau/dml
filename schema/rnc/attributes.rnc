@@ -39,7 +39,6 @@ metadata.attributes =
   resource.attribute,
   rev.attribute,
   typeof.attribute
-# object attributes
 src.attribute = attribute src { URI.datatype }
 type.attribute = attribute type { rfc2045.datatype }?
 height.attribute = attribute height { dimension.datatype }?

@@ -92,7 +92,7 @@ block.flow =
    | other)*
 inline.block.flow =
   (title.element?, block.flow, section.element*) | inline.flow
-# silent errors for non DML elements
+# Silent errors for non DML elements
 other =
   element * - inherit:* {
     (attribute * { text }
