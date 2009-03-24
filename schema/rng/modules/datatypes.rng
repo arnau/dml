@@ -16,7 +16,11 @@
 </define>
 
 <define name="URIs.datatype">
-	<text/>
+	<list>
+		<oneOrMore>
+			<data type="anyURI"/>
+		</oneOrMore>
+	</list>
 </define>
 
 <define name="URIorSafeCURIE.datatype">
@@ -24,11 +28,15 @@
 </define>
 
 <define name="CURIE.datatype">
-	<text/>
+	<data type="QName"/>
 </define>
 
 <define name="CURIEs.datatype">
-	<text/>
+	<list>
+		<oneOrMore>
+			<data type="QName"/>
+		</oneOrMore>
+	</list>
 </define>
 
 <define name="NMTOKEN.datatype">

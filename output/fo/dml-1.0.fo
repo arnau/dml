@@ -771,16 +771,24 @@ annotations<fo:inline color="#067">&lt;/<fo:inline color="#056"/>quote&gt;</fo:i
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>data <fo:inline color="#067">type="<fo:inline color="#090">anyURI</fo:inline>"</fo:inline>/&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
    <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">URIs.datatype</fo:inline>"</fo:inline>&gt;</fo:inline>
-	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>text/&gt;</fo:inline>
+	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>list&gt;</fo:inline>
+		       <fo:inline color="#067">&lt;<fo:inline color="#056"/>oneOrMore&gt;</fo:inline>
+			         <fo:inline color="#067">&lt;<fo:inline color="#056"/>data <fo:inline color="#067">type="<fo:inline color="#090">anyURI</fo:inline>"</fo:inline>/&gt;</fo:inline>
+		       <fo:inline color="#067">&lt;/<fo:inline color="#056"/>oneOrMore&gt;</fo:inline>
+	     <fo:inline color="#067">&lt;/<fo:inline color="#056"/>list&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
    <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">URIorSafeCURIE.datatype</fo:inline>"</fo:inline>&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>text/&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
    <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">CURIE.datatype</fo:inline>"</fo:inline>&gt;</fo:inline>
-	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>text/&gt;</fo:inline>
+	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>data <fo:inline color="#067">type="<fo:inline color="#090">QName</fo:inline>"</fo:inline>/&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
    <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">CURIEs.datatype</fo:inline>"</fo:inline>&gt;</fo:inline>
-	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>text/&gt;</fo:inline>
+	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>list&gt;</fo:inline>
+		       <fo:inline color="#067">&lt;<fo:inline color="#056"/>oneOrMore&gt;</fo:inline>
+			         <fo:inline color="#067">&lt;<fo:inline color="#056"/>data <fo:inline color="#067">type="<fo:inline color="#090">QName</fo:inline>"</fo:inline>/&gt;</fo:inline>
+		       <fo:inline color="#067">&lt;/<fo:inline color="#056"/>oneOrMore&gt;</fo:inline>
+	     <fo:inline color="#067">&lt;/<fo:inline color="#056"/>list&gt;</fo:inline>
    <fo:inline color="#067">&lt;/<fo:inline color="#056"/>define&gt;</fo:inline>
    <fo:inline color="#067">&lt;<fo:inline color="#056"/>define <fo:inline color="#067">name="<fo:inline color="#090">NMTOKEN.datatype</fo:inline>"</fo:inline>&gt;</fo:inline>
 	     <fo:inline color="#067">&lt;<fo:inline color="#056"/>data <fo:inline color="#067">type="<fo:inline color="#090">NMTOKEN</fo:inline>"</fo:inline>/&gt;</fo:inline>

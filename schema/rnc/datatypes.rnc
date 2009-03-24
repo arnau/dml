@@ -3,10 +3,10 @@
 rfc4646.datatype = xsd:language
 rfc2045.datatype = text
 URI.datatype = xsd:anyURI
-URIs.datatype = text
+URIs.datatype = list { xsd:anyURI+ }
 URIorSafeCURIE.datatype = text
-CURIE.datatype = text
-CURIEs.datatype = text
+CURIE.datatype = xsd:QName
+CURIEs.datatype = list { xsd:QName+ }
 NMTOKEN.datatype = xsd:NMTOKEN
 NMTOKENS.datatype = xsd:NMTOKENS
 ID.datatype = xsd:ID
