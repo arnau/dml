@@ -20,7 +20,7 @@
     example | figure | list | note | object | p | section | table | title
   )+, citation? | (
     abbr | em | object | span | sub | sup | text()
-  )+
+  )+, citation?
 )
 			</pml:code>
 		</item>
