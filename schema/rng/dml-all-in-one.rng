@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         ns="http://purl.oclc.org/NET/dml/1.0/"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+   <define name="rfc4646.datatype">
+	     <data type="language"/>
+   </define>
+
+   <define name="rfc2045.datatype">
+	     <text/>
+   </define>
+
+   <define name="URI.datatype">
+	     <data type="anyURI"/>
+   </define>
+
+   <define name="URIs.datatype">
+	     <list>
+		       <oneOrMore>
+			         <data type="anyURI"/>
+		       </oneOrMore>
+	     </list>
+   </define>
+
+   <define name="URIorSafeCURIE.datatype">
+	     <text/>
+   </define>
+
+   <define name="CURIE.datatype">
+	     <data type="QName"/>
+   </define>
+
+   <define name="CURIEs.datatype">
+	     <list>
+		       <oneOrMore>
+			         <data type="QName"/>
+		       </oneOrMore>
+	     </list>
+   </define>
+
+   <define name="NMTOKEN.datatype">
+	     <data type="NMTOKEN"/>
+   </define>
+
+   <define name="NMTOKENS.datatype">
+	     <data type="NMTOKENS"/>
+   </define>
+
+   <define name="ID.datatype">
+	     <data type="ID"/>
+   </define>
+
+   <define name="IDREF.datatype">
+	     <data type="IDREF"/>
+   </define>
+
+   <define name="IDREFS.datatype">
+	     <data type="IDREFS"/>
+   </define>
+
+   <define name="dimension.datatype">
+	     <data type="string">
+		       <param name="pattern">[1-9][0-9\.?]*(px|%|em|ex|pt|in|cm|mm|pc)</param>
+	     </data>
+   </define>
+
+
+
+   <define name="base.attribute">
+	     <optional>
+		       <attribute name="xml:base">
+			         <ref name="URI.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="class.attribute">
+	     <optional>
+		       <attribute name="class">
+			         <ref name="NMTOKENS.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="dir.attribute">
+	     <optional>
+		       <attribute name="dir">
+			         <choice>
+				           <value type="string">ltr</value>
+				           <value type="string">rtl</value>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="href.attribute">
+	     <optional>
+		       <attribute name="href">
+			         <ref name="URI.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="id.attribute">
+	     <optional>
+		       <attribute name="xml:id">
+			         <ref name="ID.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="lang.attribute">
+	     <optional>
+		       <attribute name="xml:lang">
+			         <ref name="rfc4646.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="status.attribute">
+	     <optional>
+		       <attribute name="status">
+			         <choice>
+				           <value type="string">added</value>
+				           <value type="string">deleted</value>
+				           <value type="string">draft</value>
+				           <value type="string">review</value>
+				           <ref name="NMTOKEN.datatype"/>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="about.attribute">
+	     <optional>
+		       <attribute name="about">
+			         <ref name="URIorSafeCURIE.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="content.attribute">
+	     <optional>
+		       <attribute name="content">
+			         <text/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="datatype.attribute">
+	     <optional>
+		       <attribute name="datatype">
+			         <ref name="CURIE.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="property.attribute">
+	     <optional>
+		       <attribute name="property">
+			         <ref name="CURIEs.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="rel.attribute">
+	     <optional>
+		       <attribute name="rel">
+			         <ref name="CURIEs.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="resource.attribute">
+	     <optional>
+		       <attribute name="resource">
+			         <ref name="URIorSafeCURIE.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="rev.attribute">
+	     <optional>
+		       <attribute name="rev">
+			         <ref name="CURIEs.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="typeof.attribute">
+	     <optional>
+		       <attribute name="typeof">
+			         <ref name="CURIEs.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="core.attributes">
+	     <ref name="base.attribute"/>
+	     <ref name="class.attribute"/>
+	     <ref name="dir.attribute"/>
+	     <ref name="href.attribute"/>
+	     <ref name="id.attribute"/>
+	     <ref name="lang.attribute"/>
+	     <ref name="status.attribute"/>
+   </define>
+
+   <define name="metadata.attributes">
+	     <ref name="about.attribute"/>
+	     <ref name="content.attribute"/>
+	     <ref name="datatype.attribute"/>
+	     <ref name="property.attribute"/>
+	     <ref name="rel.attribute"/>
+	     <ref name="resource.attribute"/>
+	     <ref name="rev.attribute"/>
+	     <ref name="typeof.attribute"/>
+   </define>
+
+
+   <define name="src.attribute">
+	     <attribute name="src">
+		       <ref name="URI.datatype"/>
+	     </attribute>
+   </define>
+   <define name="type.attribute">
+	     <optional>
+		       <attribute name="type">
+			         <ref name="rfc2045.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+   <define name="height.attribute">
+	     <optional>
+		       <attribute name="height">
+			         <ref name="dimension.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+   <define name="width.attribute">
+	     <optional>
+		       <attribute name="width">
+			         <ref name="dimension.datatype"/>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="role.em.attribute">
+	     <optional>
+		       <attribute name="role">
+			         <choice>
+				           <value type="string">strong</value>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="role.list.attribute">
+	     <optional>
+		       <attribute name="role">
+			         <choice>
+				           <value type="string">ordered</value>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="role.note.attribute">
+	     <optional>
+		       <attribute name="role">
+			         <choice>
+				           <value type="string">tip</value>
+				           <value type="string">warning</value>
+				           <value type="string">sidebar</value>
+				           <value type="string">footnote</value>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="role.section.attribute">
+	     <optional>
+		       <attribute name="role">
+			         <choice>
+				           <value type="string">part</value>
+				           <value type="string">chapter</value>
+				           <value type="string">appendix</value>
+				           <value type="string">header</value>
+				           <value type="string">footer</value>
+				           <value type="string">toc</value>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+   <define name="scope.attribute">
+	     <attribute name="scope">
+		       <choice>
+			         <value type="string">row</value>
+			         <value type="string">column</value>
+		       </choice>
+	     </attribute>
+   </define>
+
+   <define name="role.group.attribute">
+	     <optional>
+		       <attribute name="role">
+			         <choice>
+				           <value type="string">header</value>
+				           <value type="string">footer</value>
+			         </choice>
+		       </attribute>
+	     </optional>
+   </define>
+
+
+
+   <define name="abbr.element">
+	     <element name="abbr">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <oneOrMore>
+			         <choice>
+				           <text/>
+				           <ref name="em.element"/>
+				           <ref name="object.inline.element"/>
+				           <ref name="span.element"/>
+				           <ref name="sub.element"/>
+				           <ref name="sup.element"/>
+				           <ref name="other"/>
+			         </choice>
+		       </oneOrMore>
+	     </element>
+   </define>
+   <define name="em.element">
+	     <element name="em">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="role.em.attribute"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+   <define name="object.inline.element">
+	     <element name="object">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="src.attribute"/>
+		       <ref name="type.attribute"/>
+		       <ref name="width.attribute"/>
+		       <ref name="height.attribute"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="quote.inline.element">
+	     <element name="quote">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <oneOrMore>
+			         <choice>
+				           <text/>
+				           <ref name="em.element"/>
+				           <ref name="metadata.element"/>
+				           <ref name="object.inline.element"/>
+				           <ref name="span.element"/>
+				           <ref name="sub.element"/>
+				           <ref name="sup.element"/>
+				           <ref name="other"/>
+			         </choice>
+		       </oneOrMore>
+		       <optional>
+			         <ref name="citation.element"/>
+		       </optional>
+	     </element>
+   </define>
+
+   <define name="span.element">
+	     <element name="span">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="sub.element">
+	     <element name="sub">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="sup.element">
+	     <element name="sup">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="inline.class">
+	     <choice>
+		       <ref name="abbr.element"/>
+		       <ref name="em.element"/>
+		       <ref name="object.inline.element"/>
+		       <ref name="quote.inline.element"/>
+		       <ref name="span.element"/>
+		       <ref name="sub.element"/>
+		       <ref name="sup.element"/>
+	     </choice>
+   </define>
+
+   <define name="inline.flow">
+	     <oneOrMore>
+		       <choice>
+			         <text/>
+			         <ref name="inline.class"/>
+			         <ref name="other"/>
+		       </choice>
+	     </oneOrMore>
+   </define>
+
+
+
+   <start>
+	     <choice>
+		       <ref name="dml.element"/>
+		       <ref name="note.element"/>
+	     </choice>
+   </start>
+
+   <define name="example.element">
+	     <element name="example">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <optional>
+			         <ref name="title.element"/>
+		       </optional>
+		       <ref name="block.flow"/>
+	     </element>
+   </define>
+
+   <define name="figure.element">
+	     <element name="figure">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <optional>
+			         <ref name="title.element"/>
+		       </optional>
+		       <ref name="block.flow"/>
+	     </element>
+   </define>
+
+   <define name="item.element">
+	     <element name="item">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <choice>
+			         <group>
+				           <zeroOrMore>
+					             <ref name="title.element"/>
+				           </zeroOrMore>
+				           <ref name="block.flow"/>
+			         </group>
+			         <ref name="inline.flow"/>
+		       </choice>
+	     </element>
+   </define>
+
+   <define name="list.element">
+	     <element name="list">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="role.list.attribute"/>
+		       <optional>
+			         <ref name="title.element"/>
+		       </optional>
+		       <oneOrMore>
+			         <ref name="item.element"/>
+		       </oneOrMore>
+	     </element>
+   </define>
+
+   <define name="metadata.element">
+	     <element name="metadata">
+		       <ref name="metadata.attributes"/>
+		       <ref name="block.flow"/>
+	     </element>
+   </define>
+
+   <define name="note.element">
+	     <element name="note">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="role.note.attribute"/>
+		       <ref name="inline.block.flow"/>
+	     </element>
+   </define>
+
+   <define name="object.block.element">
+	     <element name="object">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="src.attribute"/>
+		       <ref name="type.attribute"/>
+		       <ref name="width.attribute"/>
+		       <ref name="height.attribute"/>
+		       <choice>
+			         <ref name="block.flow"/>
+			         <zeroOrMore>
+				           <ref name="section.element"/>
+			         </zeroOrMore>
+		       </choice>
+	     </element>
+   </define>
+
+   <define name="p.element">
+	     <element name="p">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="quote.block.element">
+	     <element name="quote">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <oneOrMore>
+			         <choice>
+				           <ref name="example.element"/>
+				           <ref name="figure.element"/>
+				           <ref name="list.element"/>
+				           <ref name="metadata.element"/>
+				           <ref name="note.element"/>
+				           <ref name="object.block.element"/>
+				           <ref name="p.element"/>
+				           <ref name="section.element"/>
+				           <ref name="table.element"/>
+				           <ref name="section.element"/>
+				           <ref name="other"/>
+			         </choice>
+		       </oneOrMore>
+		       <optional>
+			         <ref name="citation.element"/>
+		       </optional>
+	     </element>
+   </define>
+   <define name="citation.element">
+	     <element name="citation">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="section.element">
+	     <element name="section">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="role.section.attribute"/>
+		       <ref name="title.element"/>
+		       <ref name="block.flow"/>
+		       <zeroOrMore>
+			         <ref name="section.element"/>
+		       </zeroOrMore>
+	     </element>
+   </define>
+
+   <define name="title.element">
+	     <element name="title">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+
+   <define name="dml.element">
+	     <element name="dml">
+		       <ref name="core.attributes"/>
+		       <ref name="title.element"/>
+		       <ref name="block.flow"/>
+		       <zeroOrMore>
+			         <ref name="section.element"/>
+		       </zeroOrMore>
+	     </element>
+   </define>
+
+   <define name="block.flow">
+	     <zeroOrMore>
+		       <choice>
+			         <ref name="example.element"/>
+			         <ref name="figure.element"/>
+			         <ref name="list.element"/>
+			         <ref name="metadata.element"/>
+			         <ref name="note.element"/>
+			         <ref name="object.block.element"/>
+			         <ref name="p.element"/>
+			         <ref name="quote.block.element"/>
+			         <ref name="table.element"/>
+			         <ref name="other"/>
+		       </choice>
+	     </zeroOrMore>
+   </define>
+
+   <define name="inline.block.flow">
+	     <choice>
+		       <group>
+			         <optional>
+				           <ref name="title.element"/>
+			         </optional>
+			         <ref name="block.flow"/>
+			         <zeroOrMore>
+				           <ref name="section.element"/>
+			         </zeroOrMore>
+		       </group>
+		       <ref name="inline.flow"/>
+	     </choice>
+   </define>
+
+   <!-- Silent errors for non DML elements -->
+<define name="other">
+	     <zeroOrMore>
+		       <element>
+			         <anyName>
+				           <except>
+					             <nsName/>
+				           </except>
+			         </anyName>
+			         <zeroOrMore>
+				           <choice>
+					             <attribute>
+						               <anyName/>
+					             </attribute>
+					             <ref name="block.flow"/>
+					             <ref name="inline.flow"/>
+					             <ref name="other"/>
+				           </choice>
+			         </zeroOrMore>
+		       </element>
+	     </zeroOrMore>
+   </define>
+
+
+
+   <define name="table.element">
+	     <element name="table">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="scope.attribute"/>
+		       <optional>
+			         <ref name="title.element"/>
+		       </optional>
+		       <ref name="summary.element"/>
+		       <oneOrMore>
+			         <ref name="group.element"/>
+		       </oneOrMore>
+	     </element>
+   </define>
+   <define name="summary.element">
+	     <element name="summary">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="inline.flow"/>
+	     </element>
+   </define>
+   <define name="group.element">
+	     <element name="group">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <ref name="role.group.attribute"/>
+			      <choice>
+				        <oneOrMore>
+					          <ref name="group.element"/>
+				        </oneOrMore>
+				        <group>
+					          <oneOrMore>
+						            <choice>
+							              <ref name="title.element"/>
+							              <ref name="cell.element"/>
+						            </choice>
+					          </oneOrMore>
+				        </group>
+			      </choice>
+	     </element>
+   </define>
+   <define name="cell.element">
+	     <element name="cell">
+		       <ref name="core.attributes"/>
+		       <ref name="metadata.attributes"/>
+		       <optional>
+			         <ref name="title.element"/>
+		       </optional>
+		       <choice>
+			         <ref name="block.flow"/>
+			         <ref name="inline.flow"/>
+		       </choice>
+	     </element>
+   </define>
+
+</grammar>

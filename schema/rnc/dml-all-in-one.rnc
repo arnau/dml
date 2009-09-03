@@ -1,0 +1,259 @@
+default namespace ns1 = "http://purl.oclc.org/NET/dml/1.0/"
+
+rfc4646.datatype = xsd:language
+rfc2045.datatype = text
+URI.datatype = xsd:anyURI
+URIs.datatype = list { xsd:anyURI+ }
+URIorSafeCURIE.datatype = text
+CURIE.datatype = xsd:QName
+CURIEs.datatype = list { xsd:QName+ }
+NMTOKEN.datatype = xsd:NMTOKEN
+NMTOKENS.datatype = xsd:NMTOKENS
+ID.datatype = xsd:ID
+IDREF.datatype = xsd:IDREF
+IDREFS.datatype = xsd:IDREFS
+dimension.datatype =
+  xsd:string { pattern = "[1-9][0-9\.?]*(px|%|em|ex|pt|in|cm|mm|pc)" }
+base.attribute = attribute xml:base { URI.datatype }?
+class.attribute = attribute class { NMTOKENS.datatype }?
+dir.attribute = attribute dir { xsd:string "ltr" | xsd:string "rtl" }?
+href.attribute = attribute href { URI.datatype }?
+id.attribute = attribute xml:id { ID.datatype }?
+lang.attribute = attribute xml:lang { rfc4646.datatype }?
+status.attribute =
+  attribute status {
+    xsd:string "added"
+    | xsd:string "deleted"
+    | xsd:string "draft"
+    | xsd:string "review"
+    | NMTOKEN.datatype
+  }?
+about.attribute = attribute about { URIorSafeCURIE.datatype }?
+content.attribute = attribute content { text }?
+datatype.attribute = attribute datatype { CURIE.datatype }?
+property.attribute = attribute property { CURIEs.datatype }?
+rel.attribute = attribute rel { CURIEs.datatype }?
+resource.attribute = attribute resource { URIorSafeCURIE.datatype }?
+rev.attribute = attribute rev { CURIEs.datatype }?
+typeof.attribute = attribute typeof { CURIEs.datatype }?
+core.attributes =
+  base.attribute,
+  class.attribute,
+  dir.attribute,
+  href.attribute,
+  id.attribute,
+  lang.attribute,
+  status.attribute
+metadata.attributes =
+  about.attribute,
+  content.attribute,
+  datatype.attribute,
+  property.attribute,
+  rel.attribute,
+  resource.attribute,
+  rev.attribute,
+  typeof.attribute
+src.attribute = attribute src { URI.datatype }
+type.attribute = attribute type { rfc2045.datatype }?
+height.attribute = attribute height { dimension.datatype }?
+width.attribute = attribute width { dimension.datatype }?
+role.em.attribute = attribute role { xsd:string "strong" }?
+role.list.attribute = attribute role { xsd:string "ordered" }?
+role.note.attribute =
+  attribute role {
+    xsd:string "tip"
+    | xsd:string "warning"
+    | xsd:string "sidebar"
+    | xsd:string "footnote"
+  }?
+role.section.attribute =
+  attribute role {
+    xsd:string "part"
+    | xsd:string "chapter"
+    | xsd:string "appendix"
+    | xsd:string "header"
+    | xsd:string "footer"
+    | xsd:string "toc"
+  }?
+scope.attribute =
+  attribute scope { xsd:string "row" | xsd:string "column" }
+role.group.attribute =
+  attribute role { xsd:string "header" | xsd:string "footer" }?
+abbr.element =
+  element abbr {
+    core.attributes,
+    metadata.attributes,
+    (text
+     | em.element
+     | object.inline.element
+     | span.element
+     | sub.element
+     | sup.element
+     | other)+
+  }
+em.element =
+  element em {
+    core.attributes, metadata.attributes, role.em.attribute, inline.flow
+  }
+object.inline.element =
+  element object {
+    core.attributes,
+    metadata.attributes,
+    src.attribute,
+    type.attribute,
+    width.attribute,
+    height.attribute,
+    inline.flow
+  }
+quote.inline.element =
+  element quote {
+    core.attributes,
+    metadata.attributes,
+    (text
+     | em.element
+     | metadata.element
+     | object.inline.element
+     | span.element
+     | sub.element
+     | sup.element
+     | other)+,
+    citation.element?
+  }
+span.element =
+  element span { core.attributes, metadata.attributes, inline.flow }
+sub.element =
+  element sub { core.attributes, metadata.attributes, inline.flow }
+sup.element =
+  element sup { core.attributes, metadata.attributes, inline.flow }
+inline.class =
+  abbr.element
+  | em.element
+  | object.inline.element
+  | quote.inline.element
+  | span.element
+  | sub.element
+  | sup.element
+inline.flow = (text | inline.class | other)+
+start = dml.element | note.element
+example.element =
+  element example {
+    core.attributes, metadata.attributes, title.element?, block.flow
+  }
+figure.element =
+  element figure {
+    core.attributes, metadata.attributes, title.element?, block.flow
+  }
+item.element =
+  element item {
+    core.attributes,
+    metadata.attributes,
+    ((title.element*, block.flow) | inline.flow)
+  }
+list.element =
+  element list {
+    core.attributes,
+    metadata.attributes,
+    role.list.attribute,
+    title.element?,
+    item.element+
+  }
+metadata.element = element metadata { metadata.attributes, block.flow }
+note.element =
+  element note {
+    core.attributes,
+    metadata.attributes,
+    role.note.attribute,
+    inline.block.flow
+  }
+object.block.element =
+  element object {
+    core.attributes,
+    metadata.attributes,
+    src.attribute,
+    type.attribute,
+    width.attribute,
+    height.attribute,
+    (block.flow | section.element*)
+  }
+p.element =
+  element p { core.attributes, metadata.attributes, inline.flow }
+quote.block.element =
+  element quote {
+    core.attributes,
+    metadata.attributes,
+    (example.element
+     | figure.element
+     | list.element
+     | metadata.element
+     | note.element
+     | object.block.element
+     | p.element
+     | section.element
+     | table.element
+     | section.element
+     | other)+,
+    citation.element?
+  }
+citation.element =
+  element citation { core.attributes, metadata.attributes, inline.flow }
+section.element =
+  element section {
+    core.attributes,
+    metadata.attributes,
+    role.section.attribute,
+    title.element,
+    block.flow,
+    section.element*
+  }
+title.element =
+  element title { core.attributes, metadata.attributes, inline.flow }
+dml.element =
+  element dml {
+    core.attributes, title.element, block.flow, section.element*
+  }
+block.flow =
+  (example.element
+   | figure.element
+   | list.element
+   | metadata.element
+   | note.element
+   | object.block.element
+   | p.element
+   | quote.block.element
+   | table.element
+   | other)*
+inline.block.flow =
+  (title.element?, block.flow, section.element*) | inline.flow
+# Silent errors for non DML elements
+other =
+  element * - ns1:* {
+    (attribute * { text }
+     | block.flow
+     | inline.flow
+     | other)*
+  }*
+table.element =
+  element table {
+    core.attributes,
+    metadata.attributes,
+    scope.attribute,
+    title.element?,
+    summary.element,
+    group.element+
+  }
+summary.element =
+  element summary { core.attributes, metadata.attributes, inline.flow }
+group.element =
+  element group {
+    core.attributes,
+    metadata.attributes,
+    role.group.attribute,
+    (group.element+ | (title.element | cell.element)+)
+  }
+cell.element =
+  element cell {
+    core.attributes,
+    metadata.attributes,
+    title.element?,
+    (block.flow | inline.flow)
+  }
