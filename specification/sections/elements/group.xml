@@ -36,11 +36,11 @@
 	<list>
 		<item>
 			<title><pml:value>header</pml:value></title>
-			<p>A header table group. Table header <em>must</em> be the first child of a <pml:node role="element">table</pml:node> element.</p>
+			<p>A table header group. The table header <em>must</em> be the first child of a <pml:node role="element">table</pml:node> element.</p>
 		</item>
 		<item>
 			<title><pml:value>footer</pml:value></title>
-			<p>A footer table group. Table footer <em>must</em> be child of a <pml:node role="element">table</pml:node> element.</p>
+			<p>A table footer group. The table footer <em>must</em> be child of a <pml:node role="element">table</pml:node> element.</p>
 		</item>
 	</list>
 
