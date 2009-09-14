@@ -1,68 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Datatype Module -->
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
-	datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <define name="rfc4646.datatype">
+    <data type="language"/>
+  </define>
 
-<define name="rfc4646.datatype">
-	<data type="language"/>
-</define>
+  <define name="rfc2045.datatype">
+    <text/>
+  </define>
 
-<define name="rfc2045.datatype">
-	<text/>
-</define>
+  <define name="URI.datatype">
+    <data type="anyURI"/>
+  </define>
 
-<define name="URI.datatype">
-	<data type="anyURI"/>
-</define>
+  <define name="URIs.datatype">
+    <list>
+      <oneOrMore>
+        <data type="anyURI"/>
+      </oneOrMore>
+    </list>
+  </define>
 
-<define name="URIs.datatype">
-	<list>
-		<oneOrMore>
-			<data type="anyURI"/>
-		</oneOrMore>
-	</list>
-</define>
+  <define name="URIorSafeCURIE.datatype">
+    <text/>
+  </define>
 
-<define name="URIorSafeCURIE.datatype">
-	<text/>
-</define>
+  <define name="CURIE.datatype">
+    <data type="QName"/>
+  </define>
 
-<define name="CURIE.datatype">
-	<data type="QName"/>
-</define>
+  <define name="CURIEs.datatype">
+    <list>
+      <oneOrMore>
+        <data type="QName"/>
+      </oneOrMore>
+    </list>
+  </define>
 
-<define name="CURIEs.datatype">
-	<list>
-		<oneOrMore>
-			<data type="QName"/>
-		</oneOrMore>
-	</list>
-</define>
+  <define name="NMTOKEN.datatype">
+    <data type="NMTOKEN"/>
+  </define>
 
-<define name="NMTOKEN.datatype">
-	<data type="NMTOKEN"/>
-</define>
+  <define name="NMTOKENS.datatype">
+    <data type="NMTOKENS"/>
+  </define>
 
-<define name="NMTOKENS.datatype">
-	<data type="NMTOKENS"/>
-</define>
+  <define name="ID.datatype">
+    <data type="ID"/>
+  </define>
 
-<define name="ID.datatype">
-	<data type="ID"/>
-</define>
+  <define name="IDREF.datatype">
+    <data type="IDREF"/>
+  </define>
 
-<define name="IDREF.datatype">
-	<data type="IDREF"/>
-</define>
+  <define name="IDREFS.datatype">
+    <data type="IDREFS"/>
+  </define>
 
-<define name="IDREFS.datatype">
-	<data type="IDREFS"/>
-</define>
-
-<define name="dimension.datatype">
-	<data type="string">
-		<param name="pattern">[1-9][0-9\.?]*(px|%|em|ex|pt|in|cm|mm|pc)</param>
-	</data>
-</define>
-
+  <define name="dimension.datatype">
+    <data type="string">
+      <param name="pattern">[1-9][0-9\.?]*(px|%|em|ex|pt|in|cm|mm|pc)</param>
+    </data>
+  </define>
 </grammar>

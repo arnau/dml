@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dml xml:id="dml-spec" xml:lang="en"
-	xmlns="http://purl.oclc.org/NET/dml/1.0/" 
-	xmlns:pml="http://purl.oclc.org/NET/pml/1.0/" 
-	xmlns:dct="http://purl.org/dc/terms/"
-	xmlns:xi="http://www.w3.org/2001/XInclude">
+  xmlns="http://purl.oclc.org/NET/dml/1.0/" 
+  xmlns:pml="http://purl.oclc.org/NET/pml/1.0/" 
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
 
-	<title property="dct:title">Document Markup Language (DML) Specification 1.0</title>
-	<metadata about="#dml-spec">
-		<list>
-			<item property="dct:publisher">Arnau Siches</item>
-			<item property="dct:creator">Arnau Siches</item>
-			<item property="dct:created">2008-12-29</item>
-			<item property="dct:modified">2009-01-17</item>
-			<item property="dct:identifier">http://purl.oclc.org/NET/dml/1.0/</item>
-			<item property="dct:hasFormat">http://purl.oclc.org/NET/dml/1.0/pdf/</item>
-			<item property="dct:source">http://github.com/arnau/dml/tree/master</item>
-			<item property="dct:description">This specification defines the Document Markup Language (DML), a markup language for books, articles, documents, notes, etc.</item>
-			<item property="dct:subject">
-				<list>
-					<item>XML</item>
-					<item>Relax NG</item>
-					<item>specification</item>
-					<item>book</item>
-					<item>document</item>
-					<item>article</item>
-				</list>
-			</item>
-			<item property="dct:rights">
-				<p>Copyright © 2009 Arnau Siches.</p>
-				<p>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled <span href="#fdl-license">“GNU Free Documentation License”</span>.</p>
-			</item>
-		</list>
-	</metadata>
+  <title property="dct:title">Document Markup Language (DML) Specification 1.0</title>
+  <metadata about="#dml-spec">
+    <list>
+      <item property="dct:publisher">Arnau Siches</item>
+      <item property="dct:creator">Arnau Siches</item>
+      <item property="dct:created">2008-12-29</item>
+      <item property="dct:modified">2009-09-03</item>
+      <item property="dct:identifier">http://purl.oclc.org/NET/dml/1.0/</item>
+      <item property="dct:hasFormat">http://purl.oclc.org/NET/dml/1.0/pdf/</item>
+      <item property="dct:source">http://github.com/arnau/dml/tree/master</item>
+      <item property="dct:description">This specification defines the Document Markup Language (DML), a markup language for books, articles, documents, notes, etc.</item>
+      <item property="dct:subject">
+        <list>
+          <item>XML</item>
+          <item>Relax NG</item>
+          <item>specification</item>
+          <item>book</item>
+          <item>document</item>
+          <item>article</item>
+        </list>
+      </item>
+      <item property="dct:rights">
+        <p>Copyright © 2009 Arnau Siches.</p>
+        <p>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled <span href="#fdl-license">“GNU Free Documentation License”</span>.</p>
+      </item>
+    </list>
+  </metadata>
 
-	<xi:include href="sections/abstract.xml"/>
+  <xi:include href="sections/abstract.xml"/>
 
-	<xi:include href="sections/introduction.xml"/>
+  <xi:include href="sections/introduction.xml"/>
 
-	<xi:include href="sections/elements.xml"/>
-	<xi:include href="sections/core-attributes.xml"/>
-	<xi:include href="sections/metadata-attributes.xml"/>
+  <xi:include href="sections/elements.xml"/>
+  <xi:include href="sections/core-attributes.xml"/>
+  <xi:include href="sections/metadata-attributes.xml"/>
 
-	<section>
-		<title>Flow</title>
-		<p>Usually any elements belong to a single flow type, block or inline flow type but there are two cases (<pml:node role="element">object</pml:node> and <pml:node role="element">quote</pml:node>) where they change their type depending on their sibling elements.</p>
-		<section xml:id="block-flow">
-			<title>Block</title>
-			<p>Block elements are containers of other block elements or wrappers of inline elements and raw text.</p>
-		</section>
-		<section xml:id="inline-flow">
-			<title>Inline</title>
-			<p>Inline elements are used to mark up running text. It <em>may</em> contain inline elements and raw text.</p>
-		</section>
-	</section>
+  <section>
+    <title>Flow</title>
+    <p>Usually any elements belong to a single flow type, block or inline flow type but there are two cases (<pml:node role="element">object</pml:node> and <pml:node role="element">quote</pml:node>) where they change their type depending on their sibling elements.</p>
+    <section xml:id="block-flow">
+      <title>Block</title>
+      <p>Block elements are containers of other block elements or wrappers of inline elements and raw text.</p>
+    </section>
+    <section xml:id="inline-flow">
+      <title>Inline</title>
+      <p>Inline elements are used to mark up running text. It <em>may</em> contain inline elements and raw text.</p>
+    </section>
+  </section>
 
-	<section xml:id="dml-schema">
-		<title>Schema</title>
-		<p>This section is <em>informative</em>.</p>
-		<section xml:id="dml-rng">
-			<title>Relax NG for DML</title>
-			<pml:code language="xml">
+  <section xml:id="dml-schema">
+    <title>Schema</title>
+    <p>This section is <em>informative</em>.</p>
+    <section xml:id="dml-rng">
+      <title>Relax NG for DML</title>
+      <pml:code language="xml">
 <xi:include href="../schema/rng/dml-all-in-one.rng" parse="text"/>
-			</pml:code>
-		</section>
-		<section xml:id="dml-sch" status="draft">
-			<title>Schematron for DML</title>
-			<pml:code language="xml">
-				<p>coming soon</p>
-<!-- <xi:include href="../schema/rng/dml-all-in-one.rng" parse="text"/> -->
-			</pml:code>
-		</section>
-	</section>
+      </pml:code>
+    </section>
+    <section xml:id="dml-sch" status="draft">
+      <title>Schematron for DML</title>
+      <pml:code language="xml">
+        <p>coming soon</p>
+      </pml:code>
+    </section>
+  </section>
 
-	<xi:include href="sections/resources.xml"/>
-	<xi:include href="sections/conventions.xml"/>
-	<section xml:id="fdl-license" role="appendix">
-		<xi:include href="fdl-license.xml" xpointer="xpointer(/*/*)"/>
-	</section>
+  <xi:include href="sections/resources.xml"/>
+  <xi:include href="sections/conventions.xml"/>
+  <section xml:id="fdl-license" role="appendix">
+    <section><title>llaal</title></section>
+    <xi:include href="fdl-license.xml" xpointer="xpointer(/*/*)"/>
+  </section>
 
 </dml>

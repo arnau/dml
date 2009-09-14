@@ -69,15 +69,18 @@ section.element =
     core.attributes,
     metadata.attributes,
     role.section.attribute,
-    title.element,
+    (title.element | other),
     block.flow,
-    section.element*
+    (section.element | other)*
   }
 title.element =
   element title { core.attributes, metadata.attributes, inline.flow }
 dml.element =
   element dml {
-    core.attributes, title.element, block.flow, section.element*
+    core.attributes,
+    title.element,
+    block.flow,
+    (section.element | other)*
   }
 block.flow =
   (example.element

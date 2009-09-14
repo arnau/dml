@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar ns="http://purl.oclc.org/NET/dml/1.0/" xmlns="http://relaxng.org/ns/structure/1.0">
-	<include href="modules/datatypes.rng"/>
-	<include href="modules/attributes.rng"/>
-	<include href="modules/inline.rng"/>
-	<include href="modules/block.rng"/>
-	<include href="modules/table.rng"/>
+  <include href="modules/datatypes.rng"/>
+  <include href="modules/attributes.rng"/>
+  <include href="modules/inline.rng"/>
+  <include href="modules/block.rng"/>
+  <include href="modules/table.rng"/>
 </grammar>

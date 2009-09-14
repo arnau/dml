@@ -1,251 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Attributes Module -->
 <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="base.attribute">
+    <optional>
+      <attribute name="xml:base">
+        <ref name="URI.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="base.attribute">
-	<optional>
-		<attribute name="xml:base">
-			<ref name="URI.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="class.attribute">
+    <optional>
+      <attribute name="class">
+        <ref name="NMTOKENS.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="class.attribute">
-	<optional>
-		<attribute name="class">
-			<ref name="NMTOKENS.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="dir.attribute">
+    <optional>
+      <attribute name="dir">
+        <choice>
+          <value type="string">ltr</value>
+          <value type="string">rtl</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="dir.attribute">
-	<optional>
-		<attribute name="dir">
-			<choice>
-				<value type="string">ltr</value>
-				<value type="string">rtl</value>
-			</choice>
-		</attribute>
-	</optional>
-</define>
+  <define name="href.attribute">
+    <optional>
+      <attribute name="href">
+        <ref name="URI.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="href.attribute">
-	<optional>
-		<attribute name="href">
-			<ref name="URI.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="id.attribute">
+    <optional>
+      <attribute name="xml:id">
+        <ref name="ID.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="id.attribute">
-	<optional>
-		<attribute name="xml:id">
-			<ref name="ID.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="lang.attribute">
+    <optional>
+      <attribute name="xml:lang">
+        <ref name="rfc4646.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="lang.attribute">
-	<optional>
-		<attribute name="xml:lang">
-			<ref name="rfc4646.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="status.attribute">
+    <optional>
+      <attribute name="status">
+        <choice>
+          <value type="string">added</value>
+          <value type="string">deleted</value>
+          <value type="string">draft</value>
+          <value type="string">review</value>
+          <ref name="NMTOKEN.datatype"/>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="status.attribute">
-	<optional>
-		<attribute name="status">
-			<choice>
-				<value type="string">added</value>
-				<value type="string">deleted</value>
-				<value type="string">draft</value>
-				<value type="string">review</value>
-				<ref name="NMTOKEN.datatype"/>
-			</choice>
-		</attribute>
-	</optional>
-</define>
+  <define name="about.attribute">
+    <optional>
+      <attribute name="about">
+        <ref name="URIorSafeCURIE.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="about.attribute">
-	<optional>
-		<attribute name="about">
-			<ref name="URIorSafeCURIE.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="content.attribute">
+    <optional>
+      <attribute name="content">
+        <text/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="content.attribute">
-	<optional>
-		<attribute name="content">
-			<text/>
-		</attribute>
-	</optional>
-</define>
+  <define name="datatype.attribute">
+    <optional>
+      <attribute name="datatype">
+        <ref name="CURIE.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="datatype.attribute">
-	<optional>
-		<attribute name="datatype">
-			<ref name="CURIE.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="property.attribute">
+    <optional>
+      <attribute name="property">
+        <ref name="CURIEs.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="property.attribute">
-	<optional>
-		<attribute name="property">
-			<ref name="CURIEs.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="rel.attribute">
+    <optional>
+      <attribute name="rel">
+        <ref name="CURIEs.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="rel.attribute">
-	<optional>
-		<attribute name="rel">
-			<ref name="CURIEs.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="resource.attribute">
+    <optional>
+      <attribute name="resource">
+        <ref name="URIorSafeCURIE.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="resource.attribute">
-	<optional>
-		<attribute name="resource">
-			<ref name="URIorSafeCURIE.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="rev.attribute">
+    <optional>
+      <attribute name="rev">
+        <ref name="CURIEs.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="rev.attribute">
-	<optional>
-		<attribute name="rev">
-			<ref name="CURIEs.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="typeof.attribute">
+    <optional>
+      <attribute name="typeof">
+        <ref name="CURIEs.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="typeof.attribute">
-	<optional>
-		<attribute name="typeof">
-			<ref name="CURIEs.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="core.attributes">
+    <ref name="base.attribute"/>
+    <ref name="class.attribute"/>
+    <ref name="dir.attribute"/>
+    <ref name="href.attribute"/>
+    <ref name="id.attribute"/>
+    <ref name="lang.attribute"/>
+    <ref name="status.attribute"/>
+  </define>
 
-<define name="core.attributes">
-	<ref name="base.attribute"/>
-	<ref name="class.attribute"/>
-	<ref name="dir.attribute"/>
-	<ref name="href.attribute"/>
-	<ref name="id.attribute"/>
-	<ref name="lang.attribute"/>
-	<ref name="status.attribute"/>
-</define>
-
-<define name="metadata.attributes">
-	<ref name="about.attribute"/>
-	<ref name="content.attribute"/>
-	<ref name="datatype.attribute"/>
-	<ref name="property.attribute"/>
-	<ref name="rel.attribute"/>
-	<ref name="resource.attribute"/>
-	<ref name="rev.attribute"/>
-	<ref name="typeof.attribute"/>
-</define>
+  <define name="metadata.attributes">
+    <ref name="about.attribute"/>
+    <ref name="content.attribute"/>
+    <ref name="datatype.attribute"/>
+    <ref name="property.attribute"/>
+    <ref name="rel.attribute"/>
+    <ref name="resource.attribute"/>
+    <ref name="rev.attribute"/>
+    <ref name="typeof.attribute"/>
+  </define>
 
 
-<define name="src.attribute">
-	<attribute name="src">
-		<ref name="URI.datatype"/>
-	</attribute>
-</define>
-<define name="type.attribute">
-	<optional>
-		<attribute name="type">
-			<ref name="rfc2045.datatype"/>
-		</attribute>
-	</optional>
-</define>
-<define name="height.attribute">
-	<optional>
-		<attribute name="height">
-			<ref name="dimension.datatype"/>
-		</attribute>
-	</optional>
-</define>
-<define name="width.attribute">
-	<optional>
-		<attribute name="width">
-			<ref name="dimension.datatype"/>
-		</attribute>
-	</optional>
-</define>
+  <define name="src.attribute">
+    <attribute name="src">
+      <ref name="URI.datatype"/>
+    </attribute>
+  </define>
+  <define name="type.attribute">
+    <optional>
+      <attribute name="type">
+        <ref name="rfc2045.datatype"/>
+      </attribute>
+    </optional>
+  </define>
+  <define name="height.attribute">
+    <optional>
+      <attribute name="height">
+        <ref name="dimension.datatype"/>
+      </attribute>
+    </optional>
+  </define>
+  <define name="width.attribute">
+    <optional>
+      <attribute name="width">
+        <ref name="dimension.datatype"/>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="role.em.attribute">
-	<optional>
-		<attribute name="role">
-			<choice>
-				<value type="string">strong</value>
-			</choice>
-		</attribute>
-	</optional>
-</define>
+  <define name="role.em.attribute">
+    <optional>
+      <attribute name="role">
+        <choice>
+          <value type="string">strong</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="role.list.attribute">
-	<optional>
-		<attribute name="role">
-			<choice>
-				<value type="string">ordered</value>
-			</choice>
-		</attribute>
-	</optional>
-</define>
+  <define name="role.list.attribute">
+    <optional>
+      <attribute name="role">
+        <choice>
+          <value type="string">ordered</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="role.note.attribute">
-	<optional>
-		<attribute name="role">
-			<choice>
-				<value type="string">tip</value>
-				<value type="string">warning</value>
-				<value type="string">sidebar</value>
-				<value type="string">footnote</value>
-			</choice>
-		</attribute>
-	</optional>
-</define>
+  <define name="role.note.attribute">
+    <optional>
+      <attribute name="role">
+        <choice>
+          <value type="string">tip</value>
+          <value type="string">warning</value>
+          <value type="string">sidebar</value>
+          <value type="string">footnote</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="role.section.attribute">
-	<optional>
-		<attribute name="role">
-			<choice>
-				<value type="string">part</value>
-				<value type="string">chapter</value>
-				<value type="string">appendix</value>
-				<value type="string">header</value>
-				<value type="string">footer</value>
-				<value type="string">toc</value>
-			</choice>
-		</attribute>
-	</optional>
-</define>
+  <define name="role.section.attribute">
+    <optional>
+      <attribute name="role">
+        <choice>
+          <value type="string">part</value>
+          <value type="string">chapter</value>
+          <value type="string">appendix</value>
+          <value type="string">header</value>
+          <value type="string">footer</value>
+          <value type="string">toc</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 
-<define name="scope.attribute">
-	<attribute name="scope">
-		<choice>
-			<value type="string">row</value>
-			<value type="string">column</value>
-		</choice>
-	</attribute>
-</define>
+  <define name="scope.attribute">
+    <attribute name="scope">
+      <choice>
+        <value type="string">row</value>
+        <value type="string">column</value>
+      </choice>
+    </attribute>
+  </define>
 
-<define name="role.group.attribute">
-	<optional>
-		<attribute name="role">
-			<choice>
-				<value type="string">header</value>
-				<value type="string">footer</value>
-			</choice>
-		</attribute>
-	</optional>
-</define>
-
+  <define name="role.group.attribute">
+    <optional>
+      <attribute name="role">
+        <choice>
+          <value type="string">header</value>
+          <value type="string">footer</value>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
 </grammar>
