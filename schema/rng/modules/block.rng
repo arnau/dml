@@ -151,7 +151,6 @@
       </zeroOrMore>
     </element>
   </define>
-
   <define name="title.element">
     <element name="title">
       <ref name="core.attributes"/>
