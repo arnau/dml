@@ -11,7 +11,7 @@
       <item property="dct:publisher">Arnau Siches</item>
       <item property="dct:creator">Arnau Siches</item>
       <item property="dct:created">2008-12-29</item>
-      <item property="dct:modified">2009-09-03</item>
+      <item property="dct:modified">2009-11-29</item>
       <item property="dct:identifier">http://purl.oclc.org/NET/dml/1.0/</item>
       <item property="dct:hasFormat">http://purl.oclc.org/NET/dml/1.0/pdf/</item>
       <item property="dct:source">http://github.com/arnau/dml/tree/master</item>
@@ -74,7 +74,6 @@
   <xi:include href="sections/resources.xml"/>
   <xi:include href="sections/conventions.xml"/>
   <section xml:id="fdl-license" role="appendix">
-    <section><title>llaal</title></section>
     <xi:include href="fdl-license.xml" xpointer="xpointer(/*/*)"/>
   </section>
 
