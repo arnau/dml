@@ -44,7 +44,7 @@
 
 	     <fo:block role="dml:section" xml:lang="en" id="acknowledgments">
 	        <fo:block space-before="2em" space-after="0.83em" font-size="1.8em" font-weight="normal" keep-with-next.within-column="always" keep-together.within-column="always" role="dml:title" id="d14e171">1.3. Acknowledgments</fo:block>
-	        <fo:block space-before="0.5em" space-after="0.5em" role="dml:p" id="d14e174">Many people has helped to make this document. Some of them in no particular order are: Àlex Royo, Ferran Cases, Alejandro Gonzalo Bravo, David Rodríguez, Choan Gálvez, Tatiana Ledesma, Iu Siches, Oscar Sanchez Casamitjana, Carolina Figueroa and Juan Carlos Candanedo.</fo:block>
+	        <fo:block space-before="0.5em" space-after="0.5em" role="dml:p" id="d14e174">Many people collaborated on this document. Some of them in no particular order are: Àlex Royo, Ferran Cases, Alejandro Gonzalo Bravo, David Rodríguez, Choan Gálvez, Tatiana Ledesma, Iu Siches, Oscar Sanchez Casamitjana, Carolina Figueroa and Juan Carlos Candanedo.</fo:block>
 
       </fo:block>
 
