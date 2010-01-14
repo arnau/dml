@@ -1,0 +1,33 @@
+<Project
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns="http://usefulinc.com/ns/doap#">
+  <name>DML</name>
+  <homepage rdf:resource="http://purl.oclc.org/NET/dml/1.0/"/>
+  <created>2008-12-29</created>
+  <shortdesc xml:lang="en">
+    DML (Document Markup Language) is a simple markup language for books, articles, documents, notes, etc.
+  </shortdesc>
+  <description xml:lang="en">
+    DML (Document Markup Language) is a markup language for books, articles, notes and other types of document. DML is normatively available as a RELAX NG schema with additional Schematron assertions.
+  </description>
+  <mailing-list rdf:resource="http://groups.google.com/group/dml-discuss"/>
+  <maintainer rdf:resource="http://esbudellat.net/data/people/asiches#me"/>
+  <release>
+    <Version>
+      <name>Release Candidate</name>
+      <created>2008-12-29</created>
+      <revision>0.9</revision>
+    </Version>
+  </release>
+  <license rdf:resource="http://www.gnu.org/licenses/fdl.html"/>
+  <repository>
+    <GitRepository>
+      <location rdf:resource="http://github.com/arnau/dml.git"/>
+      <browse rdf:resource="http://github.com/arnau/dml/"/>
+    </GitRepository>
+  </repository>
+  <download-page rdf:resource="http://github.com/arnau/dml/archives/master"/>
+  <helper rdf:resource="http://choangalvez.nom.es/foaf.rdf#me"/>
+</Project>
